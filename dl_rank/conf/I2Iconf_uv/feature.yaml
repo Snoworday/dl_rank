@@ -1,0 +1,5566 @@
+acr:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_uv_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_uv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_uv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_uv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_uv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+acr_uv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_uv:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_uv_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_uv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_uv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_uv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_uv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+add_uv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_female:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_female_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_female_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_female_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_female_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_female_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_female_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_male:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_male_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_male_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_male_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_male_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_male_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_male_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_neutral:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_neutral_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_neutral_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_neutral_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_neutral_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_neutral_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyer_neutral_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyers:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyers_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyers_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyers_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyers_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyers_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+buyers_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+c_platform_price:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+cat1_price:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+cat2_price:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+cat3_price:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+catid1:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+  parameter:
+    fill: DEFAULT
+  style:
+  - onehot
+  - embedding
+  transform: vocabulary_list
+  type: category
+catid2:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+  parameter:
+    fill: DEFAULT
+  style:
+  - onehot
+  - embedding
+  transform: vocabulary_list
+  type: category
+catid3:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+  parameter:
+    fill: DEFAULT
+  style:
+  - onehot
+  - embedding
+  transform: vocabulary_list
+  type: category
+click:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_uv_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_uv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_uv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_uv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_uv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+click_uv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+comment_cnt:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+comment_cnt_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+comment_cnt_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+comment_cnt_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+comment_cnt_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+comment_cnt_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+comment_cnt_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_female:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_female_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_female_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_female_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_female_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_female_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_female_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_male:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_male_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_male_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_male_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_male_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_male_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_male_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_neutral:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_neutral_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_neutral_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_neutral_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_neutral_60d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_neutral_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyer_neutral_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyers:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyers_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyers_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyers_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyers_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyers_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_buyers_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_female_rate:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_female_rate_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_female_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_female_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_female_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_female_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_female_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_gmv:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_gmv_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_gmv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_gmv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_gmv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_gmv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_gmv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_male_rate:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_male_rate_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_male_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_male_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_male_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_male_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_male_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_neutral_rate:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_neutral_rate_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_neutral_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_neutral_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_neutral_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_neutral_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_neutral_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_orders:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_orders_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_orders_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_orders_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_orders_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_orders_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_orders_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_avg:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_avg_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_avg_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_avg_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_avg_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_avg_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_avg_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_var:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_var_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_var_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_var_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_var_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_var_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_price_unit_india_var_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_sales:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_sales_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_sales_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_sales_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_sales_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_sales_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+confirm_sales_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+create_date:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_uv_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_uv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_uv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_uv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_uv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+ctr_uv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+discount:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+female_rate:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+female_rate_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+female_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+female_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+female_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+female_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+female_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+gender:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+gmv:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+gmv_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+gmv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+gmv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+gmv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+gmv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+gmv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+good_score_rate:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+good_score_rate_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+good_score_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+good_score_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+good_score_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+good_score_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+good_score_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+illegal_tags:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_uv_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_uv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_uv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_uv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_uv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+imp_uv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_buyers:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_buyers_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_buyers_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_buyers_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_buyers_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_buyers_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_buyers_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_buyers:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_buyers_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_buyers_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_buyers_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_buyers_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_buyers_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_buyers_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_sales:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_sales_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_sales_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_sales_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_sales_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_sales_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_confirm_sales_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_sales:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_sales_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_sales_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_sales_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_sales_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_sales_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+in_sales_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+is_sale:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+list_price:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+log_date:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+male_rate:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+male_rate_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+male_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+male_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+male_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+male_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+male_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+neutral_rate:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+neutral_rate_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+neutral_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+neutral_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+neutral_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+neutral_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+neutral_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+orders:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+orders_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+orders_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+orders_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+orders_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+orders_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+orders_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_uv:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_uv_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_uv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_uv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_uv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_uv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+page_imp_uv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+pid:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+pno:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+price:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+price_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+price_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+price_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+price_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+price_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+price_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_rate:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_rate_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+refund_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+repurchase_rate:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+repurchase_rate_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+repurchase_rate_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+repurchase_rate_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+repurchase_rate_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+repurchase_rate_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+repurchase_rate_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+sales:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+sales_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+sales_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+sales_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+sales_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+sales_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+sales_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_description:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_description_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_description_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_description_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_description_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_description_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_description_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_quality:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_quality_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_quality_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_quality_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_quality_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_quality_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_quality_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_size:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_size_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_size_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_size_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_size_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_size_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+score_size_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+season:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_orders:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_orders_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_orders_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_orders_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_orders_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_orders_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_orders_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_sales:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_sales_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_sales_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_sales_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_sales_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_sales_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+shipping_sales_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+sku_num:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_15d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_uv:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_uv_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_uv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_uv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_uv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_uv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wishlist_uv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_uv_15d:
+  ignore: false
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_uv_1d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_uv_30d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_uv_60d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_uv_7d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
+wr_uv_90d:
+  ignore: true
+  multi:
+    combiner: none
+    num: 2
+    same: true
+  parameter:
+    boundaries:
+    normalization:
+  style:
+  - embedding
+  - value
+  transform:
+  type: continuous
