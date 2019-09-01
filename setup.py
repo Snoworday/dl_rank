@@ -1,10 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(name='dl_rank',
-      version='0.1',
+      version='0.1.1',
       description='Deeplearning Package for Recommend onlocal and EMR',
       author='wangqi@696',
       author_email='qiwang@clubfactory.com',
+      url='https://github.com/Snoworday/dl_rank',
       packages=find_packages(
           exclude=['tensorflowonspark']), #['dl_rank', 'dl_rank.model', 'dl_rank.conf'],
       # package_dir={'':'dl_rank'},
@@ -19,9 +20,9 @@ setup(name='dl_rank',
           'pyarrow==0.14.1'
       ],
       classifiers=[
-          'Programming Language :: Python :: 3.6',
-          'Programming Language :: Python :: 3.7    u',
           "License :: OSI Approved :: MIT License",
+          'Programming Language :: Python :: 3.6',
+          'Programming Language :: Python :: 3.7',
           "Operating System :: OS Independent"
       ]
       )

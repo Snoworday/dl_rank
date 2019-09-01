@@ -4,7 +4,11 @@ import shutil
 import numpy as np
 import time
 from collections import OrderedDict
-from conf.BaseParser import BaseParser
+
+try:
+    from ..BaseParser import BaseParser
+except:
+    from dl_rank import BaseParser
 import yaml
 import logging
 from functools import reduce

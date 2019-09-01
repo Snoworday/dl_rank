@@ -112,8 +112,8 @@ class EstimatorManager(object):
             config=run_config
         )
 
-    def export_model(self, save_path='', remove_subdir=False):
-        save_path = self.train_conf['graph_dir'] if not save_path else save_path
+    def export_model(self, save_path=None, remove_subdir=False):
+        save_path = self.train_conf['graph_dir'] if save_path is None else save_path
         org_dir_set = set(tf.gfile.ListDirectory(save_path))
         self.estimator.export_saved_model(save_path, self.parser.serving_parse_fn(), as_text=False)
         sub_dir_name = (set(tf.gfile.ListDirectory(save_path)) - org_dir_set).pop()
@@ -134,8 +134,8 @@ class EstimatorManager(object):
             tf.gfile.DeleteRecursively(sub_dir_path)
 
 
-    def export_model_online(self, save_path='', output_node_names=None, input_node_map=None, from_pb=False):
-        save_path = self.train_conf['online_graph_dir'] if save_path == '' else save_path
+    def export_model_online(self, save_path=None, output_node_names=None, input_node_map=None, from_pb=False):
+        save_path = self.train_conf['online_graph_dir'] if save_path is None else save_path
         input_node_map = self.model.placeholder_map if not input_node_map else input_node_map
         graph_pb_path = self.train_conf['graph_dir'] if from_pb else ''
         checkpoint_path = self.train_conf['model_dir'] if not from_pb else ''

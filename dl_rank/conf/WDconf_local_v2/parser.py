@@ -4,12 +4,19 @@ import shutil
 import numpy as np
 import time
 from collections import OrderedDict
-from conf.BaseParser import BaseParser
+from dl_rank import BaseParser
+
+try:
+    from ..BaseParser import BaseParser
+except:
+    from dl_rank import BaseParser
 import yaml
 import logging
 from functools import reduce
-
 class Parser(BaseParser):
+
+
+
     @staticmethod
     def secondary_parse_fn(sparse_emb, deep_emb, dense_emb, mask, model_struct):
         wide = ['cid', 'click_cross', 'order_cross', 'gmv', 'ctr']

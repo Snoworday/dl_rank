@@ -28,6 +28,8 @@ train:
   # path related.
   model_dir: /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/
   graph_dir: /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/
+  online_graph_dir: /Users/snoworday/git/algo-deeplearning/result/online_graph/deepfm_v2/
+
   result_dir: /tmp/predictions
   model_type: deepfm_v2
   train_data:  /Users/snoworday/git/algo-deeplearning/data/

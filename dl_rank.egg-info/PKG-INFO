@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: dl-rank
+Version: 0.1.1
+Summary: Deeplearning Package for Recommend onlocal and EMR
+Home-page: https://github.com/Snoworday/dl_rank
+Author: wangqi@696
+Author-email: qiwang@clubfactory.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent

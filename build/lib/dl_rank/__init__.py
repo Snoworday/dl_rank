@@ -9,7 +9,7 @@ import subprocess as _subprocess
 
 __version__ = '0.1.1'
 
-_env = {'distribution': True, 'date': '', 'ev_num': 1, 'ps_num': 1, 'conf': '', 'port': 6006,
+_env = {'distribution': True, 'date': '', 'ev_num': 1, 'ps_num': 1, 'conf': '',
         'logpath': _distribute.emr_home_path, 'backend': False, 'force_stop': True}
 _emr = {'keyFile': '/home/hadoop/wangqi.pem', 'emrName': 'wangqi'}
 _process_pool = {'train': None, 'infer': None, 'tb': None}
@@ -163,43 +163,38 @@ def export4online(conf='', from_pb=False, **kwargs):
     else:
         _main.run('export_online', conf=conf, useSpark=False, from_pb=from_pb, logpath=_os.path.join(_env['logpath'], 'dl_rank_tb.log'))
 
-def start_tensorboard(path='', conf='', port=None):
-    if port is not None:
-        _env['tb_port'] = port
-    if _process_pool['tb'] is None:
+def start_tensorboard(path='', conf=''):
+    if _process_pool['infer'] is not None:
         _kill_process(_process_pool['tb'])
-        if path != '':
-            process = _distribute.run_tensorboard(model_dir=path, logpath=_env['logpath'], port=_env['tb_port'])
-        elif conf != '':
-            process = _distribute.run_tensorboard(conf=conf, logpath=_env['logpath'], port=_env['tb_port'])
-        elif _env['conf'] != '':
-            process = _distribute.run_tensorboard(conf=_env['conf'], logpath=_env['logpath'], port=_env['tb_port'])
-        else:
-            raise FileNotFoundError('Please define summary path')
-        _process_pool['tb'] = process.pid
+    if path != '':
+        process = _distribute.run_tensorboard(model_dir=path, logpath=_env['logpath'])
+    elif conf != '':
+        process = _distribute.run_tensorboard(conf=conf, logpath=_env['logpath'])
+    elif _env['conf'] != '':
+        process = _distribute.run_tensorboard(conf=_env['conf'], logpath=_env['logpath'])
     else:
-        pass
-    print('Tensorboard Process pid: {}, port: {}'.format(_process_pool['tb'], _env['tb_port']))
+        raise FileNotFoundError('Please define summary path')
+    _process_pool['tb'] = process.pid
+    print('Tensorboard Process pid: {}'.format(process.pid))
 
 
 def _kill_process(group_name=None):
     group_names = ['tb', 'infer', 'train'] if group_name is None else [group_name]
     for group_name in group_names:
-        if group_name == 'tb':
-            _os.system("ps -ef | grep python | grep {name} | awk '{{print \"kill -9 \" $2}}' | bash -v"
-                       .format(name='tensorboard'))
-            _process_pool[group_name] = None
-        else:
-            if _process_pool[group_name] is None and _env['force_stop']:
+        if _process_pool[group_name] is None and _env['force_stop']:
+            if group_name == 'tb':
+                _os.system("ps -ef | grep python | grep {name} | awk '{{print \"kill -9 \" $2}}' | bash -v"
+                           .format(name=group_name))
+            else:
                 _os.system("ps -ef | grep python | grep solo | grep {name} | awk '{{print \"kill -9 \" $2}}' | bash -v"
                        .format(name=group_name))
-            else:
-                import psutil
-                root = psutil.Process(_process_pool[group_name])
-                childs = root.children(recursive=True)
-                for chd in childs:
-                    chd.kill()
-                root.kill()
-                _process_pool[group_name] = None
+        else:
+            import psutil
+            root = psutil.Process(_process_pool[group_name])
+            childs = root.children(recursive=True)
+            for chd in childs:
+                chd.kill()
+            root.kill()
+            _process_pool[group_name] = None
 
 
