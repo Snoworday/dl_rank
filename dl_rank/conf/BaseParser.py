@@ -13,7 +13,6 @@ except:
 
 
 class BaseParser(object):
-
     def __init__(self, confPath, useSpark):
         self.useSpark = useSpark
         self.confPath = confPath
@@ -34,6 +33,7 @@ class BaseParser(object):
             self._sparator['primary_delim'] = '@'
             self._sparator['secondary_delim'] = '|'
             self._sparator['teriary_delim'] = '&'
+            self._sparator['pred_out_delim'] = ','
             self._sparator['train_data_format'] = ['pid1', 'pid2', 'features']
             self._sparator['infer_data_format'] = ['label', 'features']
             self._sparator['model_out_format'] = ['pid1', 'pid2', 'out']
@@ -45,9 +45,9 @@ class BaseParser(object):
         if hasattr(self, '_model_out_format'):
             return self._model_out_format
         else:
-            _model = self._sparator['model_out_format']
-            self._model = [item+'_' if item != 'out' else 'out' for item in _model]
-            return self._model
+            _model_out_format = self._sparator['model_out_format']
+            self._model_out_format = [item+'_' for item in _model_out_format]
+            return self._model_out_format
 
     def load_conf_switch(self):
         confPath = self.confPath
@@ -103,7 +103,7 @@ class BaseParser(object):
         self.column_defaults = csv_defaults
         self.column_scope = csv_scope
 
-    def serving_parse_fn(self):
+    def serving_parse_fn(self, pred_node_names):
         csv_defaults = self.column_defaults
         csv_scope = self.column_scope
         feature_unused = self.feature_unused
@@ -118,7 +118,7 @@ class BaseParser(object):
                         input_dict.update({key: tf.compat.v1.placeholder(dtype=tf.string, shape=[None], name=csv_scope[key][1])})
                     else:
                         input_dict.update({key: tf.compat.v1.placeholder(dtype=tf.float32, shape=[None], name=csv_scope[key][1])})
-            input_dict.update({id: tf.compat.v1.placeholder(dtype=tf.string, shape=[None], name=id) for id in model_out_format if id != 'out'})
+            input_dict.update({id: tf.compat.v1.placeholder(dtype=tf.string, shape=[None], name=id) for id in model_out_format if id[:-1] not in pred_node_names})
             return tf.estimator.export.ServingInputReceiver(features=input_dict, receiver_tensors=input_dict)
         return serving_input_receiver_fn
 
@@ -163,6 +163,7 @@ class BaseParser(object):
                 return features_tail
             else:
                 labels = [tf.equal(data_container[label], '1') for label in train_data_format if label != 'features']
+                labels = tf.concat([tf.expand_dims(label, 1) if label.shape.ndims<2 else label for label in labels], axis=1)
                 return features_tail, labels
         return parser
 

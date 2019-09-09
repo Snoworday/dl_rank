@@ -1,0 +1,184 @@
+2019-09-07 00:35:05,007 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb46dcaac8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-07 00:35:05,092 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb46627a90>
+2019-09-07 00:35:05,100 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-07 00:35:05,100 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-07 00:35:05,101 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-07 00:35:05,131 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-09-07 00:35:05,161 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-07 00:35:06,078 - tensorflow - INFO - Calling model_fn.
+2019-09-07 00:35:06,376 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/lookup_ops.py:1137: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:35:14,350 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:35: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.batch_normalization instead.
+2019-09-07 00:35:14,436 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:36: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2019-09-07 00:35:14,438 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-09-07 00:35:14,631 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:76: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2019-09-07 00:35:14,992 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/losses/losses_impl.py:514: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:35:15,507 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:788: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+2019-09-07 00:35:17,074 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:35:22,794 - tensorflow - INFO - Done calling model_fn.
+2019-09-07 00:35:22,799 - tensorflow - INFO - Create CheckpointSaverHook.
+2019-09-07 00:35:26,553 - tensorflow - INFO - Graph was finalized.
+2019-09-07 00:35:26,557 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-07 00:35:26,559 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-16600
+2019-09-07 00:35:28,724 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1070: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2019-09-07 00:35:29,536 - tensorflow - INFO - Running local_init_op.
+2019-09-07 00:35:29,935 - tensorflow - INFO - Done running local_init_op.
+2019-09-07 00:35:43,220 - tensorflow - INFO - Saving checkpoints for 16600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-07 00:36:51,246 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb42b938d0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-07 00:36:51,323 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb423cdac8>
+2019-09-07 00:36:51,330 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-07 00:36:51,330 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-07 00:36:51,331 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-07 00:36:51,360 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-09-07 00:36:51,385 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-07 00:36:52,256 - tensorflow - INFO - Calling model_fn.
+2019-09-07 00:36:52,531 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/lookup_ops.py:1137: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:37:00,495 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:35: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.batch_normalization instead.
+2019-09-07 00:37:00,583 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:36: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2019-09-07 00:37:00,586 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-09-07 00:37:00,777 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:76: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2019-09-07 00:38:11,977 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb40410630>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-07 00:38:12,069 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3fc64b70>
+2019-09-07 00:38:12,075 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-07 00:38:12,076 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-07 00:38:12,076 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-07 00:38:12,104 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-09-07 00:38:12,131 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-07 00:38:13,046 - tensorflow - INFO - Calling model_fn.
+2019-09-07 00:38:13,337 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/lookup_ops.py:1137: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:38:21,125 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:35: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.batch_normalization instead.
+2019-09-07 00:38:21,215 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:36: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2019-09-07 00:38:21,217 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-09-07 00:38:21,415 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:76: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2019-09-07 00:40:09,870 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb41b7b128>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-07 00:40:09,944 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb413f4be0>
+2019-09-07 00:40:09,953 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-07 00:40:09,954 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-07 00:40:09,955 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-07 00:40:09,973 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-09-07 00:40:10,000 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-07 00:44:57,779 - tensorflow - INFO - Calling model_fn.
+2019-09-07 00:44:58,051 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/lookup_ops.py:1137: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:45:07,165 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:35: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.batch_normalization instead.
+2019-09-07 00:45:07,271 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:36: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2019-09-07 00:45:07,273 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-09-07 00:45:07,508 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:76: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2019-09-07 00:51:13,314 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb46131cf8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-07 00:51:13,399 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb46131fd0>
+2019-09-07 00:51:13,406 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-07 00:51:13,406 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-07 00:51:13,407 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-07 00:51:13,437 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-09-07 00:51:13,463 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-07 00:51:37,608 - tensorflow - INFO - Calling model_fn.
+2019-09-07 00:51:37,870 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/lookup_ops.py:1137: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:51:46,597 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:35: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.batch_normalization instead.
+2019-09-07 00:51:46,692 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:36: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2019-09-07 00:51:46,695 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-09-07 00:51:46,911 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:76: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2019-09-07 00:52:49,581 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/losses/losses_impl.py:514: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:52:50,204 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:788: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+2019-09-07 00:52:52,312 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-09-07 00:52:58,041 - tensorflow - INFO - Done calling model_fn.
+2019-09-07 00:52:58,045 - tensorflow - INFO - Create CheckpointSaverHook.
+2019-09-07 00:53:01,966 - tensorflow - INFO - Graph was finalized.
+2019-09-07 00:53:01,970 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-07 00:53:01,973 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-16600
+2019-09-07 00:53:03,996 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1070: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2019-09-07 00:53:04,731 - tensorflow - INFO - Running local_init_op.
+2019-09-07 00:53:05,101 - tensorflow - INFO - Done running local_init_op.
+2019-09-07 00:53:17,516 - tensorflow - INFO - Saving checkpoints for 16600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-07 00:53:34,701 - tensorflow - INFO - loss = 0.47388548, step = 16601
+2019-09-07 00:54:09,298 - tensorflow - INFO - global_step/sec: 0.578064
+2019-09-07 00:54:09,300 - tensorflow - INFO - loss = 0.5194956, step = 16621 (34.599 sec)
+2019-09-07 00:54:10,925 - tensorflow - INFO - global_step/sec: 12.2847
+2019-09-07 00:54:10,926 - tensorflow - INFO - loss = 0.5094205, step = 16641 (1.626 sec)

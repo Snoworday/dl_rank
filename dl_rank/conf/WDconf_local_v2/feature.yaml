@@ -42,7 +42,7 @@ click_cross:
     combiner: sum
     num: -20
   parameter:
-    size: 6965793
+    size: 31700548
     embed_dim: 1
     scope: wide_layer_variable
   model:
@@ -57,7 +57,7 @@ order_cross:
     combiner: sum
     num: -20
   parameter:
-    size: 6965793
+    size: 31700548
     embed_dim: 1
     scope: wide_layer_variable
   model:

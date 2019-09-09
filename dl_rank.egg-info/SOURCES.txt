@@ -1,7 +1,7 @@
 setup.py
 dl_rank/__init__.py
-dl_rank/distribute.py
 dl_rank/solo.py
+dl_rank/symphony.py
 dl_rank.egg-info/PKG-INFO
 dl_rank.egg-info/SOURCES.txt
 dl_rank.egg-info/dependency_links.txt
@@ -20,6 +20,18 @@ dl_rank/model/wide_and_deep.py
 dl_rank/model/wide_deep_traditional_attention.py
 dl_rank/model/xcross.py
 dl_rank/model/xdeepfm.py
+dl_rank/tensorflowonspark/TFCluster.py
+dl_rank/tensorflowonspark/TFManager.py
+dl_rank/tensorflowonspark/TFNode.py
+dl_rank/tensorflowonspark/TFSparkNode.py
+dl_rank/tensorflowonspark/__init__.py
+dl_rank/tensorflowonspark/dfutil.py
+dl_rank/tensorflowonspark/gpu_info.py
+dl_rank/tensorflowonspark/marker.py
+dl_rank/tensorflowonspark/pipeline.py
+dl_rank/tensorflowonspark/reservation.py
+dl_rank/tensorflowonspark/reservation_client.py
+dl_rank/tensorflowonspark/util.py
 dl_rank/utils/__init__.py
 dl_rank/utils/csvResult2json.py
 dl_rank/utils/dataHelper.py

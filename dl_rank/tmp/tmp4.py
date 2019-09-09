@@ -166,3 +166,29 @@ with tf.Graph().as_default() as new_graph:
 
 print('finish!')
 
+python3 -m dl_rank.solo --mode train --tw 3 --wi 0 --useps  --conf /home/hadoop/_dl_rank/conf/I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_*_172.31.27.48:2222_]*_ps_:[_172.31.21.20:2222_]}*_task_:{_type_:_chief_*_index_:0}} --logpath /home/hadoop
+
+python3 -m dl_rank.solo --mode train --tw 3 --wi 1 --useps --conf /home/hadoop/_dl_rank/conf/I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_*_172.31.27.48:2222_]*_ps_:[_172.31.21.20:2222_]}*_task_:{_type_:_worker_*_index_:0}} --logpath /home/hadoop
+
+python3 -m dl_rank.solo --mode train --tw 3 --wi 2 --useps --conf /home/hadoop/_dl_rank/conf/I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_*_172.31.27.48:2222_]*_ps_:[_172.31.21.20:2222_]}*_task_:{_type_:_worker_*_index_:1}} --logpath /home/hadoop
+
+python3 -m dl_rank.solo --mode train --tw 3 --wi 0 --useps --conf /home/hadoop/_dl_rank/conf/I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_*_172.31.27.48:2222_]*_ps_:[_172.31.21.20:2222_]}*_task_:{_type_:_ps_*_index_:0}} --logpath /home/hadoop
+
+
+
+
+# stable
+python3 /home/hadoop/_dl_rank/solo.py --mode train --tw 2 --wi 0 --useps --conf I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_]*_ps_:[_172.31.27.48:2222_]}*_task_:{_type_:_chief_*_index_:0}} --logpath /home/hadoop
+python3 /home/hadoop/_dl_rank/solo.py --mode train --tw 2 --wi 1 --useps --conf I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_]*_ps_:[_172.31.27.48:2222_]}*_task_:{_type_:_worker_*_index_:0}} --logpath /home/hadoop
+python3 /home/hadoop/_dl_rank/solo.py --mode train --tw 2 --wi 0 --useps --conf I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_]*_ps_:[_172.31.27.48:2222_]}*_task_:{_type_:_ps_*_index_:0}} --logpath /home/hadoop
+python3 /home/hadoop/_dl_rank/solo.py --mode train --tw 1 --wi 0 --useps --conf I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_]*_ps_:[_172.31.27.48:2222_]}*_task_:{_type_:_evaluator_*_index_:0}} --logpath /home/hadoop
+
+# module
+python3 -m dl_rank.solo --mode train --tw 2 --wi 0 --useps --conf /home/hadoop/_dl_rank/conf/I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_]*_ps_:[_172.31.27.48:2222_]}*_task_:{_type_:_chief_*_index_:0}} --logpath /home/hadoop
+python3 -m dl_rank.solo --mode train --tw 2 --wi 1 --useps --conf /home/hadoop/_dl_rank/conf/I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_]*_ps_:[_172.31.27.48:2222_]}*_task_:{_type_:_worker_*_index_:0}} --logpath /home/hadoop
+python3 -m dl_rank.solo --mode train --tw 2 --wi 0 --useps --conf /home/hadoop/_dl_rank/conf/I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_]*_ps_:[_172.31.27.48:2222_]}*_task_:{_type_:_ps_*_index_:0}} --logpath /home/hadoop
+python3 -m dl_rank.solo --mode train --tw 1 --wi 0 --useps --conf /home/hadoop/_dl_rank/conf/I2Iconf_uv --tfconfig {_cluster_:{_chief_:[_172.31.25.189:2222_]*_worker_:[_172.31.21.154:2222_]*_ps_:[_172.31.27.48:2222_]}*_task_:{_type_:_evaluator_*_index_:0}} --logpath /home/hadoop
+
+
+${SPARK_HOME}/bin/spark-submit --master yarn --py-files /home/hadoop/_dl_rank/conf/I2Iconf_uv/__pycache__,/home/hadoop/_dl_rank/conf/I2Iconf_uv/sparator.yaml,/home/hadoop/_dl_rank/conf/I2Iconf_uv/train.yaml,/home/hadoop/_dl_rank/conf/I2Iconf_uv/schema.yaml,/home/hadoop/_dl_rank/conf/I2Iconf_uv/.DS_Store,/home/hadoop/_dl_rank/conf/I2Iconf_uv/model.yaml,/home/hadoop/_dl_rank/conf/I2Iconf_uv/feature.yaml,/home/hadoop/_dl_rank/conf/I2Iconf_uv/item_profile_parse.py,/home/hadoop/_dl_rank/conf/I2Iconf_uv/vocabulary.yaml,/home/hadoop/_dl_rank/conf/I2Iconf_uv/parser.py  --num-executors 4 --executor-memory 15G --driver-memory 15G --conf spark.executorEnv.JAVA_HOME="$JAVA_HOME" --conf spark.executorEnv.PYSPARK_PYTHON="/usr/bin/python3" --conf spark.executorEnv.PYSPARK_DRIVER_PYTHON="/usr/bin/python3"  --conf spark.executorEnv.CLASSPATH="$($HADOOP_HOME/bin/hadoop classpath --glob):${CLASSPATH}"  --conf spark.executorEnv.LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:${JAVA_HOME}/lib/amd64/server" /usr/local/lib/python3.6/site-packages/dl_rank-0.1.5-py3.6.egg/dl_rank/solo.py --date 2019-08-14 --mode infer --useSpark --logpath /home/hadoop --conf _dl_rank/conf/I2Iconf_uv
+

@@ -95,8 +95,52 @@ nohup spark-submit \
 --conf spark.core.connection.ack.wait.timeout=5000 \
 --conf spark.executorEnv.LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:${JAVA_HOME}/lib/amd64/server" \
 --conf spark.executorEnv.CLASSPATH="${CLASSPATH}" \
-generate_train_data_v2.py \
---date 2019-08-27 \
+generate_train_data_v3.py \
 > tmp.log 2>&1 &
+########
+sudo rm -r /usr/local/lib/python3.6/site-packages/dl_rank*
+python3 setup.py build
+sudo python3 setup.py install
+#######
+ssh -i ~/wangqi.pem hadoop@ec2-34-216-139-139.us-west-2.compute.amazonaws.com
+ssh -i ~/wangqi.pem hadoop@172.31.21.29
+
+ssh -i ~/wangqi.pem hadoop@ec2-34-216-139-139.us-west-2.compute.amazonaws.com
+ssh -i ~/wangqi.pem hadoop@172.31.20.62
+
+ssh -i ~/wangqi.pem hadoop@ec2-34-216-139-139.us-west-2.compute.amazonaws.com
+ssh -i ~/wangqi.pem hadoop@172.31.18.185
+#######
+scp -i ~/wangqi.pem /usr/local/lib/python3.6/site-packages/dl_rank-0.1.10-py3.6.egg/dl_rank/solo.py hadoop@172.31.21.29:/home/hadoop
+scp -i ~/wangqi.pem /usr/local/lib/python3.6/site-packages/dl_rank-0.1.10-py3.6.egg/dl_rank/solo.py hadoop@172.31.20.62:/home/hadoop
+scp -i ~/wangqi.pem /usr/local/lib/python3.6/site-packages/dl_rank-0.1.10-py3.6.egg/dl_rank/solo.py hadoop@172.31.18.185:/home/hadoop
+
+sudo mv /home/hadoop/solo.py /usr/local/lib/python3.6/site-packages/dl_rank-0.1.10-py3.6.egg/dl_rank/solo.py
+
+######
+scp -i ~/wangqi.pem -r /home/hadoop/dl_rank hadoop@172.31.21.29:/home/hadoop
+scp -i ~/wangqi.pem -r /home/hadoop/setup.py hadoop@172.31.21.29:/home/hadoop
+
+scp -i ~/wangqi.pem -r /home/hadoop/dl_rank hadoop@172.31.20.62:/home/hadoop
+scp -i ~/wangqi.pem -r /home/hadoop/setup.py hadoop@172.31.20.62:/home/hadoop
+
+scp -i ~/wangqi.pem -r /home/hadoop/dl_rank hadoop@172.31.18.185:/home/hadoop
+scp -i ~/wangqi.pem -r /home/hadoop/setup.py hadoop@172.31.18.185:/home/hadoop
 
 
+${SPARK_HOME}/bin/spark-submit --master yarn \
+--py-files /home/hadoop/dl_rank_/conf/I2Iconf_test_emr/sparator.yaml,/home/hadoop/dl_rank_/conf/I2Iconf_test_emr/train.yaml,/home/hadoop/dl_rank_/conf/I2Iconf_test_emr/schema.yaml,/home/hadoop/dl_rank_/conf/I2Iconf_test_emr/model.yaml,/home/hadoop/dl_rank_/conf/I2Iconf_test_emr/feature.yaml,/home/hadoop/dl_rank_/conf/I2Iconf_test_emr/item_profile_parse.py,/home/hadoop/dl_rank_/conf/I2Iconf_test_emr/vocabulary.yaml,/home/hadoop/dl_rank_/conf/I2Iconf_test_emr/parser.py \
+--num-executors 3 --executor-memory 15G --driver-memory 15G \
+--conf spark.executorEnv.JAVA_HOME="$JAVA_HOME" \
+--conf spark.executorEnv.PYSPARK_PYTHON="/usr/bin/python3" \
+--conf spark.executorEnv.PYSPARK_DRIVER_PYTHON="/usr/bin/python3"  \
+--conf spark.executorEnv.CLASSPATH="$($HADOOP_HOME/bin/hadoop classpath --glob):$(hadoop classpath --glob)"  \
+--conf spark.executorEnv.LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:${JAVA_HOME}/lib/amd64/server" \
+--conf spark.yarn.appMasterEnv.S3_REQUEST_TIMEOUT=60000 \
+/usr/local/lib/python3.6/site-packages/dl_rank-0.1.10-py3.6.egg/dl_rank/solo.py \
+--date 2019-07-28 --mode infer --useSpark --logpath /home/hadoop --ps 1 --num_executor 3 --use_TFoS \
+--conf /home/hadoop/dl_rank_/conf/I2Iconf_test_emr
+
+
+
+tf.gfile.Exists('s3://jiayun.spark.data/wangqi/demo/I2IRank/I2ICTRUV/logData/deepfm_v2_mba/model.ckpt-8977.index')

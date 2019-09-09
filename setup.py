@@ -1,13 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(name='dl_rank',
-      version='0.1.1',
-      description='Deeplearning Package for Recommend onlocal and EMR',
+      version='0.1.12',
+      description='Packaging tensorflow for Recommend on local and EMR',
       author='wangqi@696',
       author_email='qiwang@clubfactory.com',
       url='https://github.com/Snoworday/dl_rank',
-      packages=find_packages(
-          exclude=['tensorflowonspark']), #['dl_rank', 'dl_rank.model', 'dl_rank.conf'],
+      packages=find_packages(), #['dl_rank', 'dl_rank.model', 'dl_rank.conf'],
       # package_dir={'':'dl_rank'},
       package_data={
           'conf': ['I2Iconf_uv/*']

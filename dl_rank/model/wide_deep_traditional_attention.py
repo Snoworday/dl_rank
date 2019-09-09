@@ -67,15 +67,15 @@ class wide_and_deep(baseModel):
                 # sequence_token_mask = tf.random.normal([self.batch_size, self.cfg.reduce_sequence_length])
                 # itemid_token_mask = tf.random.normal([self.batch_size, 1])
             else:
-                sparse_features, itemid_emb, sequence_emb, sequence_token_mask, itemid_token_mask = args
+                sparse_features, itemid_emb, sequence_emb, _, _ = args
                 self.sequence = sequence_emb
                 self.itemid = tf.squeeze(itemid_emb, axis=1)
 
                 # self.sequence = tf.random.normal([None, self.cfg.reduce_sequence_length, self.cfg.embedding_dim], name='sequence')
                 # self.itemid = tf.random.normal([None, self.cfg.embedding_dim], name='itemid')
-                # sequence_expand = tf.reduce_mean(self.sequence, 2)
-                # sequence_token_mask = tf.cast(sequence_expand, tf.bool)
-                # itemid_token_mask = tf.cast(tf.reduce_mean(tf.expand_dims(self.itemid, 1), 2), tf.bool)
+                sequence_expand = tf.reduce_mean(self.sequence, 2)
+                sequence_token_mask = tf.cast(sequence_expand, tf.bool)
+                itemid_token_mask = tf.cast(tf.reduce_mean(tf.expand_dims(self.itemid, 1), 2), tf.bool)
             with tf.variable_scope("wide_layer") as scope:
                 if self.mode == 'train':
                     self.add_sum = tf.reduce_sum(sparse_features, axis=1, name='wide_sum')
@@ -112,9 +112,10 @@ class wide_and_deep(baseModel):
                 else:
                     self.logits = self.logits_deep
                 print('logits_shape', self.logits.get_shape())
-                self.y = tf.identity(self.logits_deep, name=self.out_node_name[0])
+            # self.y = tf.identity(self.logits_deep, name=self.out_node_names[0])
             self.predictions = tf.nn.sigmoid(self.logits)
-            return self.predictions
+        self.y = tf.identity(self.logits_deep, name=self.out_node_names[0])
+        return self.predictions
 
     @staticmethod
     def _secondary_parse_fn(sparse_emb, deep_emb, dense_emb, mask, model_struct):
@@ -141,7 +142,8 @@ class wide_and_deep(baseModel):
         Returns:
             Dict of metric results keyed by name.
         """
-        labels = tf.expand_dims(tf.cast(labels, tf.int32), axis=1)
+        # labels = tf.expand_dims(tf.cast(labels, tf.int32), axis=1)
+        labels = tf.cast(labels, tf.int32)
         auc = tf.compat.v1.metrics.auc(
             labels=labels,
             predictions=predictions,
@@ -281,7 +283,7 @@ class wide_and_deep(baseModel):
         # trainable_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES,'deep_layer')
         # print('trainable var num: %d' % len(trainable_vars))
         labels = tf.cast(labels, tf.float32, name='true_label')
-        labels = tf.squeeze(labels, axis=1)
+        # labels = tf.squeeze(labels, axis=2)
         labels = tf.slice(labels, [0], tf.shape(self.logits))
         losses = tf.nn.sigmoid_cross_entropy_with_logits(labels=labels, logits=self.logits)
         loss = tf.reduce_mean(losses, name='loss')

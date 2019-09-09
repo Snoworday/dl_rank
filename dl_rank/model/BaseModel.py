@@ -18,19 +18,20 @@ class baseModel(metaclass=ABCMeta):
         # self.initializer_fn = initializer_fn
         self.model_conf = model_conf
         self.mode = mode
+        self.num_shards = self.model_conf['num_shards'] if 'num_shards' in self.model_conf else 1
         self.placeholder_map = self.model_conf['input_node_map'] if 'input_node_map' in self.model_conf else dict()
-        self.out_node_name = self.model_conf['out_node_names'] if 'out_node_names' in self.model_conf else ['out']
+        self.out_node_names = self.model_conf['out_node_names'] if 'out_node_names' in self.model_conf else ['out']
     def set_embedding_parser(self, fn):
         self.embedding_parser_fn = fn(self._secondary_parse_fn)
 
-
     @staticmethod
-    def build_embedding(params):
+    def build_embedding(params, num_shards):
         feature_conf = params['feature_conf']
         model_conf = params['model_conf']
         vocabulary_conf = params['vocabulary_conf']
         embed_dim = model_conf['embed_dim']
         first_order = int(model_conf['first_order'])
+        partitioner = tf.fixed_size_partitioner(num_shards) if num_shards > 1 else None
 
         table = OrderedDict()
         sparse = []
@@ -52,7 +53,7 @@ class baseModel(metaclass=ABCMeta):
             feature_name = f_param['name'] if 'name' in f_param else feature
             feature_embed_dim = f_param['embed_dim'] if 'embed_dim' in f_param else embed_dim
             feature_scope = f_param['scope'] if 'scope' in f_param else 'embedding'
-            with tf.variable_scope(feature_scope, reuse=tf.AUTO_REUSE) as scope:
+            with tf.variable_scope(feature_scope, reuse=tf.AUTO_REUSE, partitioner=partitioner) as scope:
                 if f_type == 'category':
                     f_num, combiner = f_multi['num'], f_multi['combiner']
                     default_value = f_param['default'] if 'default' in f_param else 0
@@ -194,7 +195,7 @@ class baseModel(metaclass=ABCMeta):
         return sparse_features, deep_features, dense_features
 
     def build_columns_information(self, params):
-        self.model_struct, *Features = baseModel.build_embedding(params)
+        self.model_struct, *Features = baseModel.build_embedding(params, self.num_shards)
         return Features
 
     def get_train_op_fn(self, loss, params):
@@ -247,7 +248,7 @@ class baseModel(metaclass=ABCMeta):
         self.dims, model_input = self.embedding_parser_fn(indexed_input, columns, dims, self.model_struct)
         out = self._forward_model(is_training, *model_input)
         if self.mode != 'train':
-            for out_node in self.out_node_name:
+            for out_node in self.out_node_names:
                 try:
                     _ = tf.get_default_graph().get_operation_by_name(out_node)
                 except:
@@ -275,6 +276,6 @@ class baseModel(metaclass=ABCMeta):
         tf.compat.v1.summary.scalar('auc_train', eval_metric_ops['auc'][1])
 
     def get_predictions_out(self, features, predictions, pids, out_format):
-        predictions_out = {id:tf.expand_dims(tf.identity(pids[id], name=id), axis=1) if id != 'out' else predictions
+        predictions_out = {id:tf.expand_dims(tf.identity(pids[id], name=id), axis=1) if id[:-1] not in self.out_node_names else predictions
                            for id in out_format}
         return predictions_out

@@ -2,6 +2,8 @@ primary_delim: '@'
 secondary_delim: '|'
 teriary_delim: '&'
 
+pred_out_delim: ','
+
 train_data_format:
 - label
 - features

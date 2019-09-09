@@ -1,7 +1,7 @@
 cid:
   ignore: false
   parameter:
-    size: 3489979
+    size: 4662977
     embed_dim: 1
     scope: wide_layer_variable
   transform: tabled
@@ -13,7 +13,7 @@ cid:
 pid:
   ignore: false
   parameter:
-    size: 48713
+    size: 55356
     scope: deep_layer_variable
   model:
     - trigger_id
@@ -27,7 +27,7 @@ click:
     combiner: none
     num: -20
   parameter:
-    size: 48713
+    size: 55356
     name: pid
     scope: deep_layer_variable
   model:
@@ -42,7 +42,7 @@ click_cross:
     combiner: sum
     num: -20
   parameter:
-    size: 6965793
+    size: 31708747
     embed_dim: 1
     scope: wide_layer_variable
   model:
@@ -57,7 +57,7 @@ order_cross:
     combiner: sum
     num: -20
   parameter:
-    size: 6965793
+    size: 31708747
     embed_dim: 1
     scope: wide_layer_variable
   model:

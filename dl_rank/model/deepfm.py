@@ -8,8 +8,8 @@ except:
 # wide columns
 
 class deepfm(baseModel):
-    def __init__(self, model_conf):
-        super(deepfm, self).__init__(model_conf)
+    def __init__(self, model_conf, mode):
+        super(deepfm, self).__init__(model_conf, mode)
         self.dropout_keep_fm = model_conf['dropout_keep_fm']
         self.dropout_keep_deep = model_conf['dropout_keep_deep']
 
@@ -54,7 +54,7 @@ class deepfm(baseModel):
             else:
                 merge = tf.concat([y_second_order, deep_input], axis=1)
             out = layers.dense(merge, 1, bn=False, training=is_training)
-        predictions = tf.nn.sigmoid(out, name=self.out_node_name[0])
+        predictions = tf.nn.sigmoid(out, name=self.out_node_names[0])
         return predictions
 
 

@@ -33,7 +33,7 @@ class wdl(baseModel):
                     deep_input = tf.compat.v1.layers.dropout(deep_input, 1 - self.dropout_keep_deep, training=is_training)
                 deep_out = layers.dense(deep_input, 1)
         out = wide_out + deep_out
-        predictions = tf.nn.sigmoid(out, name=self.out_node_name[0])
+        predictions = tf.nn.sigmoid(out, name=self.out_node_names[0])
         ld = wide_out
         return predictions
 

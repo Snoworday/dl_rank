@@ -37,7 +37,7 @@ class dcn(baseModel):
                 deep_out = deep_input
             merge = tf.concat([cross, deep_out], axis=1)
             out = layers.dense(merge, 1, bn=False, training=is_training)
-            predictions = tf.nn.sigmoid(out, name=self.out_node_name[0])
+            predictions = tf.nn.sigmoid(out, name=self.out_node_names[0])
         ld = deep_out
         return predictions
 

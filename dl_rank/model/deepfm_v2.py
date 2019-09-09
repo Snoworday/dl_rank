@@ -53,7 +53,7 @@ class deepfm(baseModel):
             else:
                 merge = tf.concat([y_second_order, deep_input], axis=1)
             out = layers.dense(merge, 2, bn=False, training=is_training)
-        predictions = tf.nn.sigmoid(out, name=self.out_node_name[0])
+        predictions = tf.nn.sigmoid(out, name=self.out_node_names[0])
         return predictions
 
     def get_eval_metric_ops(self, labels, predictions):

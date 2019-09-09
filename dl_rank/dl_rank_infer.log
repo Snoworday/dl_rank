@@ -1,0 +1,649 @@
+2019-09-06 11:09:57,709 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb38882048>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 11:09:57,729 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb38882160>
+2019-09-06 11:10:21,423 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 11:10:27,580 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 11:10:27,585 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 11:10:28,506 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 11:14:51,453 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3a47d8d0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 11:14:51,472 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3a47d748>
+2019-09-06 11:14:51,656 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 11:14:57,479 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 11:14:57,482 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 11:15:00,248 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 11:27:19,795 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3f9b28d0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 11:27:19,815 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3f9b2748>
+2019-09-06 11:27:28,230 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:335: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 11:27:37,469 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 11:27:37,472 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 11:27:38,220 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 11:31:18,463 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3c52a550>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 11:31:18,481 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3bc49668>
+2019-09-06 11:31:18,651 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:335: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 11:31:27,083 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 11:31:27,107 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 11:31:27,945 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 11:41:03,111 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3ed74198>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 11:41:03,232 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3e38c518>
+2019-09-06 11:42:18,473 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb47035080>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 11:42:18,547 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb467ca198>
+2019-09-06 11:42:25,396 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:335: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 11:42:36,920 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 11:42:36,922 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 11:42:37,767 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 11:44:47,530 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb47762358>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 11:44:47,607 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb46e71208>
+2019-09-06 11:44:53,086 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:335: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 11:45:04,575 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 11:45:04,578 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 11:45:05,317 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:12:01,119 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb41417b70>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:12:01,138 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb408b2ef0>
+2019-09-06 12:12:08,179 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:335: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:12:15,000 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:12:15,003 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:12:18,208 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:15:12,706 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3f1b5518>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:15:12,725 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3e9456d8>
+2019-09-06 12:15:12,908 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:335: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:15:18,568 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:15:18,570 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:15:20,718 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:17:45,553 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3904e518>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:17:45,573 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb387df6d8>
+2019-09-06 12:17:45,767 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:335: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:17:55,572 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:17:55,575 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:17:56,427 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:22:07,837 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb42ae2908>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:22:07,856 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb422736d8>
+2019-09-06 12:22:08,036 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:333: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:22:13,994 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:22:13,996 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:22:16,490 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:25:25,268 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb430be978>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:25:25,286 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb4284c6a0>
+2019-09-06 12:25:25,439 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:333: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:25:32,281 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:25:32,301 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:25:34,287 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:29:32,792 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb43db19e8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:29:32,811 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb4328df98>
+2019-09-06 12:29:32,990 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:333: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:29:40,204 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:29:40,215 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:29:41,905 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:34:15,343 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb393759e8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:34:15,362 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb38851f98>
+2019-09-06 12:34:15,540 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:333: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:34:21,485 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:34:21,511 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:34:24,592 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:37:08,039 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb4455b8d0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:37:08,057 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb43a37f98>
+2019-09-06 12:37:08,225 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:333: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:37:13,961 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:37:13,964 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:37:15,238 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:48:53,234 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3c13c860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:48:53,253 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3b6fa668>
+2019-09-06 12:49:06,474 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:333: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:49:15,151 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:49:15,156 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:49:15,925 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:53:07,749 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3fc47b00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:53:07,768 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3f173f60>
+2019-09-06 12:53:54,848 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb36e5b978>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:53:54,867 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb36338dd8>
+2019-09-06 12:53:55,025 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:333: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:54:01,373 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:54:01,375 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:54:04,383 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:55:42,429 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3fbbe710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:55:42,447 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3f09bf60>
+2019-09-06 12:58:02,730 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3b7777b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:58:02,749 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3af02748>
+2019-09-06 12:58:02,912 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:332: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 12:58:08,841 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 12:58:08,842 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 12:58:11,350 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 12:59:59,858 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3949f7b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 12:59:59,877 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb38c2a748>
+2019-09-06 13:00:00,058 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:332: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 13:00:05,853 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 13:00:05,856 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 13:00:09,437 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 13:02:08,347 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb447ea7b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:02:08,366 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb43d306d8>
+2019-09-06 13:03:17,169 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb437d67b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:03:17,188 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb42ee06d8>
+2019-09-06 13:19:40,477 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3c8bb7b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:19:40,495 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3bd3c6d8>
+2019-09-06 13:25:08,752 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3cd527b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:25:08,772 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3c1d26d8>
+2019-09-06 13:33:41,137 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb403a17b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:33:41,158 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3f82a6d8>
+2019-09-06 13:34:32,608 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb372c07b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:34:32,628 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb367406d8>
+2019-09-06 13:36:40,627 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb41a89710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:36:40,645 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb410b5748>
+2019-09-06 13:43:34,341 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb44824ef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:43:34,360 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb43d51748>
+2019-09-06 13:45:36,742 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb39da2630>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:45:36,762 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb393d07b8>
+2019-09-06 13:46:30,392 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3aa62630>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:46:30,417 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3a03d7b8>
+2019-09-06 13:48:03,275 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3b55e860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:48:03,294 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3ab216d8>
+2019-09-06 13:49:47,070 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb399dc860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:49:47,090 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb38f9f6d8>
+2019-09-06 13:51:40,743 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb388de780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:51:40,761 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb380a56a0>
+2019-09-06 13:55:40,446 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb36367780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:55:40,465 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb359296a0>
+2019-09-06 13:58:46,939 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb40995780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 13:58:46,959 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3ff576a0>
+2019-09-06 14:07:06,127 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb42d0b780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:07:06,149 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb422cd6a0>
+2019-09-06 14:11:11,098 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb35e4f780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:11:11,116 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb354126a0>
+2019-09-06 14:12:24,657 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb37986780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:12:24,675 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb36f496a0>
+2019-09-06 14:15:52,845 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3704a780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:15:52,864 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3680f6a0>
+2019-09-06 14:17:02,454 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb38153780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:17:02,473 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb379186a0>
+2019-09-06 14:20:16,905 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb36993780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:20:16,923 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb35f566a0>
+2019-09-06 14:21:19,447 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb39686780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:21:19,466 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb38c496a0>
+2019-09-06 14:23:40,009 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb37a0d780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:23:40,030 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb36fd06a0>
+2019-09-06 14:27:40,646 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb382fc780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:27:40,666 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb37a036a0>
+2019-09-06 14:29:56,659 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3e3d7780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:29:56,678 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3db1a6a0>
+2019-09-06 14:33:06,358 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3db1e780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:33:06,377 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3d2616a0>
+2019-09-06 14:48:51,352 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3c5d9780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:48:51,369 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3bb9e6a0>
+2019-09-06 14:51:11,452 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb440e7780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 14:51:11,470 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb436ac6a0>
+2019-09-06 15:45:13,822 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3e918860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 15:45:13,845 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3e0586d8>
+2019-09-06 15:47:49,725 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb43b4c860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 15:47:49,744 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb4328b6d8>
+2019-09-06 15:50:50,030 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3d2ed860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 15:50:50,049 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3ca2d6d8>
+2019-09-06 15:53:27,329 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb4540d860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 15:53:27,349 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb44b4d6d8>
+2019-09-06 15:55:50,321 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3d0d5860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 15:55:50,341 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3c8136d8>
+2019-09-06 15:59:38,118 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb45abb860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 15:59:38,139 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb451f96d8>
+2019-09-06 16:02:01,979 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3ccbd860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:02:01,998 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3c4236d8>
+2019-09-06 16:18:36,812 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb44b11828>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:18:36,833 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb4428b748>
+2019-09-06 16:24:53,322 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb35da2e48>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:24:53,345 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb354ec7f0>
+2019-09-06 16:28:16,003 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb44dc8e80>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:28:16,023 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb444d4828>
+2019-09-06 16:30:58,391 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3ff78e80>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:30:58,413 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3f684828>
+2019-09-06 16:33:07,733 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3735fe80>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:33:07,757 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb36a6b828>
+2019-09-06 16:35:50,287 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3b7e9b00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:35:50,308 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3af617b8>
+2019-09-06 16:40:10,678 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3ed58b00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:40:10,696 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3e34d7b8>
+2019-09-06 16:44:25,262 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3d391b00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:44:25,283 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3cb0a7b8>
+2019-09-06 16:45:38,654 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3984cb00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 16:45:38,674 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb38fc57b8>
+2019-09-06 17:08:49,922 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb42b96b00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 17:08:49,943 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb4229b7b8>
+2019-09-06 17:12:21,240 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3bb5bb00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 17:12:21,264 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3b25f7b8>
+2019-09-06 17:27:44,771 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb4412ab00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 17:27:44,791 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb4382d7b8>
+2019-09-06 17:29:30,715 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3b7c5b00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 17:29:30,734 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3aec87b8>
+2019-09-06 17:32:05,883 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb4022bb00>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 17:32:05,902 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3f81a7b8>
+2019-09-06 17:38:42,632 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb4382b7b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 17:38:42,656 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb42f2f860>
+2019-09-06 17:43:41,420 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3d173860>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 17:43:41,440 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3c9877f0>
+2019-09-06 17:43:41,449 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 17:43:47,449 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 17:43:47,452 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 17:43:48,246 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 18:02:00,682 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb4071a080>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 18:02:01,436 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3fe34b38>
+2019-09-06 18:02:12,311 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 18:03:53,691 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 18:03:53,697 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 18:03:54,681 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 18:07:48,686 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb42df3710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 18:07:49,395 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb424d6f60>
+2019-09-06 18:07:52,755 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 18:09:33,747 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 18:09:33,751 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 18:09:34,554 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 18:09:55,821 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py:1419: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-09-06 18:14:17,830 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3f5e36d8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 18:14:17,851 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3eca3940>
+2019-09-06 18:14:17,860 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 18:14:24,039 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 18:14:24,041 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 18:14:24,871 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 18:14:33,991 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py:1419: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-09-06 18:16:51,188 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb4833fd30>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 18:16:51,267 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb479e57b8>
+2019-09-06 18:16:51,282 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 18:17:03,632 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 18:17:03,634 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 18:17:04,426 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 18:17:16,538 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py:1419: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-09-06 19:30:33,616 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb45c002e8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 19:30:33,702 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb45bc4ef0>
+2019-09-06 19:30:33,719 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 19:30:48,722 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 19:30:48,726 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 19:30:49,682 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 19:32:54,582 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb445cf908>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 19:32:54,667 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb445cfcf8>
+2019-09-06 19:32:54,686 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 19:33:08,315 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 19:33:08,318 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 19:33:09,146 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 19:38:44,970 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3b4bd4a8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 19:38:45,058 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3b482fd0>
+2019-09-06 19:38:45,080 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 19:38:59,272 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 19:38:59,275 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 19:39:00,113 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 19:43:30,838 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb495330f0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 19:43:30,926 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb48ba9710>
+2019-09-06 19:43:30,954 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:334: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-06 19:43:44,663 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-06 19:43:44,665 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-06 19:43:45,502 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
+2019-09-06 20:26:05,017 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb387534a8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 20:26:05,062 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb37cfa898>
+2019-09-06 20:37:41,842 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb36fed4a8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 20:37:41,864 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb36594898>
+2019-09-06 20:41:23,863 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb419004a8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 20:41:23,894 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb40ea7898>
+2019-09-06 20:45:18,247 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3ad67710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 20:45:18,264 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3a2708d0>
+2019-09-06 20:46:27,679 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3eddb710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 20:46:27,701 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3e2e48d0>
+2019-09-06 20:49:37,057 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3e5e6160>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 20:49:37,076 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3dbaa908>
+2019-09-06 20:53:50,038 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb44409198>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 20:53:50,060 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb43bc8978>
+2019-09-06 20:54:42,988 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3ec041d0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 20:54:43,019 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3e3c79b0>
+2019-09-06 21:35:05,100 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb453711d0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-06 21:35:05,120 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb44849da0>
+2019-09-07 03:07:16,014 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb41785be0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-07 03:07:16,035 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb41785748>
+2019-09-07 03:07:16,043 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:333: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+2019-09-07 03:07:21,657 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-07 03:07:21,659 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/graph/deepfm_v2/variables/variables
+2019-09-07 03:07:22,475 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/util/decorator_utils.py:145: GraphKeys.VARIABLES (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.GraphKeys.GLOBAL_VARIABLES` instead.
