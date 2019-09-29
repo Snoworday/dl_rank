@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b5803b0-6d14-4a7c-b9fb-5c68c2b79716" name="Default Changelist" comment="" />
+    <list default="true" id="3b5803b0-6d14-4a7c-b9fb-5c68c2b79716" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop@ec2-34-219-178-41.us-west-2.compute.amazonaws.com/feature.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop@ec2-34-219-178-41.us-west-2.compute.amazonaws.com/mission.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop@ec2-34-219-178-41.us-west-2.compute.amazonaws.com/model.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop@ec2-34-219-178-41.us-west-2.compute.amazonaws.com/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop@ec2-34-219-178-41.us-west-2.compute.amazonaws.com/schema.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop@ec2-34-219-178-41.us-west-2.compute.amazonaws.com/separator.yaml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,14 +20,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.62218046">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dl_rank/solo.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="362">
-                  <caret line="490" column="42" selection-start-line="490" selection-start-column="42" selection-end-line="490" selection-end-column="42" />
+                <state relative-caret-position="282">
+                  <caret line="494" column="16" lean-forward="true" selection-start-line="494" selection-start-column="16" selection-end-line="494" selection-end-column="16" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="14" selection-start-column="14" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -156,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local/feature.yaml" />
         <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/feature.yaml" />
         <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/feature.yaml" />
         <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/item_profile_parse.py" />
@@ -207,6 +223,7 @@
         <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/mission.yaml" />
         <option value="$PROJECT_DIR$/dl_rank/utils/configManager.py" />
         <option value="$PROJECT_DIR$/dl_rank/solo.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -231,37 +248,7 @@
             <path>
               <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
               <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="datapipeline" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
               <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-              <item name="I2Iconf_uv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
@@ -492,7 +479,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-262" y="-1177" width="1920" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19536598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -639,9 +625,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/schema.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/separator.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1021,11 +1004,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dl_rank/solo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="490" column="42" selection-start-line="490" selection-start-column="42" selection-end-line="490" selection-end-column="42" />
+        <state relative-caret-position="282">
+          <caret line="494" column="16" lean-forward="true" selection-start-line="494" selection-start-column="16" selection-end-line="494" selection-end-column="16" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
