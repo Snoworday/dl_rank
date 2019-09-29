@@ -1,2 +1,2 @@
-datapipeline
-dl_rank/conf
+datapipeline/*
+dl_rank/conf/*
