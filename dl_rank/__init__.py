@@ -4,14 +4,14 @@ from . import solo as _main
 from . import conf as _conf
 from . import symphony as _distribute
 import os as _os
-import signal as _signal
 import subprocess as _subprocess
 
-__version__ = '0.1.12'
+__version__ = '0.3.3.3'
 
 _env = {'distribution': True, 'date': '', 'ev_num': 1, 'ps_num': 1, 'conf': '', 'tb_port': 6006, 'use_TFoS': False,
         'save_data_type': 'txt', 'logpath': _distribute.emr_home_path, 'backend': False, 'force_stop': True}
 _emr = {'keyFile': '/home/hadoop/wangqi.pem', 'emrName': 'wangqi'}
+_model = []
 _process_pool = {'train': None, 'infer': None, 'tb': None}
 
 def emr():
@@ -45,7 +45,7 @@ def off_eval():
     _env['ev_num'] = 0
 
 def _update_env(mode_fn):
-    def wrapper(conf=None, date=None):
+    def wrapper(conf=None, date=None, *args, **kwargs):
         if conf is not None:
             _env['conf']=conf
         else:
@@ -57,7 +57,7 @@ def _update_env(mode_fn):
             _env['date'] = date
         else:
             date = _env['date']
-        mode_fn(conf, date)
+        mode_fn(conf, date, *args, **kwargs)
     return wrapper
 
 def set_emr(emrName=None, keyFile=None):
@@ -70,19 +70,19 @@ def set_emr(emrName=None, keyFile=None):
             assert False, 'Cant find keyFile'
     print(_emr)
 
-def set_env(conf=None, date=None, ev_num=None, ps_num=None, use_TFoS=None, logpath=None, distribution=None,
+def set_env(conf=None, date=None, ev=None, ps=None, use_TFoS=None, logpath=None, distribution=None,
             backend=None, force_stop=None, save_data_type=None):
     if conf is not None:
         _env['conf'] = conf
     if date is not None:
         _env['date'] = date
-    if ev_num is not None:
-        if ev_num > 1:
+    if ev is not None:
+        if ev > 1:
             print('evaluator number can only be 1 now')
-            ev_num = 1
-        _env['ev_num'] = ev_num
-    if ps_num is not None:
-        _env['ps_num'] = ps_num
+            ev = 1
+        _env['ev_num'] = ev
+    if ps is not None:
+        _env['ps_num'] = ps
     if use_TFoS is not None:
         _env['use_TFoS'] = use_TFoS
     if logpath is not None:
@@ -98,25 +98,33 @@ def set_env(conf=None, date=None, ev_num=None, ps_num=None, use_TFoS=None, logpa
         _env['save_data_type'] = save_data_type
 
 @_update_env
-def train(conf, date):
+def train(conf, date, retrain=False):
+    stop('train')
     if _env['distribution']:
-        process = _distribute.distributeTrain(conf, date, _env['ps_num'], _env['ev_num'], emrName=_emr['emrName'],
-                                              keyFile=_emr['keyFile'], logDir=_env['logpath'])
-        print('Train Process pid: {}'.format(process.pid))
+        process_pid = _distribute.distributeMulti('train', conf, date, retrain, _env['ps_num'], _env['ev_num'], emrName=_emr['emrName'],
+                                              keyFile=_emr['keyFile'], logDir=_env['logpath'], dirs2issue=_model)
+        _process_pool['train'] = process_pid
+
+        print('Train Process pid: {}'.format(process_pid))
     else:
         if _env['backend']:
             if _process_pool['train'] is not None:
                 _kill_process(_process_pool['train'])
             date = '' if date=='' else '--date {}'.format(date)
-            cmd = 'python3 -m dl_rank.solo --mode train --conf {} {} --logpath {} --ps {} > {}'.format(
-                conf, date, _env['logpath'], _env['ps_num'],
+            retrain = '' if retrain else '--retrain'
+            if _model[0].startswith('s3:'):
+                _os.system('aws s3 cp {model_path} {logpath}'.format(model_path=_model[0], logpath=_env['logpath']))
+            else:
+                _os.system('cp {model_path} {logpath}'.format(model_path=_model[0], logpath=_env['logpath']))
+            cmd = 'python3 -m dl_rank.solo --mode train --conf {} {} --logpath {} --ps {} {} > {}'.format(
+                conf, date, _env['logpath'], _env['ps_num'], retrain,
                 _os.path.join(_env['logpath'], 'dl_rank_run.log')
             )
             process = _subprocess.Popen([cmd], shell=True, stdout=_subprocess.PIPE, stderr=_subprocess.PIPE, close_fds=True)
             _process_pool['train'] = process.pid
             print('Train Process pid: {}'.format(process.pid))
         else:
-            _main.run('train', conf=conf, useSpark=False, date=date, ps=_env['ps_num'],
+            _main.run('train', conf=conf, retrain=retrain, useSpark=False, date=date, ps=_env['ps_num'],
                       logpath=_env['logpath'])
 
 
@@ -128,11 +136,13 @@ def test(conf, date):
     return pred_generator
 
 @_update_env
-def infer(conf, date):
+def infer(conf, date, executer_num=0):
+    stop('infer')
     if _env['distribution']:
-        process = _distribute.distributeInfer(conf, date,_env['ps_num'], _emr['emrName'],
-                                              logpath=_env['logpath'], use_TFoS=_env['use_TFoS'])
-        print('Infer Process pid: {}'.format(process.pid))
+        process_pid = _distribute.distributeMulti('infer', conf, date,_env['ps_num'], _emr['emrName'], logpath=_env['logpath'],
+                                                  use_TFoS=_env['use_TFoS'], dirs2issue=_model, executer_num=executer_num)
+        _process_pool['infer'] = process_pid
+        print('Infer Process pid: {}'.format(process_pid))
     else:
         if _env['backend']:
             if _process_pool['infer'] is not None:
@@ -166,20 +176,28 @@ def export(save_path=None, conf='', pbtxt=True):
         conf = _env['conf']
     _main.run('export', conf=conf, useSpark=False, logpath=_env['logpath'], save_path=save_path, pbtxt=pbtxt)
 
-def export4online(conf='', from_pb=False, **kwargs):
-    if conf == '':
-        conf = _env['conf']
-    if conf == '' or kwargs:
+def export4online(conf=None, save_data_type=None, from_pb=True, **kwargs):
+    conf = _env['conf'] if conf is None else conf
+    output_data_type = _env['save_data_type'] if save_data_type is None else save_data_type
+    if conf == '' and kwargs:
         _main.EstimatorManager._export_model_online(**kwargs)
     else:
-        _main.run('export_online', conf=conf, useSpark=False, output_data_type=_env['save_data_type'],
+        _main.run('export_online', conf=conf, useSpark=False, output_data_type=output_data_type,
                   from_pb=from_pb, logpath=_env['logpath'])
+
+def register(model):
+    from model.ModelFactory import modelFactory
+    from model.BaseModel import baseModel
+    if isinstance(model, baseModel):
+        modelFactory.register(model)
+    elif isinstance(model, str):
+        _model.append(_os.path.abspath(model))
 
 def start_tensorboard(path='', conf='', port=None):
     if port is not None:
         _env['tb_port'] = port
     if _process_pool['tb'] is None:
-        _kill_process(_process_pool['tb'])
+        _kill_process('tb')
         if path != '':
             process = _distribute.run_tensorboard(model_dir=path, logpath=_env['logpath'], port=_env['tb_port'])
         elif conf != '':
@@ -193,14 +211,36 @@ def start_tensorboard(path='', conf='', port=None):
         pass
     print('Tensorboard Process pid: {}, port: {}'.format(_process_pool['tb'], _env['tb_port']))
 
+def wait(delay=30):
+    import psutil
+    import time
+    time.sleep(delay)  # After initialization, the PID of child process would changes in a moment
+    try:
+        root = [psutil.Process(_process_pool[group_name]) for group_name in ['train', 'infer'] if _process_pool[group_name] != None]
+    except:
+        return
+    all_ps = []
+    for r in root:
+        all_ps += r.children(recursive=True)
+        print('root', r, 'child', all_ps)
+    exit_code = [p.wait() for p in all_ps]
+
+def _get_all_pids():
+    import psutil
+    root = [psutil.Process(_process_pool[group_name]) for group_name in ['train', 'infer'] if _process_pool[group_name] != None]
+    all_ps = []
+    for r in root:
+        all_ps += r.children(recursive=True)
+        print('root', r, 'child', all_ps)
+    pids = [p.pid for p in all_ps]
+    return pids
 
 def _kill_process(group_name=None):
     group_names = ['tb', 'infer', 'train'] if group_name is None else [group_name]
     for group_name in group_names:
         if group_name == 'tb':
             _os.system("ps -ef | grep python | grep {name} | awk '{{print \"kill -9 \" $2}}' | bash -v"
-                       .format(name='tensorboard'))
-            _process_pool[group_name] = None
+                       .format(name='tensorboard.main'))
         else:
             if _process_pool[group_name] is None and _env['force_stop']:
                 _os.system("ps -ef | grep python | grep solo | grep {name} | awk '{{print \"kill -9 \" $2}}' | bash -v"
@@ -212,6 +252,6 @@ def _kill_process(group_name=None):
                 for chd in childs:
                     chd.kill()
                 root.kill()
-                _process_pool[group_name] = None
+        _process_pool[group_name] = None
 
 

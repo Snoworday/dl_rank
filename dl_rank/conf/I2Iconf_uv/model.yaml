@@ -1,8 +1,9 @@
 dnn_hidden_units: [80,40]
-learning_rate: 0.0001
+learning_rate: 0.001
 lr_decay_step: 1000
 l1_reg: 0.00
-l2_reg: 0.001
+l2_reg: 0.01
+MBA_reg: 0.01
 cross_layer_size: [200,200,100]
 dnn_decay_rate: 0.8
 field_num: 6

@@ -1,0 +1,32 @@
+dnn_hidden_units: [80,40]
+learning_rate: 0.01
+lr_decay_step: 10000
+l1_reg: 0.00
+l2_reg: 0.00
+cross_layer_size: [200,200,100]
+dnn_decay_rate: 0.8
+field_num: 6
+embed_dim: 64
+activation: relu
+initializer: xavier
+embed_initializer:
+dropout_keep_fm: 0.7
+dropout_keep_deep: 0.7
+use_feature_column: False
+optimizer: ftrl_adam
+first_order: False
+cross_dcn_layer_size: 3
+
+input_node_map:
+  trunk/Squeeze: placeholder/itemid
+  embedding_lookup_2/Identity: placeholder/sequence
+out_node_names:
+  - predict_value
+
+cfg:
+  reduce_sequence_length: 20
+  embedding_dim: 64
+  dropout: 0.8
+  last_dropout: 0.8
+  hidden_num: 64
+  wd: 1

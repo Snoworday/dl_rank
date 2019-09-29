@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='dl_rank',
-      version='0.1.12',
+      version='0.3.3.3',
       description='Packaging tensorflow for Recommend on local and EMR',
       author='wangqi@696',
       author_email='qiwang@clubfactory.com',

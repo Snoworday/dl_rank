@@ -2,3 +2,9 @@
 log_device_placement: true
 , '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 400, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb43542ba8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
 2019-09-05 10:36:54,584 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb43542b70>
+2019-09-12 16:45:09,706 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:66: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-09-12 16:45:19,919 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3df80160>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-12 16:45:19,994 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3df80668>

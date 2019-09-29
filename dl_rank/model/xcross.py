@@ -1,12 +1,12 @@
 import tensorflow as tf
 from .BaseModel import baseModel
 try:
-    from ..utils import layers
+    from dl_rank.layer import layers
 except:
-    from utils import layers
+    from layer import layers
 
 class xcross(baseModel):
-
+    name = 'xcoss'
 
     def _forward_model(self, sparse_features, deep_features, dense_features, is_training):
         with tf.compat.v1.variable_scope('trunk'):

@@ -1,14 +1,15 @@
 import tensorflow as tf
 from .BaseModel import baseModel
 try:
-    from ..utils import layers
+    from dl_rank.layer import layers
 except:
-    from utils import layers
+    from layer import layers
 
 
 # wide columns
 
 class deepfm(baseModel):
+    name = 'deepfm_v2'
     def __init__(self, model_conf, mode):
         super(deepfm, self).__init__(model_conf, mode)
         self.dropout_keep_fm = model_conf['dropout_keep_fm']
@@ -19,7 +20,6 @@ class deepfm(baseModel):
 
     def _forward_model(self, is_training, *args, **kwargs):
         sparse_features, deep_features, dense_features = args
-        ld = deep_features
         with tf.compat.v1.variable_scope('trunk'):
             if self.use_first_order:
                 deep_features, bias_features = tf.split(deep_features, [-1, 1], axis=2)
@@ -52,8 +52,11 @@ class deepfm(baseModel):
                 merge = tf.concat([y_first_order, y_second_order, deep_input], axis=1)
             else:
                 merge = tf.concat([y_second_order, deep_input], axis=1)
-            out = layers.dense(merge, 2, bn=False, training=is_training)
-        predictions = tf.nn.sigmoid(out, name=self.out_node_names[0])
+            ctr_out = tf.nn.sigmoid(layers.dense(merge, 1, bn=False, training=is_training))
+            cvr_out = tf.nn.sigmoid(layers.dense(merge, 1, bn=False, training=is_training))
+            ctcvr_out = ctr_out * cvr_out
+            out = tf.concat([ctr_out, ctcvr_out], axis=1)
+        predictions = tf.identity(out, name=self.out_node_names[0])
         return predictions
 
     def get_eval_metric_ops(self, labels, predictions):
@@ -88,7 +91,7 @@ class deepfm(baseModel):
         ctr_pred, uv_pred = tf.split(predictions, [1, 1], axis=1)
         ctr_labels_ = tf.cast(ctr_labels, tf.float32)
 
-        l1_reg, l2_reg = self.model_conf['l1_reg'], self.model_conf['l2_reg']
+        l1_reg, l2_reg, MBA_reg = self.model_conf['l1_reg'], self.model_conf['l2_reg'], self.model_conf['MBA_reg']
         ctr_loss = tf.compat.v1.losses.log_loss(ctr_labels, ctr_pred)
         uv_loss = layers.focal_loss_sigmoid(uv_labels, uv_pred, weights=ctr_labels_, alpha=0.03)
         T_vars = tf.compat.v1.trainable_variables()
@@ -104,7 +107,7 @@ class deepfm(baseModel):
             for vars in M_vars:
                 l1_loss += tf.keras.regularizers.l1(
                     l1_reg)(vars)
-        loss = ctr_loss + uv_loss # + l1_loss + l2_loss + layers.MBA_loss(l2_reg) # + dice_loss * l2_reg
+        loss = ctr_loss + uv_loss + l1_loss + l2_loss + layers.MBA_loss(MBA_reg) # + dice_loss * l2_reg
         return loss
 
     def add_summary(self, labels, predictions, eval_metric_ops):

@@ -10,11 +10,14 @@ dl_rank.egg-info/requires.txt
 dl_rank.egg-info/top_level.txt
 dl_rank/conf/BaseParser.py
 dl_rank/conf/__init__.py
+dl_rank/layer/__init__.py
+dl_rank/layer/layers.py
 dl_rank/model/BaseModel.py
 dl_rank/model/ModelFactory.py
 dl_rank/model/__init__.py
 dl_rank/model/dcn.py
 dl_rank/model/deepfm.py
+dl_rank/model/deepfm_pair.py
 dl_rank/model/deepfm_v2.py
 dl_rank/model/wide_and_deep.py
 dl_rank/model/wide_deep_traditional_attention.py
@@ -36,7 +39,7 @@ dl_rank/utils/__init__.py
 dl_rank/utils/csvResult2json.py
 dl_rank/utils/dataHelper.py
 dl_rank/utils/item_profile_parse.py
-dl_rank/utils/layers.py
 dl_rank/utils/modelUtils.py
 dl_rank/utils/preprocess.py
+dl_rank/utils/scriptHelper.py
 dl_rank/utils/yamlHelper.py

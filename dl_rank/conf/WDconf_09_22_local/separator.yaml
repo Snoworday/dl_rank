@@ -1,0 +1,17 @@
+primary_delim: '@'
+secondary_delim: '|'
+teriary_delim: ','
+
+pred_out_delim: ','
+
+train_data_format:
+- ctr_label
+- features
+infer_data_format:
+- cid
+- pid
+- features
+model_out_format:
+- cid
+- pid
+- out

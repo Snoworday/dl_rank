@@ -182,3 +182,1712 @@ Use standard file utilities to get mtimes.
 2019-09-07 00:54:09,300 - tensorflow - INFO - loss = 0.5194956, step = 16621 (34.599 sec)
 2019-09-07 00:54:10,925 - tensorflow - INFO - global_step/sec: 12.2847
 2019-09-07 00:54:10,926 - tensorflow - INFO - loss = 0.5094205, step = 16641 (1.626 sec)
+2019-09-12 16:02:57,451 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:66: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-09-12 16:03:08,715 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb41f9e0b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-12 16:03:08,794 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb41f9e978>
+2019-09-12 16:03:08,801 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-12 16:03:08,802 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-12 16:03:08,803 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-12 16:03:08,863 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2019-09-12 16:03:08,902 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-12 16:03:08,905 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:509: The name tf.gfile.IsDirectory is deprecated. Please use tf.io.gfile.isdir instead.
+
+2019-09-12 16:03:08,999 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/data/util/random_seed.py:58: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2019-09-12 16:03:10,110 - tensorflow - INFO - Calling model_fn.
+2019-09-12 16:03:10,112 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:56: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2019-09-12 16:03:10,113 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:56: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+2019-09-12 16:03:10,114 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:115: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2019-09-12 16:03:11,554 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:271: The name tf.regex_replace is deprecated. Please use tf.strings.regex_replace instead.
+
+2019-09-12 16:03:19,197 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:35: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+2019-09-12 16:03:19,568 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:36: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2019-09-12 16:03:20,079 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:76: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2019-09-12 16:03:20,086 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2019-09-12 16:03:21,677 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:96: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2019-09-12 16:03:21,689 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:97: The name tf.log is deprecated. Please use tf.math.log instead.
+
+2019-09-12 16:03:22,148 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:809: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+2019-09-12 16:03:29,601 - tensorflow - INFO - Done calling model_fn.
+2019-09-12 16:03:29,606 - tensorflow - INFO - Create CheckpointSaverHook.
+2019-09-12 16:03:33,671 - tensorflow - INFO - Graph was finalized.
+2019-09-12 16:03:33,679 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-12 16:03:33,681 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-16600
+2019-09-12 16:03:36,578 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1066: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2019-09-12 16:03:37,405 - tensorflow - INFO - Running local_init_op.
+2019-09-12 16:03:37,840 - tensorflow - INFO - Done running local_init_op.
+2019-09-12 16:03:51,362 - tensorflow - INFO - Saving checkpoints for 16600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:04:12,621 - tensorflow - INFO - loss = 0.48604265, step = 16601
+2019-09-12 16:04:50,788 - tensorflow - INFO - global_step/sec: 0.523852
+2019-09-12 16:04:50,790 - tensorflow - INFO - loss = 0.5025328, step = 16621 (38.173 sec)
+2019-09-12 16:04:52,450 - tensorflow - INFO - global_step/sec: 12.0354
+2019-09-12 16:04:52,451 - tensorflow - INFO - loss = 0.5315959, step = 16641 (1.661 sec)
+2019-09-12 16:05:10,276 - tensorflow - INFO - global_step/sec: 1.12187
+2019-09-12 16:05:10,277 - tensorflow - INFO - loss = 0.53618515, step = 16661 (17.826 sec)
+2019-09-12 16:05:12,079 - tensorflow - INFO - global_step/sec: 11.0943
+2019-09-12 16:05:12,086 - tensorflow - INFO - loss = 0.5794825, step = 16681 (1.809 sec)
+2019-09-12 16:05:13,751 - tensorflow - INFO - Saving checkpoints for 16700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:05:13,801 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2019-09-12 16:05:15,071 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-29
+2019-09-12 16:15:42,258 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:66: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-09-12 16:15:51,830 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb3f371e10>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-12 16:15:51,908 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb3f3710f0>
+2019-09-12 16:15:51,915 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-12 16:15:51,915 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-12 16:15:51,916 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-12 16:15:51,974 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2019-09-12 16:15:52,014 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-12 16:18:26,750 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:66: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-09-12 16:18:36,584 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0xb428320b8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-12 16:18:36,661 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0xb428328d0>
+2019-09-12 16:18:36,662 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-12 16:18:36,662 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-12 16:18:36,663 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-12 16:18:36,694 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2019-09-12 16:18:36,730 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-12 16:18:41,992 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:509: The name tf.gfile.IsDirectory is deprecated. Please use tf.io.gfile.isdir instead.
+
+2019-09-12 16:18:42,069 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/data/util/random_seed.py:58: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2019-09-12 16:18:43,389 - tensorflow - INFO - Calling model_fn.
+2019-09-12 16:18:43,396 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:56: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2019-09-12 16:18:43,396 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:56: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+2019-09-12 16:18:43,398 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:115: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2019-09-12 16:18:45,173 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:271: The name tf.regex_replace is deprecated. Please use tf.strings.regex_replace instead.
+
+2019-09-12 16:18:52,429 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:35: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+2019-09-12 16:18:52,732 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:36: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2019-09-12 16:18:53,152 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:76: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2019-09-12 16:18:53,159 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2019-09-12 16:18:59,089 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:96: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2019-09-12 16:18:59,107 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:97: The name tf.log is deprecated. Please use tf.math.log instead.
+
+2019-09-12 16:18:59,552 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:809: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+2019-09-12 16:19:25,019 - tensorflow - INFO - Done calling model_fn.
+2019-09-12 16:19:25,029 - tensorflow - INFO - Create CheckpointSaverHook.
+2019-09-12 16:19:34,257 - tensorflow - INFO - Graph was finalized.
+2019-09-12 16:19:34,271 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-12 16:19:34,274 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-16700
+2019-09-12 16:19:36,950 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1066: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2019-09-12 16:19:37,873 - tensorflow - INFO - Running local_init_op.
+2019-09-12 16:19:38,276 - tensorflow - INFO - Done running local_init_op.
+2019-09-12 16:20:42,626 - tensorflow - INFO - Saving checkpoints for 16700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:21:02,989 - tensorflow - INFO - loss = 0.46843883, step = 16701
+2019-09-12 16:21:40,905 - tensorflow - INFO - global_step/sec: 0.527072
+2019-09-12 16:21:40,908 - tensorflow - INFO - loss = 0.516721, step = 16721 (37.919 sec)
+2019-09-12 16:21:42,581 - tensorflow - INFO - global_step/sec: 11.9303
+2019-09-12 16:21:42,585 - tensorflow - INFO - loss = 0.52147543, step = 16741 (1.678 sec)
+2019-09-12 16:22:07,305 - tensorflow - INFO - global_step/sec: 0.808903
+2019-09-12 16:22:07,308 - tensorflow - INFO - loss = 0.52897495, step = 16761 (24.722 sec)
+2019-09-12 16:22:10,497 - tensorflow - INFO - global_step/sec: 6.26518
+2019-09-12 16:22:10,500 - tensorflow - INFO - loss = 0.5608019, step = 16781 (3.192 sec)
+2019-09-12 16:22:13,326 - tensorflow - INFO - Saving checkpoints for 16800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:22:13,377 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2019-09-12 16:22:15,253 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-12 16:22:18,158 - tensorflow - INFO - Calling model_fn.
+2019-09-12 16:22:43,672 - tensorflow - INFO - Done calling model_fn.
+2019-09-12 16:22:43,832 - tensorflow - INFO - Starting evaluation at 2019-09-12T16:22:43Z
+2019-09-12 16:22:46,486 - tensorflow - INFO - Graph was finalized.
+2019-09-12 16:22:46,497 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-16800
+2019-09-12 16:22:48,242 - tensorflow - INFO - Running local_init_op.
+2019-09-12 16:22:48,586 - tensorflow - INFO - Done running local_init_op.
+2019-09-12 16:23:09,204 - tensorflow - INFO - Evaluation [100/1000]
+2019-09-12 16:23:13,621 - tensorflow - INFO - Evaluation [200/1000]
+2019-09-12 16:23:17,927 - tensorflow - INFO - Evaluation [300/1000]
+2019-09-12 16:23:19,797 - tensorflow - INFO - Finished evaluation at 2019-09-12-16:23:19
+2019-09-12 16:23:19,798 - tensorflow - INFO - Saving dict for global step 16800: ctr_auc = 0.8655055, global_step = 16800, loss = 0.47485986, uv_auc = 0.87649417
+2019-09-12 16:23:22,997 - tensorflow - INFO - Saving 'checkpoint_path' summary for global step 16800: /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-16800
+2019-09-12 16:23:23,090 - tensorflow - INFO - global_step/sec: 0.275511
+2019-09-12 16:23:23,091 - tensorflow - INFO - loss = 0.5984465, step = 16801 (72.592 sec)
+2019-09-12 16:23:24,948 - tensorflow - INFO - global_step/sec: 10.7621
+2019-09-12 16:23:24,949 - tensorflow - INFO - loss = 0.5831264, step = 16821 (1.858 sec)
+2019-09-12 16:23:26,669 - tensorflow - INFO - global_step/sec: 11.6188
+2019-09-12 16:23:26,671 - tensorflow - INFO - loss = 0.6451848, step = 16841 (1.722 sec)
+2019-09-12 16:23:28,388 - tensorflow - INFO - global_step/sec: 11.636
+2019-09-12 16:23:28,389 - tensorflow - INFO - loss = 0.504827, step = 16861 (1.718 sec)
+2019-09-12 16:23:31,033 - tensorflow - INFO - global_step/sec: 7.56189
+2019-09-12 16:23:31,036 - tensorflow - INFO - loss = 0.5103463, step = 16881 (2.646 sec)
+2019-09-12 16:23:33,943 - tensorflow - INFO - Saving checkpoints for 16900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:23:35,966 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:23:36,056 - tensorflow - INFO - global_step/sec: 3.98135
+2019-09-12 16:23:36,058 - tensorflow - INFO - loss = 0.49552715, step = 16901 (5.022 sec)
+2019-09-12 16:23:38,171 - tensorflow - INFO - global_step/sec: 9.45815
+2019-09-12 16:23:38,175 - tensorflow - INFO - loss = 0.3862921, step = 16921 (2.117 sec)
+2019-09-12 16:23:40,272 - tensorflow - INFO - global_step/sec: 9.51924
+2019-09-12 16:23:40,273 - tensorflow - INFO - loss = 0.46357957, step = 16941 (2.098 sec)
+2019-09-12 16:23:42,487 - tensorflow - INFO - global_step/sec: 9.03066
+2019-09-12 16:23:42,492 - tensorflow - INFO - loss = 0.4357507, step = 16961 (2.218 sec)
+2019-09-12 16:23:44,726 - tensorflow - INFO - global_step/sec: 8.92957
+2019-09-12 16:23:44,728 - tensorflow - INFO - loss = 0.36158857, step = 16981 (2.236 sec)
+2019-09-12 16:23:46,543 - tensorflow - INFO - Saving checkpoints for 17000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:23:48,753 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:23:48,830 - tensorflow - INFO - global_step/sec: 4.87334
+2019-09-12 16:23:48,832 - tensorflow - INFO - loss = 0.31552443, step = 17001 (4.104 sec)
+2019-09-12 16:23:50,761 - tensorflow - INFO - global_step/sec: 10.361
+2019-09-12 16:23:50,763 - tensorflow - INFO - loss = 0.3584751, step = 17021 (1.931 sec)
+2019-09-12 16:23:53,010 - tensorflow - INFO - global_step/sec: 8.89188
+2019-09-12 16:23:53,011 - tensorflow - INFO - loss = 0.7752546, step = 17041 (2.249 sec)
+2019-09-12 16:23:54,911 - tensorflow - INFO - global_step/sec: 10.522
+2019-09-12 16:23:54,912 - tensorflow - INFO - loss = 0.7814738, step = 17061 (1.901 sec)
+2019-09-12 16:23:56,858 - tensorflow - INFO - global_step/sec: 10.2736
+2019-09-12 16:23:56,860 - tensorflow - INFO - loss = 0.6006995, step = 17081 (1.948 sec)
+2019-09-12 16:23:58,635 - tensorflow - INFO - Saving checkpoints for 17100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:24:00,880 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:24:00,973 - tensorflow - INFO - global_step/sec: 4.8595
+2019-09-12 16:24:00,975 - tensorflow - INFO - loss = 0.6072493, step = 17101 (4.114 sec)
+2019-09-12 16:24:02,951 - tensorflow - INFO - global_step/sec: 10.1116
+2019-09-12 16:24:02,953 - tensorflow - INFO - loss = 0.4718629, step = 17121 (1.978 sec)
+2019-09-12 16:24:04,888 - tensorflow - INFO - global_step/sec: 10.3236
+2019-09-12 16:24:04,891 - tensorflow - INFO - loss = 0.523191, step = 17141 (1.939 sec)
+2019-09-12 16:24:06,870 - tensorflow - INFO - global_step/sec: 10.0926
+2019-09-12 16:24:06,871 - tensorflow - INFO - loss = 0.4597386, step = 17161 (1.980 sec)
+2019-09-12 16:24:09,095 - tensorflow - INFO - global_step/sec: 8.98615
+2019-09-12 16:24:09,097 - tensorflow - INFO - loss = 0.37099165, step = 17181 (2.226 sec)
+2019-09-12 16:24:11,195 - tensorflow - INFO - Saving checkpoints for 17200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:24:13,169 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:24:13,247 - tensorflow - INFO - global_step/sec: 4.81801
+2019-09-12 16:24:13,248 - tensorflow - INFO - loss = 0.42661375, step = 17201 (4.151 sec)
+2019-09-12 16:24:15,579 - tensorflow - INFO - global_step/sec: 8.57652
+2019-09-12 16:24:15,582 - tensorflow - INFO - loss = 0.33418608, step = 17221 (2.334 sec)
+2019-09-12 16:24:17,406 - tensorflow - INFO - global_step/sec: 10.9448
+2019-09-12 16:24:17,409 - tensorflow - INFO - loss = 0.39901218, step = 17241 (1.827 sec)
+2019-09-12 16:24:19,148 - tensorflow - INFO - global_step/sec: 11.4794
+2019-09-12 16:24:19,150 - tensorflow - INFO - loss = 0.32540628, step = 17261 (1.742 sec)
+2019-09-12 16:24:20,898 - tensorflow - INFO - global_step/sec: 11.4273
+2019-09-12 16:24:20,900 - tensorflow - INFO - loss = 0.31596863, step = 17281 (1.749 sec)
+2019-09-12 16:24:22,611 - tensorflow - INFO - Saving checkpoints for 17300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:24:24,740 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:24:24,845 - tensorflow - INFO - global_step/sec: 5.06747
+2019-09-12 16:24:24,850 - tensorflow - INFO - loss = 0.4777971, step = 17301 (3.950 sec)
+2019-09-12 16:24:26,660 - tensorflow - INFO - global_step/sec: 11.0209
+2019-09-12 16:24:26,662 - tensorflow - INFO - loss = 0.3311401, step = 17321 (1.811 sec)
+2019-09-12 16:24:28,334 - tensorflow - INFO - global_step/sec: 11.9476
+2019-09-12 16:24:28,335 - tensorflow - INFO - loss = 0.29451075, step = 17341 (1.673 sec)
+2019-09-12 16:24:29,995 - tensorflow - INFO - global_step/sec: 12.0367
+2019-09-12 16:24:29,998 - tensorflow - INFO - loss = 0.97732747, step = 17361 (1.663 sec)
+2019-09-12 16:24:31,935 - tensorflow - INFO - global_step/sec: 10.3096
+2019-09-12 16:24:31,937 - tensorflow - INFO - loss = 0.8196564, step = 17381 (1.940 sec)
+2019-09-12 16:24:33,706 - tensorflow - INFO - Saving checkpoints for 17400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:24:35,846 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:24:35,918 - tensorflow - INFO - global_step/sec: 5.02132
+2019-09-12 16:24:35,920 - tensorflow - INFO - loss = 0.7169657, step = 17401 (3.982 sec)
+2019-09-12 16:24:37,792 - tensorflow - INFO - global_step/sec: 10.6757
+2019-09-12 16:24:37,793 - tensorflow - INFO - loss = 0.49800423, step = 17421 (1.873 sec)
+2019-09-12 16:24:39,732 - tensorflow - INFO - global_step/sec: 10.3105
+2019-09-12 16:24:39,735 - tensorflow - INFO - loss = 0.61243683, step = 17441 (1.942 sec)
+2019-09-12 16:24:41,763 - tensorflow - INFO - global_step/sec: 9.8447
+2019-09-12 16:24:41,765 - tensorflow - INFO - loss = 0.55217505, step = 17461 (2.030 sec)
+2019-09-12 16:24:43,644 - tensorflow - INFO - global_step/sec: 10.6315
+2019-09-12 16:24:43,647 - tensorflow - INFO - loss = 0.41136664, step = 17481 (1.882 sec)
+2019-09-12 16:24:45,453 - tensorflow - INFO - Saving checkpoints for 17500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:24:47,792 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:24:47,893 - tensorflow - INFO - global_step/sec: 4.70769
+2019-09-12 16:24:47,895 - tensorflow - INFO - loss = 0.51510775, step = 17501 (4.248 sec)
+2019-09-12 16:24:49,688 - tensorflow - INFO - global_step/sec: 11.1424
+2019-09-12 16:24:49,689 - tensorflow - INFO - loss = 0.38177377, step = 17521 (1.794 sec)
+2019-09-12 16:24:51,537 - tensorflow - INFO - global_step/sec: 10.8152
+2019-09-12 16:24:51,539 - tensorflow - INFO - loss = 0.43336663, step = 17541 (1.851 sec)
+2019-09-12 16:24:53,262 - tensorflow - INFO - global_step/sec: 11.5916
+2019-09-12 16:24:53,264 - tensorflow - INFO - loss = 0.36940435, step = 17561 (1.725 sec)
+2019-09-12 16:24:54,988 - tensorflow - INFO - global_step/sec: 11.5878
+2019-09-12 16:24:54,991 - tensorflow - INFO - loss = 0.28907323, step = 17581 (1.727 sec)
+2019-09-12 16:24:56,606 - tensorflow - INFO - Saving checkpoints for 17600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:24:58,344 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:24:58,413 - tensorflow - INFO - global_step/sec: 5.83988
+2019-09-12 16:24:58,415 - tensorflow - INFO - loss = 0.29939756, step = 17601 (3.424 sec)
+2019-09-12 16:25:00,084 - tensorflow - INFO - global_step/sec: 11.9665
+2019-09-12 16:25:00,087 - tensorflow - INFO - loss = 0.26353994, step = 17621 (1.673 sec)
+2019-09-12 16:25:01,751 - tensorflow - INFO - global_step/sec: 11.9969
+2019-09-12 16:25:01,753 - tensorflow - INFO - loss = 0.34858128, step = 17641 (1.665 sec)
+2019-09-12 16:25:03,389 - tensorflow - INFO - global_step/sec: 12.2149
+2019-09-12 16:25:03,390 - tensorflow - INFO - loss = 0.24153103, step = 17661 (1.637 sec)
+2019-09-12 16:25:05,052 - tensorflow - INFO - global_step/sec: 12.0241
+2019-09-12 16:25:05,053 - tensorflow - INFO - loss = 0.26189193, step = 17681 (1.663 sec)
+2019-09-12 16:25:06,730 - tensorflow - INFO - Saving checkpoints for 17700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:25:08,508 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:25:08,592 - tensorflow - INFO - global_step/sec: 5.64925
+2019-09-12 16:25:08,593 - tensorflow - INFO - loss = 0.9783168, step = 17701 (3.540 sec)
+2019-09-12 16:25:10,274 - tensorflow - INFO - global_step/sec: 11.8925
+2019-09-12 16:25:10,275 - tensorflow - INFO - loss = 0.82324994, step = 17721 (1.682 sec)
+2019-09-12 16:25:11,974 - tensorflow - INFO - global_step/sec: 11.763
+2019-09-12 16:25:11,978 - tensorflow - INFO - loss = 0.52487713, step = 17741 (1.703 sec)
+2019-09-12 16:25:13,668 - tensorflow - INFO - global_step/sec: 11.809
+2019-09-12 16:25:13,669 - tensorflow - INFO - loss = 0.60460615, step = 17761 (1.691 sec)
+2019-09-12 16:25:15,398 - tensorflow - INFO - global_step/sec: 11.5607
+2019-09-12 16:25:15,399 - tensorflow - INFO - loss = 0.7074868, step = 17781 (1.730 sec)
+2019-09-12 16:25:17,060 - tensorflow - INFO - Saving checkpoints for 17800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:25:18,848 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:25:18,927 - tensorflow - INFO - global_step/sec: 5.66657
+2019-09-12 16:25:18,930 - tensorflow - INFO - loss = 0.5199709, step = 17801 (3.531 sec)
+2019-09-12 16:25:20,664 - tensorflow - INFO - global_step/sec: 11.5157
+2019-09-12 16:25:20,666 - tensorflow - INFO - loss = 0.44098002, step = 17821 (1.736 sec)
+2019-09-12 16:25:22,394 - tensorflow - INFO - global_step/sec: 11.5621
+2019-09-12 16:25:22,395 - tensorflow - INFO - loss = 0.4649757, step = 17841 (1.729 sec)
+2019-09-12 16:25:24,139 - tensorflow - INFO - global_step/sec: 11.4616
+2019-09-12 16:25:24,141 - tensorflow - INFO - loss = 0.46210325, step = 17861 (1.746 sec)
+2019-09-12 16:25:25,860 - tensorflow - INFO - global_step/sec: 11.6203
+2019-09-12 16:25:25,862 - tensorflow - INFO - loss = 0.40234876, step = 17881 (1.721 sec)
+2019-09-12 16:25:27,527 - tensorflow - INFO - Saving checkpoints for 17900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:25:29,286 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:25:29,375 - tensorflow - INFO - global_step/sec: 5.68959
+2019-09-12 16:25:29,376 - tensorflow - INFO - loss = 0.43396008, step = 17901 (3.514 sec)
+2019-09-12 16:25:31,061 - tensorflow - INFO - global_step/sec: 11.8626
+2019-09-12 16:25:31,064 - tensorflow - INFO - loss = 0.34170005, step = 17921 (1.687 sec)
+2019-09-12 16:25:32,749 - tensorflow - INFO - global_step/sec: 11.8493
+2019-09-12 16:25:32,750 - tensorflow - INFO - loss = 0.3025685, step = 17941 (1.687 sec)
+2019-09-12 16:25:34,508 - tensorflow - INFO - global_step/sec: 11.3738
+2019-09-12 16:25:34,509 - tensorflow - INFO - loss = 0.31637016, step = 17961 (1.759 sec)
+2019-09-12 16:25:36,256 - tensorflow - INFO - global_step/sec: 11.4392
+2019-09-12 16:25:36,257 - tensorflow - INFO - loss = 0.3018132, step = 17981 (1.748 sec)
+2019-09-12 16:25:37,881 - tensorflow - INFO - Saving checkpoints for 18000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:25:39,692 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:25:39,763 - tensorflow - INFO - global_step/sec: 5.70323
+2019-09-12 16:25:39,765 - tensorflow - INFO - loss = 0.24941334, step = 18001 (3.507 sec)
+2019-09-12 16:25:41,451 - tensorflow - INFO - global_step/sec: 11.8474
+2019-09-12 16:25:41,453 - tensorflow - INFO - loss = 0.90430325, step = 18021 (1.689 sec)
+2019-09-12 16:25:43,138 - tensorflow - INFO - global_step/sec: 11.8504
+2019-09-12 16:25:43,141 - tensorflow - INFO - loss = 0.73513585, step = 18041 (1.688 sec)
+2019-09-12 16:25:44,825 - tensorflow - INFO - global_step/sec: 11.8583
+2019-09-12 16:25:44,826 - tensorflow - INFO - loss = 0.66499615, step = 18061 (1.685 sec)
+2019-09-12 16:25:46,508 - tensorflow - INFO - global_step/sec: 11.8869
+2019-09-12 16:25:46,510 - tensorflow - INFO - loss = 0.63050926, step = 18081 (1.684 sec)
+2019-09-12 16:25:48,172 - tensorflow - INFO - Saving checkpoints for 18100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:25:50,041 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:25:50,113 - tensorflow - INFO - global_step/sec: 5.54813
+2019-09-12 16:25:50,115 - tensorflow - INFO - loss = 0.6087925, step = 18101 (3.605 sec)
+2019-09-12 16:25:51,854 - tensorflow - INFO - global_step/sec: 11.4815
+2019-09-12 16:25:51,857 - tensorflow - INFO - loss = 0.53534275, step = 18121 (1.742 sec)
+2019-09-12 16:25:53,605 - tensorflow - INFO - global_step/sec: 11.4263
+2019-09-12 16:25:53,607 - tensorflow - INFO - loss = 0.3422783, step = 18141 (1.751 sec)
+2019-09-12 16:25:55,346 - tensorflow - INFO - global_step/sec: 11.4876
+2019-09-12 16:25:55,347 - tensorflow - INFO - loss = 0.4549636, step = 18161 (1.740 sec)
+2019-09-12 16:25:57,071 - tensorflow - INFO - global_step/sec: 11.5945
+2019-09-12 16:25:57,072 - tensorflow - INFO - loss = 0.41393596, step = 18181 (1.725 sec)
+2019-09-12 16:25:58,736 - tensorflow - INFO - Saving checkpoints for 18200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:26:00,539 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:26:00,632 - tensorflow - INFO - global_step/sec: 5.61649
+2019-09-12 16:26:00,633 - tensorflow - INFO - loss = 0.5087051, step = 18201 (3.561 sec)
+2019-09-12 16:26:02,432 - tensorflow - INFO - global_step/sec: 11.1071
+2019-09-12 16:26:02,433 - tensorflow - INFO - loss = 0.33493558, step = 18221 (1.801 sec)
+2019-09-12 16:26:04,139 - tensorflow - INFO - global_step/sec: 11.7199
+2019-09-12 16:26:04,145 - tensorflow - INFO - loss = 0.29736412, step = 18241 (1.712 sec)
+2019-09-12 16:26:05,844 - tensorflow - INFO - global_step/sec: 11.7306
+2019-09-12 16:26:05,845 - tensorflow - INFO - loss = 0.39004847, step = 18261 (1.700 sec)
+2019-09-12 16:26:07,542 - tensorflow - INFO - global_step/sec: 11.7745
+2019-09-12 16:26:07,544 - tensorflow - INFO - loss = 0.26958722, step = 18281 (1.699 sec)
+2019-09-12 16:26:09,152 - tensorflow - INFO - Saving checkpoints for 18300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:26:10,931 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:26:11,004 - tensorflow - INFO - global_step/sec: 5.77739
+2019-09-12 16:26:11,006 - tensorflow - INFO - loss = 0.23804714, step = 18301 (3.462 sec)
+2019-09-12 16:26:12,693 - tensorflow - INFO - global_step/sec: 11.8406
+2019-09-12 16:26:12,697 - tensorflow - INFO - loss = 0.29307893, step = 18321 (1.691 sec)
+2019-09-12 16:26:14,335 - tensorflow - INFO - global_step/sec: 12.181
+2019-09-12 16:26:14,336 - tensorflow - INFO - loss = 0.24775767, step = 18341 (1.640 sec)
+2019-09-12 16:26:16,009 - tensorflow - INFO - global_step/sec: 11.949
+2019-09-12 16:26:16,010 - tensorflow - INFO - loss = 0.86644, step = 18361 (1.674 sec)
+2019-09-12 16:26:17,698 - tensorflow - INFO - global_step/sec: 11.8365
+2019-09-12 16:26:17,700 - tensorflow - INFO - loss = 0.6132897, step = 18381 (1.690 sec)
+2019-09-12 16:26:19,288 - tensorflow - INFO - Saving checkpoints for 18400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:26:21,056 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:26:21,130 - tensorflow - INFO - global_step/sec: 5.82795
+2019-09-12 16:26:21,131 - tensorflow - INFO - loss = 0.6754019, step = 18401 (3.432 sec)
+2019-09-12 16:26:22,789 - tensorflow - INFO - global_step/sec: 12.0538
+2019-09-12 16:26:22,791 - tensorflow - INFO - loss = 0.55274564, step = 18421 (1.659 sec)
+2019-09-12 16:26:24,552 - tensorflow - INFO - global_step/sec: 11.3477
+2019-09-12 16:26:24,554 - tensorflow - INFO - loss = 0.49244076, step = 18441 (1.763 sec)
+2019-09-12 16:26:26,282 - tensorflow - INFO - global_step/sec: 11.5597
+2019-09-12 16:26:26,285 - tensorflow - INFO - loss = 0.3945782, step = 18461 (1.731 sec)
+2019-09-12 16:26:28,029 - tensorflow - INFO - global_step/sec: 11.4528
+2019-09-12 16:26:28,030 - tensorflow - INFO - loss = 0.46609372, step = 18481 (1.745 sec)
+2019-09-12 16:26:29,667 - tensorflow - INFO - Saving checkpoints for 18500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:26:31,475 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:26:31,563 - tensorflow - INFO - global_step/sec: 5.65917
+2019-09-12 16:26:31,564 - tensorflow - INFO - loss = 0.36478865, step = 18501 (3.534 sec)
+2019-09-12 16:26:33,276 - tensorflow - INFO - global_step/sec: 11.6712
+2019-09-12 16:26:33,277 - tensorflow - INFO - loss = 0.35498542, step = 18521 (1.713 sec)
+2019-09-12 16:26:34,983 - tensorflow - INFO - global_step/sec: 11.7172
+2019-09-12 16:26:34,984 - tensorflow - INFO - loss = 0.34842503, step = 18541 (1.707 sec)
+2019-09-12 16:26:36,713 - tensorflow - INFO - global_step/sec: 11.5607
+2019-09-12 16:26:36,715 - tensorflow - INFO - loss = 0.39628905, step = 18561 (1.731 sec)
+2019-09-12 16:26:38,443 - tensorflow - INFO - global_step/sec: 11.5597
+2019-09-12 16:26:38,444 - tensorflow - INFO - loss = 0.34590852, step = 18581 (1.729 sec)
+2019-09-12 16:26:40,085 - tensorflow - INFO - Saving checkpoints for 18600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:26:41,852 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:26:41,954 - tensorflow - INFO - global_step/sec: 5.69614
+2019-09-12 16:26:41,959 - tensorflow - INFO - loss = 0.4050411, step = 18601 (3.515 sec)
+2019-09-12 16:26:43,622 - tensorflow - INFO - global_step/sec: 11.9955
+2019-09-12 16:26:43,623 - tensorflow - INFO - loss = 0.32144317, step = 18621 (1.664 sec)
+2019-09-12 16:26:45,340 - tensorflow - INFO - global_step/sec: 11.6359
+2019-09-12 16:26:45,342 - tensorflow - INFO - loss = 0.23914137, step = 18641 (1.719 sec)
+2019-09-12 16:26:46,996 - tensorflow - INFO - global_step/sec: 12.0792
+2019-09-12 16:26:46,998 - tensorflow - INFO - loss = 0.23767966, step = 18661 (1.657 sec)
+2019-09-12 16:26:48,639 - tensorflow - INFO - global_step/sec: 12.1767
+2019-09-12 16:26:48,641 - tensorflow - INFO - loss = 0.85386276, step = 18681 (1.643 sec)
+2019-09-12 16:26:50,347 - tensorflow - INFO - Saving checkpoints for 18700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:26:52,831 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:26:52,918 - tensorflow - INFO - global_step/sec: 4.67339
+2019-09-12 16:26:52,921 - tensorflow - INFO - loss = 0.73052704, step = 18701 (4.280 sec)
+2019-09-12 16:26:55,263 - tensorflow - INFO - global_step/sec: 8.52885
+2019-09-12 16:26:55,265 - tensorflow - INFO - loss = 0.6906455, step = 18721 (2.344 sec)
+2019-09-12 16:26:57,082 - tensorflow - INFO - global_step/sec: 10.998
+2019-09-12 16:26:57,083 - tensorflow - INFO - loss = 0.72375107, step = 18741 (1.818 sec)
+2019-09-12 16:26:59,507 - tensorflow - INFO - global_step/sec: 8.24538
+2019-09-12 16:26:59,508 - tensorflow - INFO - loss = 0.583413, step = 18761 (2.426 sec)
+2019-09-12 16:27:01,552 - tensorflow - INFO - global_step/sec: 9.78407
+2019-09-12 16:27:01,555 - tensorflow - INFO - loss = 0.50842804, step = 18781 (2.046 sec)
+2019-09-12 16:27:03,329 - tensorflow - INFO - Saving checkpoints for 18800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:27:05,717 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:27:05,803 - tensorflow - INFO - global_step/sec: 4.70469
+2019-09-12 16:27:05,805 - tensorflow - INFO - loss = 0.40433824, step = 18801 (4.250 sec)
+2019-09-12 16:27:07,521 - tensorflow - INFO - global_step/sec: 11.6354
+2019-09-12 16:27:07,523 - tensorflow - INFO - loss = 0.40929276, step = 18821 (1.719 sec)
+2019-09-12 16:27:09,289 - tensorflow - INFO - global_step/sec: 11.3149
+2019-09-12 16:27:09,291 - tensorflow - INFO - loss = 0.46730384, step = 18841 (1.768 sec)
+2019-09-12 16:27:11,152 - tensorflow - INFO - global_step/sec: 10.7324
+2019-09-12 16:27:11,154 - tensorflow - INFO - loss = 0.3365214, step = 18861 (1.863 sec)
+2019-09-12 16:27:13,140 - tensorflow - INFO - global_step/sec: 10.061
+2019-09-12 16:27:13,143 - tensorflow - INFO - loss = 0.29080844, step = 18881 (1.990 sec)
+2019-09-12 16:27:14,825 - tensorflow - INFO - Saving checkpoints for 18900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:27:16,601 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:27:16,709 - tensorflow - INFO - global_step/sec: 5.60415
+2019-09-12 16:27:16,712 - tensorflow - INFO - loss = 0.30634683, step = 18901 (3.568 sec)
+2019-09-12 16:27:18,435 - tensorflow - INFO - global_step/sec: 11.5886
+2019-09-12 16:27:18,437 - tensorflow - INFO - loss = 0.26755208, step = 18921 (1.725 sec)
+2019-09-12 16:27:20,173 - tensorflow - INFO - global_step/sec: 11.5081
+2019-09-12 16:27:20,174 - tensorflow - INFO - loss = 0.26392663, step = 18941 (1.737 sec)
+2019-09-12 16:27:21,901 - tensorflow - INFO - global_step/sec: 11.5752
+2019-09-12 16:27:21,902 - tensorflow - INFO - loss = 0.32911652, step = 18961 (1.728 sec)
+2019-09-12 16:27:23,752 - tensorflow - INFO - global_step/sec: 10.8057
+2019-09-12 16:27:23,753 - tensorflow - INFO - loss = 0.24857077, step = 18981 (1.851 sec)
+2019-09-12 16:27:25,776 - tensorflow - INFO - Saving checkpoints for 19000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:27:27,686 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:27:27,773 - tensorflow - INFO - global_step/sec: 4.97377
+2019-09-12 16:27:27,774 - tensorflow - INFO - loss = 0.23439215, step = 19001 (4.021 sec)
+2019-09-12 16:27:29,452 - tensorflow - INFO - global_step/sec: 11.9106
+2019-09-12 16:27:29,453 - tensorflow - INFO - loss = 0.96191096, step = 19021 (1.679 sec)
+2019-09-12 16:27:31,142 - tensorflow - INFO - global_step/sec: 11.8341
+2019-09-12 16:27:31,143 - tensorflow - INFO - loss = 0.8105105, step = 19041 (1.690 sec)
+2019-09-12 16:27:33,097 - tensorflow - INFO - global_step/sec: 10.2269
+2019-09-12 16:27:33,100 - tensorflow - INFO - loss = 0.648903, step = 19061 (1.957 sec)
+2019-09-12 16:27:35,367 - tensorflow - INFO - global_step/sec: 8.81202
+2019-09-12 16:27:35,369 - tensorflow - INFO - loss = 0.56915754, step = 19081 (2.269 sec)
+2019-09-12 16:27:37,317 - tensorflow - INFO - Saving checkpoints for 19100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:27:39,573 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:27:39,669 - tensorflow - INFO - global_step/sec: 4.64944
+2019-09-12 16:27:39,670 - tensorflow - INFO - loss = 0.4673312, step = 19101 (4.301 sec)
+2019-09-12 16:27:41,494 - tensorflow - INFO - global_step/sec: 10.9551
+2019-09-12 16:27:41,497 - tensorflow - INFO - loss = 0.4302933, step = 19121 (1.827 sec)
+2019-09-12 16:27:43,245 - tensorflow - INFO - global_step/sec: 11.4214
+2019-09-12 16:27:43,249 - tensorflow - INFO - loss = 0.5059954, step = 19141 (1.751 sec)
+2019-09-12 16:27:44,963 - tensorflow - INFO - global_step/sec: 11.642
+2019-09-12 16:27:44,965 - tensorflow - INFO - loss = 0.38918054, step = 19161 (1.716 sec)
+2019-09-12 16:27:46,688 - tensorflow - INFO - global_step/sec: 11.5969
+2019-09-12 16:27:46,689 - tensorflow - INFO - loss = 0.3611797, step = 19181 (1.725 sec)
+2019-09-12 16:27:48,322 - tensorflow - INFO - Saving checkpoints for 19200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:27:50,103 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:27:50,173 - tensorflow - INFO - global_step/sec: 5.73875
+2019-09-12 16:27:50,175 - tensorflow - INFO - loss = 0.36988512, step = 19201 (3.486 sec)
+2019-09-12 16:27:51,870 - tensorflow - INFO - global_step/sec: 11.7887
+2019-09-12 16:27:51,871 - tensorflow - INFO - loss = 0.31180194, step = 19221 (1.696 sec)
+2019-09-12 16:27:53,595 - tensorflow - INFO - global_step/sec: 11.5943
+2019-09-12 16:27:53,596 - tensorflow - INFO - loss = 0.26989946, step = 19241 (1.725 sec)
+2019-09-12 16:27:55,285 - tensorflow - INFO - global_step/sec: 11.828
+2019-09-12 16:27:55,287 - tensorflow - INFO - loss = 0.2628454, step = 19261 (1.691 sec)
+2019-09-12 16:27:57,023 - tensorflow - INFO - global_step/sec: 11.5136
+2019-09-12 16:27:57,024 - tensorflow - INFO - loss = 0.31575578, step = 19281 (1.738 sec)
+2019-09-12 16:27:59,027 - tensorflow - INFO - Saving checkpoints for 19300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:28:01,090 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:28:01,156 - tensorflow - INFO - global_step/sec: 4.83799
+2019-09-12 16:28:01,158 - tensorflow - INFO - loss = 0.22409558, step = 19301 (4.133 sec)
+2019-09-12 16:28:03,186 - tensorflow - INFO - global_step/sec: 9.85244
+2019-09-12 16:28:03,188 - tensorflow - INFO - loss = 0.24336562, step = 19321 (2.030 sec)
+2019-09-12 16:28:05,012 - tensorflow - INFO - global_step/sec: 10.9578
+2019-09-12 16:28:05,015 - tensorflow - INFO - loss = 0.69942963, step = 19341 (1.827 sec)
+2019-09-12 16:28:07,184 - tensorflow - INFO - global_step/sec: 9.20722
+2019-09-12 16:28:07,185 - tensorflow - INFO - loss = 0.7068547, step = 19361 (2.170 sec)
+2019-09-12 16:28:08,919 - tensorflow - INFO - global_step/sec: 11.5249
+2019-09-12 16:28:08,921 - tensorflow - INFO - loss = 0.91575575, step = 19381 (1.736 sec)
+2019-09-12 16:28:10,608 - tensorflow - INFO - Saving checkpoints for 19400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:28:12,654 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:28:12,724 - tensorflow - INFO - global_step/sec: 5.25617
+2019-09-12 16:28:12,726 - tensorflow - INFO - loss = 0.6856181, step = 19401 (3.806 sec)
+2019-09-12 16:28:14,534 - tensorflow - INFO - global_step/sec: 11.0521
+2019-09-12 16:28:14,535 - tensorflow - INFO - loss = 0.66057444, step = 19421 (1.809 sec)
+2019-09-12 16:28:16,315 - tensorflow - INFO - global_step/sec: 11.2276
+2019-09-12 16:28:16,316 - tensorflow - INFO - loss = 0.45900404, step = 19441 (1.781 sec)
+2019-09-12 16:28:18,080 - tensorflow - INFO - global_step/sec: 11.3329
+2019-09-12 16:28:18,083 - tensorflow - INFO - loss = 0.56102693, step = 19461 (1.766 sec)
+2019-09-12 16:28:19,826 - tensorflow - INFO - global_step/sec: 11.4555
+2019-09-12 16:28:19,827 - tensorflow - INFO - loss = 0.4974578, step = 19481 (1.745 sec)
+2019-09-12 16:28:21,475 - tensorflow - INFO - Saving checkpoints for 19500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:28:23,237 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:28:23,309 - tensorflow - INFO - global_step/sec: 5.74214
+2019-09-12 16:28:23,311 - tensorflow - INFO - loss = 0.37162396, step = 19501 (3.484 sec)
+2019-09-12 16:28:25,028 - tensorflow - INFO - global_step/sec: 11.6355
+2019-09-12 16:28:25,029 - tensorflow - INFO - loss = 0.2986005, step = 19521 (1.718 sec)
+2019-09-12 16:28:26,795 - tensorflow - INFO - global_step/sec: 11.3152
+2019-09-12 16:28:26,797 - tensorflow - INFO - loss = 0.2936393, step = 19541 (1.767 sec)
+2019-09-12 16:28:28,515 - tensorflow - INFO - global_step/sec: 11.6297
+2019-09-12 16:28:28,518 - tensorflow - INFO - loss = 0.3101433, step = 19561 (1.721 sec)
+2019-09-12 16:28:30,242 - tensorflow - INFO - global_step/sec: 11.5824
+2019-09-12 16:28:30,243 - tensorflow - INFO - loss = 0.22711068, step = 19581 (1.725 sec)
+2019-09-12 16:28:31,823 - tensorflow - INFO - Saving checkpoints for 19600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:28:33,575 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:28:33,645 - tensorflow - INFO - global_step/sec: 5.87614
+2019-09-12 16:28:33,647 - tensorflow - INFO - loss = 0.2762802, step = 19601 (3.404 sec)
+2019-09-12 16:28:35,302 - tensorflow - INFO - global_step/sec: 12.0706
+2019-09-12 16:28:35,305 - tensorflow - INFO - loss = 0.28202996, step = 19621 (1.657 sec)
+2019-09-12 16:28:36,963 - tensorflow - INFO - global_step/sec: 12.0452
+2019-09-12 16:28:36,964 - tensorflow - INFO - loss = 0.26042613, step = 19641 (1.659 sec)
+2019-09-12 16:28:38,613 - tensorflow - INFO - global_step/sec: 12.12
+2019-09-12 16:28:38,614 - tensorflow - INFO - loss = 0.28103894, step = 19661 (1.650 sec)
+2019-09-12 16:28:40,300 - tensorflow - INFO - global_step/sec: 11.856
+2019-09-12 16:28:40,301 - tensorflow - INFO - loss = 0.7843389, step = 19681 (1.687 sec)
+2019-09-12 16:28:41,907 - tensorflow - INFO - Saving checkpoints for 19700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:28:43,768 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:28:43,850 - tensorflow - INFO - global_step/sec: 5.63422
+2019-09-12 16:28:43,852 - tensorflow - INFO - loss = 0.67689264, step = 19701 (3.551 sec)
+2019-09-12 16:28:45,505 - tensorflow - INFO - global_step/sec: 12.0799
+2019-09-12 16:28:45,506 - tensorflow - INFO - loss = 0.6500703, step = 19721 (1.655 sec)
+2019-09-12 16:28:47,198 - tensorflow - INFO - global_step/sec: 11.8152
+2019-09-12 16:28:47,200 - tensorflow - INFO - loss = 0.6535532, step = 19741 (1.693 sec)
+2019-09-12 16:28:48,962 - tensorflow - INFO - global_step/sec: 11.3348
+2019-09-12 16:28:48,965 - tensorflow - INFO - loss = 0.68657327, step = 19761 (1.765 sec)
+2019-09-12 16:28:50,712 - tensorflow - INFO - global_step/sec: 11.4293
+2019-09-12 16:28:50,717 - tensorflow - INFO - loss = 0.47333717, step = 19781 (1.751 sec)
+2019-09-12 16:28:52,414 - tensorflow - INFO - Saving checkpoints for 19800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:28:54,336 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:28:54,425 - tensorflow - INFO - global_step/sec: 5.38667
+2019-09-12 16:28:54,428 - tensorflow - INFO - loss = 0.51239353, step = 19801 (3.712 sec)
+2019-09-12 16:28:56,295 - tensorflow - INFO - global_step/sec: 10.6991
+2019-09-12 16:28:56,297 - tensorflow - INFO - loss = 0.4132419, step = 19821 (1.868 sec)
+2019-09-12 16:28:58,120 - tensorflow - INFO - global_step/sec: 10.9564
+2019-09-12 16:28:58,123 - tensorflow - INFO - loss = 0.39447412, step = 19841 (1.826 sec)
+2019-09-12 16:29:00,300 - tensorflow - INFO - global_step/sec: 9.17487
+2019-09-12 16:29:00,302 - tensorflow - INFO - loss = 0.37674922, step = 19861 (2.179 sec)
+2019-09-12 16:29:02,546 - tensorflow - INFO - global_step/sec: 8.90509
+2019-09-12 16:29:02,548 - tensorflow - INFO - loss = 0.3405458, step = 19881 (2.246 sec)
+2019-09-12 16:29:04,298 - tensorflow - INFO - Saving checkpoints for 19900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:29:06,447 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:29:06,547 - tensorflow - INFO - global_step/sec: 4.99797
+2019-09-12 16:29:06,548 - tensorflow - INFO - loss = 0.2947682, step = 19901 (4.001 sec)
+2019-09-12 16:29:09,194 - tensorflow - INFO - global_step/sec: 7.55603
+2019-09-12 16:29:09,197 - tensorflow - INFO - loss = 0.23222604, step = 19921 (2.648 sec)
+2019-09-12 16:29:10,990 - tensorflow - INFO - global_step/sec: 11.1338
+2019-09-12 16:29:10,992 - tensorflow - INFO - loss = 0.28765717, step = 19941 (1.795 sec)
+2019-09-12 16:29:12,799 - tensorflow - INFO - global_step/sec: 11.0566
+2019-09-12 16:29:12,801 - tensorflow - INFO - loss = 0.27291468, step = 19961 (1.809 sec)
+2019-09-12 16:29:14,990 - tensorflow - INFO - global_step/sec: 9.13053
+2019-09-12 16:29:14,992 - tensorflow - INFO - loss = 0.23042952, step = 19981 (2.192 sec)
+2019-09-12 16:29:18,177 - tensorflow - INFO - Saving checkpoints for 20000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:29:20,590 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:29:20,673 - tensorflow - INFO - global_step/sec: 3.51917
+2019-09-12 16:29:20,678 - tensorflow - INFO - loss = 0.90527934, step = 20001 (5.685 sec)
+2019-09-12 16:29:22,522 - tensorflow - INFO - global_step/sec: 10.8178
+2019-09-12 16:29:22,523 - tensorflow - INFO - loss = 0.77328324, step = 20021 (1.845 sec)
+2019-09-12 16:29:24,491 - tensorflow - INFO - global_step/sec: 10.1549
+2019-09-12 16:29:24,494 - tensorflow - INFO - loss = 0.79420745, step = 20041 (1.971 sec)
+2019-09-12 16:29:26,770 - tensorflow - INFO - global_step/sec: 8.77567
+2019-09-12 16:29:26,773 - tensorflow - INFO - loss = 0.60256636, step = 20061 (2.279 sec)
+2019-09-12 16:29:28,568 - tensorflow - INFO - global_step/sec: 11.1249
+2019-09-12 16:29:28,571 - tensorflow - INFO - loss = 0.5246959, step = 20081 (1.798 sec)
+2019-09-12 16:29:30,255 - tensorflow - INFO - Saving checkpoints for 20100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:29:32,023 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:29:32,117 - tensorflow - INFO - global_step/sec: 5.63472
+2019-09-12 16:29:32,119 - tensorflow - INFO - loss = 0.6035559, step = 20101 (3.548 sec)
+2019-09-12 16:29:33,851 - tensorflow - INFO - global_step/sec: 11.5372
+2019-09-12 16:29:33,853 - tensorflow - INFO - loss = 0.39260954, step = 20121 (1.734 sec)
+2019-09-12 16:29:35,608 - tensorflow - INFO - global_step/sec: 11.3847
+2019-09-12 16:29:35,610 - tensorflow - INFO - loss = 0.51628566, step = 20141 (1.757 sec)
+2019-09-12 16:29:37,970 - tensorflow - INFO - global_step/sec: 8.46807
+2019-09-12 16:29:37,972 - tensorflow - INFO - loss = 0.42742065, step = 20161 (2.362 sec)
+2019-09-12 16:29:40,269 - tensorflow - INFO - global_step/sec: 8.69917
+2019-09-12 16:29:40,271 - tensorflow - INFO - loss = 0.3961273, step = 20181 (2.299 sec)
+2019-09-12 16:29:42,426 - tensorflow - INFO - Saving checkpoints for 20200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:29:46,950 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:29:47,074 - tensorflow - INFO - global_step/sec: 2.93911
+2019-09-12 16:29:47,076 - tensorflow - INFO - loss = 0.29492614, step = 20201 (6.805 sec)
+2019-09-12 16:29:49,073 - tensorflow - INFO - global_step/sec: 10.0028
+2019-09-12 16:29:49,076 - tensorflow - INFO - loss = 0.32020903, step = 20221 (2.000 sec)
+2019-09-12 16:29:51,055 - tensorflow - INFO - global_step/sec: 10.0886
+2019-09-12 16:29:51,057 - tensorflow - INFO - loss = 0.3013461, step = 20241 (1.981 sec)
+2019-09-12 16:29:54,016 - tensorflow - INFO - global_step/sec: 6.75627
+2019-09-12 16:29:54,018 - tensorflow - INFO - loss = 0.26970446, step = 20261 (2.961 sec)
+2019-09-12 16:29:56,189 - tensorflow - INFO - global_step/sec: 9.20033
+2019-09-12 16:29:56,191 - tensorflow - INFO - loss = 0.24228138, step = 20281 (2.173 sec)
+2019-09-12 16:29:57,814 - tensorflow - INFO - Saving checkpoints for 20300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:29:59,614 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:29:59,684 - tensorflow - INFO - global_step/sec: 5.72265
+2019-09-12 16:29:59,685 - tensorflow - INFO - loss = 0.27714872, step = 20301 (3.495 sec)
+2019-09-12 16:30:01,329 - tensorflow - INFO - global_step/sec: 12.1605
+2019-09-12 16:30:01,330 - tensorflow - INFO - loss = 0.24954079, step = 20321 (1.645 sec)
+2019-09-12 16:30:03,013 - tensorflow - INFO - global_step/sec: 11.8749
+2019-09-12 16:30:03,016 - tensorflow - INFO - loss = 0.88711876, step = 20341 (1.685 sec)
+2019-09-12 16:30:04,726 - tensorflow - INFO - global_step/sec: 11.6775
+2019-09-12 16:30:04,727 - tensorflow - INFO - loss = 0.7964813, step = 20361 (1.711 sec)
+2019-09-12 16:30:06,416 - tensorflow - INFO - global_step/sec: 11.834
+2019-09-12 16:30:06,418 - tensorflow - INFO - loss = 0.66379774, step = 20381 (1.691 sec)
+2019-09-12 16:30:08,033 - tensorflow - INFO - Saving checkpoints for 20400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:30:09,815 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:30:09,886 - tensorflow - INFO - global_step/sec: 5.764
+2019-09-12 16:30:09,888 - tensorflow - INFO - loss = 0.60365987, step = 20401 (3.470 sec)
+2019-09-12 16:30:11,659 - tensorflow - INFO - global_step/sec: 11.277
+2019-09-12 16:30:11,660 - tensorflow - INFO - loss = 0.49592346, step = 20421 (1.773 sec)
+2019-09-12 16:30:13,420 - tensorflow - INFO - global_step/sec: 11.3584
+2019-09-12 16:30:13,426 - tensorflow - INFO - loss = 0.37657553, step = 20441 (1.765 sec)
+2019-09-12 16:30:15,200 - tensorflow - INFO - global_step/sec: 11.2343
+2019-09-12 16:30:15,202 - tensorflow - INFO - loss = 0.4386882, step = 20461 (1.776 sec)
+2019-09-12 16:30:16,967 - tensorflow - INFO - global_step/sec: 11.3194
+2019-09-12 16:30:16,969 - tensorflow - INFO - loss = 0.4990808, step = 20481 (1.767 sec)
+2019-09-12 16:30:18,602 - tensorflow - INFO - Saving checkpoints for 20500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:30:20,377 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:30:20,455 - tensorflow - INFO - global_step/sec: 5.73466
+2019-09-12 16:30:20,456 - tensorflow - INFO - loss = 0.37720454, step = 20501 (3.487 sec)
+2019-09-12 16:30:22,175 - tensorflow - INFO - global_step/sec: 11.6254
+2019-09-12 16:30:22,176 - tensorflow - INFO - loss = 0.38284913, step = 20521 (1.720 sec)
+2019-09-12 16:30:23,878 - tensorflow - INFO - global_step/sec: 11.7477
+2019-09-12 16:30:23,881 - tensorflow - INFO - loss = 0.33867118, step = 20541 (1.705 sec)
+2019-09-12 16:30:26,438 - tensorflow - INFO - global_step/sec: 7.81045
+2019-09-12 16:30:26,439 - tensorflow - INFO - loss = 0.2810025, step = 20561 (2.559 sec)
+2019-09-12 16:30:28,902 - tensorflow - INFO - global_step/sec: 8.11917
+2019-09-12 16:30:28,904 - tensorflow - INFO - loss = 0.23927765, step = 20581 (2.464 sec)
+2019-09-12 16:30:32,417 - tensorflow - INFO - Saving checkpoints for 20600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:30:34,806 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:30:34,888 - tensorflow - INFO - global_step/sec: 3.34068
+2019-09-12 16:30:34,891 - tensorflow - INFO - loss = 0.27142465, step = 20601 (5.987 sec)
+2019-09-12 16:30:36,849 - tensorflow - INFO - global_step/sec: 10.1988
+2019-09-12 16:30:36,850 - tensorflow - INFO - loss = 0.30878386, step = 20621 (1.960 sec)
+2019-09-12 16:30:39,321 - tensorflow - INFO - global_step/sec: 8.09214
+2019-09-12 16:30:39,324 - tensorflow - INFO - loss = 0.2531847, step = 20641 (2.473 sec)
+2019-09-12 16:30:41,790 - tensorflow - INFO - global_step/sec: 8.0992
+2019-09-12 16:30:41,793 - tensorflow - INFO - loss = 0.8127942, step = 20661 (2.470 sec)
+2019-09-12 16:30:43,765 - tensorflow - INFO - global_step/sec: 10.1266
+2019-09-12 16:30:43,774 - tensorflow - INFO - loss = 0.8308224, step = 20681 (1.981 sec)
+2019-09-12 16:30:46,173 - tensorflow - INFO - Saving checkpoints for 20700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:30:48,346 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:30:48,480 - tensorflow - INFO - global_step/sec: 4.24246
+2019-09-12 16:30:48,483 - tensorflow - INFO - loss = 0.7063968, step = 20701 (4.708 sec)
+2019-09-12 16:30:50,373 - tensorflow - INFO - global_step/sec: 10.5602
+2019-09-12 16:30:50,375 - tensorflow - INFO - loss = 0.7406128, step = 20721 (1.893 sec)
+2019-09-12 16:30:53,354 - tensorflow - INFO - global_step/sec: 6.71122
+2019-09-12 16:30:53,356 - tensorflow - INFO - loss = 0.6108939, step = 20741 (2.981 sec)
+2019-09-12 16:30:56,646 - tensorflow - INFO - global_step/sec: 6.07382
+2019-09-12 16:30:56,651 - tensorflow - INFO - loss = 0.57779753, step = 20761 (3.295 sec)
+2019-09-12 16:30:59,089 - tensorflow - INFO - global_step/sec: 8.18847
+2019-09-12 16:30:59,091 - tensorflow - INFO - loss = 0.42358655, step = 20781 (2.440 sec)
+2019-09-12 16:31:01,212 - tensorflow - INFO - Saving checkpoints for 20800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:31:03,641 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:31:03,712 - tensorflow - INFO - global_step/sec: 4.32556
+2019-09-12 16:31:03,714 - tensorflow - INFO - loss = 0.515186, step = 20801 (4.624 sec)
+2019-09-12 16:31:05,661 - tensorflow - INFO - global_step/sec: 10.265
+2019-09-12 16:31:05,662 - tensorflow - INFO - loss = 0.44385645, step = 20821 (1.948 sec)
+2019-09-12 16:31:07,461 - tensorflow - INFO - global_step/sec: 11.1119
+2019-09-12 16:31:07,463 - tensorflow - INFO - loss = 0.37144533, step = 20841 (1.801 sec)
+2019-09-12 16:31:09,225 - tensorflow - INFO - global_step/sec: 11.3347
+2019-09-12 16:31:09,226 - tensorflow - INFO - loss = 0.41349736, step = 20861 (1.764 sec)
+2019-09-12 16:31:11,340 - tensorflow - INFO - global_step/sec: 9.45461
+2019-09-12 16:31:11,344 - tensorflow - INFO - loss = 0.2706862, step = 20881 (2.118 sec)
+2019-09-12 16:31:13,306 - tensorflow - INFO - Saving checkpoints for 20900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:31:15,841 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:31:15,934 - tensorflow - INFO - global_step/sec: 4.35439
+2019-09-12 16:31:15,938 - tensorflow - INFO - loss = 0.28618518, step = 20901 (4.593 sec)
+2019-09-12 16:31:18,015 - tensorflow - INFO - global_step/sec: 9.60901
+2019-09-12 16:31:18,017 - tensorflow - INFO - loss = 0.34083378, step = 20921 (2.079 sec)
+2019-09-12 16:31:20,263 - tensorflow - INFO - global_step/sec: 8.89764
+2019-09-12 16:31:20,264 - tensorflow - INFO - loss = 0.2679053, step = 20941 (2.247 sec)
+2019-09-12 16:31:22,346 - tensorflow - INFO - global_step/sec: 9.60135
+2019-09-12 16:31:22,349 - tensorflow - INFO - loss = 0.29856423, step = 20961 (2.085 sec)
+2019-09-12 16:31:24,217 - tensorflow - INFO - global_step/sec: 10.6865
+2019-09-12 16:31:24,219 - tensorflow - INFO - loss = 0.24281724, step = 20981 (1.870 sec)
+2019-09-12 16:31:25,989 - tensorflow - INFO - Saving checkpoints for 21000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:31:27,869 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:31:27,947 - tensorflow - INFO - global_step/sec: 5.36285
+2019-09-12 16:31:27,948 - tensorflow - INFO - loss = 0.8736783, step = 21001 (3.730 sec)
+2019-09-12 16:31:29,649 - tensorflow - INFO - global_step/sec: 11.7497
+2019-09-12 16:31:29,650 - tensorflow - INFO - loss = 0.6176536, step = 21021 (1.702 sec)
+2019-09-12 16:31:31,353 - tensorflow - INFO - global_step/sec: 11.7324
+2019-09-12 16:31:31,355 - tensorflow - INFO - loss = 0.525673, step = 21041 (1.705 sec)
+2019-09-12 16:31:33,096 - tensorflow - INFO - global_step/sec: 11.4771
+2019-09-12 16:31:33,098 - tensorflow - INFO - loss = 0.49128512, step = 21061 (1.744 sec)
+2019-09-12 16:31:34,861 - tensorflow - INFO - global_step/sec: 11.3324
+2019-09-12 16:31:34,863 - tensorflow - INFO - loss = 0.5094548, step = 21081 (1.765 sec)
+2019-09-12 16:31:36,557 - tensorflow - INFO - Saving checkpoints for 21100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:31:38,417 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:31:38,503 - tensorflow - INFO - global_step/sec: 5.49126
+2019-09-12 16:31:38,506 - tensorflow - INFO - loss = 0.51895785, step = 21101 (3.643 sec)
+2019-09-12 16:31:40,275 - tensorflow - INFO - global_step/sec: 11.2882
+2019-09-12 16:31:40,277 - tensorflow - INFO - loss = 0.408094, step = 21121 (1.771 sec)
+2019-09-12 16:31:42,074 - tensorflow - INFO - global_step/sec: 11.1181
+2019-09-12 16:31:42,080 - tensorflow - INFO - loss = 0.4417555, step = 21141 (1.803 sec)
+2019-09-12 16:31:43,862 - tensorflow - INFO - global_step/sec: 11.1842
+2019-09-12 16:31:43,863 - tensorflow - INFO - loss = 0.38937575, step = 21161 (1.784 sec)
+2019-09-12 16:31:45,738 - tensorflow - INFO - global_step/sec: 10.6609
+2019-09-12 16:31:45,740 - tensorflow - INFO - loss = 0.32741302, step = 21181 (1.877 sec)
+2019-09-12 16:31:47,414 - tensorflow - INFO - Saving checkpoints for 21200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:31:49,277 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:31:49,348 - tensorflow - INFO - global_step/sec: 5.54041
+2019-09-12 16:31:49,351 - tensorflow - INFO - loss = 0.35317776, step = 21201 (3.611 sec)
+2019-09-12 16:31:51,157 - tensorflow - INFO - global_step/sec: 11.0552
+2019-09-12 16:31:51,160 - tensorflow - INFO - loss = 0.3102854, step = 21221 (1.808 sec)
+2019-09-12 16:31:53,068 - tensorflow - INFO - global_step/sec: 10.4684
+2019-09-12 16:31:53,070 - tensorflow - INFO - loss = 0.24443303, step = 21241 (1.910 sec)
+2019-09-12 16:31:55,286 - tensorflow - INFO - global_step/sec: 9.01471
+2019-09-12 16:31:55,288 - tensorflow - INFO - loss = 0.2444151, step = 21261 (2.218 sec)
+2019-09-12 16:31:57,093 - tensorflow - INFO - global_step/sec: 11.0657
+2019-09-12 16:31:57,096 - tensorflow - INFO - loss = 0.2931587, step = 21281 (1.808 sec)
+2019-09-12 16:31:58,765 - tensorflow - INFO - Saving checkpoints for 21300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:32:00,607 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:32:00,686 - tensorflow - INFO - global_step/sec: 5.56684
+2019-09-12 16:32:00,688 - tensorflow - INFO - loss = 0.2318958, step = 21301 (3.592 sec)
+2019-09-12 16:32:02,399 - tensorflow - INFO - global_step/sec: 11.6748
+2019-09-12 16:32:02,404 - tensorflow - INFO - loss = 0.93634987, step = 21321 (1.716 sec)
+2019-09-12 16:32:04,275 - tensorflow - INFO - global_step/sec: 10.6643
+2019-09-12 16:32:04,277 - tensorflow - INFO - loss = 0.74986297, step = 21341 (1.872 sec)
+2019-09-12 16:32:06,071 - tensorflow - INFO - global_step/sec: 11.1348
+2019-09-12 16:32:06,073 - tensorflow - INFO - loss = 0.721558, step = 21361 (1.796 sec)
+2019-09-12 16:32:08,347 - tensorflow - INFO - global_step/sec: 8.78551
+2019-09-12 16:32:08,350 - tensorflow - INFO - loss = 0.6872317, step = 21381 (2.276 sec)
+2019-09-12 16:32:10,392 - tensorflow - INFO - Saving checkpoints for 21400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:32:12,374 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:32:12,469 - tensorflow - INFO - global_step/sec: 4.85214
+2019-09-12 16:32:12,471 - tensorflow - INFO - loss = 0.50341314, step = 21401 (4.122 sec)
+2019-09-12 16:32:14,256 - tensorflow - INFO - global_step/sec: 11.1913
+2019-09-12 16:32:14,257 - tensorflow - INFO - loss = 0.4614555, step = 21421 (1.786 sec)
+2019-09-12 16:32:16,080 - tensorflow - INFO - global_step/sec: 10.9676
+2019-09-12 16:32:16,082 - tensorflow - INFO - loss = 0.37318248, step = 21441 (1.825 sec)
+2019-09-12 16:32:17,796 - tensorflow - INFO - global_step/sec: 11.6535
+2019-09-12 16:32:17,798 - tensorflow - INFO - loss = 0.45524514, step = 21461 (1.715 sec)
+2019-09-12 16:32:19,652 - tensorflow - INFO - global_step/sec: 10.7754
+2019-09-12 16:32:19,654 - tensorflow - INFO - loss = 0.42773375, step = 21481 (1.856 sec)
+2019-09-12 16:32:21,652 - tensorflow - INFO - Saving checkpoints for 21500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:32:23,553 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-12 16:32:26,938 - tensorflow - INFO - Calling model_fn.
+2019-09-12 16:33:04,112 - tensorflow - INFO - Done calling model_fn.
+2019-09-12 16:33:04,264 - tensorflow - INFO - Starting evaluation at 2019-09-12T16:33:04Z
+2019-09-12 16:33:06,228 - tensorflow - INFO - Graph was finalized.
+2019-09-12 16:33:06,234 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-21500
+2019-09-12 16:33:09,537 - tensorflow - INFO - Running local_init_op.
+2019-09-12 16:33:09,901 - tensorflow - INFO - Done running local_init_op.
+2019-09-12 16:33:33,692 - tensorflow - INFO - Evaluation [100/1000]
+2019-09-12 16:33:38,341 - tensorflow - INFO - Evaluation [200/1000]
+2019-09-12 16:33:43,341 - tensorflow - INFO - Evaluation [300/1000]
+2019-09-12 16:33:45,549 - tensorflow - INFO - Finished evaluation at 2019-09-12-16:33:45
+2019-09-12 16:33:45,550 - tensorflow - INFO - Saving dict for global step 21500: ctr_auc = 0.87739825, global_step = 21500, loss = 0.38198358, uv_auc = 0.84006107
+2019-09-12 16:33:45,553 - tensorflow - INFO - Saving 'checkpoint_path' summary for global step 21500: /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-21500
+2019-09-12 16:33:45,635 - tensorflow - INFO - global_step/sec: 0.232604
+2019-09-12 16:33:45,637 - tensorflow - INFO - loss = 0.3481044, step = 21501 (85.983 sec)
+2019-09-12 16:33:47,828 - tensorflow - INFO - global_step/sec: 9.12128
+2019-09-12 16:33:47,829 - tensorflow - INFO - loss = 0.2889183, step = 21521 (2.192 sec)
+2019-09-12 16:33:49,622 - tensorflow - INFO - global_step/sec: 11.1443
+2019-09-12 16:33:49,626 - tensorflow - INFO - loss = 0.25443807, step = 21541 (1.797 sec)
+2019-09-12 16:33:51,456 - tensorflow - INFO - global_step/sec: 10.9097
+2019-09-12 16:33:51,457 - tensorflow - INFO - loss = 0.19681329, step = 21561 (1.831 sec)
+2019-09-12 16:33:53,134 - tensorflow - INFO - global_step/sec: 11.9165
+2019-09-12 16:33:53,135 - tensorflow - INFO - loss = 0.21438074, step = 21581 (1.678 sec)
+2019-09-12 16:33:54,734 - tensorflow - INFO - Saving checkpoints for 21600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:33:56,564 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:33:56,636 - tensorflow - INFO - global_step/sec: 5.71101
+2019-09-12 16:33:56,638 - tensorflow - INFO - loss = 0.22535548, step = 21601 (3.502 sec)
+2019-09-12 16:33:58,393 - tensorflow - INFO - global_step/sec: 11.383
+2019-09-12 16:33:58,395 - tensorflow - INFO - loss = 0.3735216, step = 21621 (1.757 sec)
+2019-09-12 16:34:00,097 - tensorflow - INFO - global_step/sec: 11.7331
+2019-09-12 16:34:00,099 - tensorflow - INFO - loss = 0.2567889, step = 21641 (1.704 sec)
+2019-09-12 16:34:01,814 - tensorflow - INFO - global_step/sec: 11.6498
+2019-09-12 16:34:01,816 - tensorflow - INFO - loss = 0.8311729, step = 21661 (1.718 sec)
+2019-09-12 16:34:03,526 - tensorflow - INFO - global_step/sec: 11.6834
+2019-09-12 16:34:03,527 - tensorflow - INFO - loss = 0.80839884, step = 21681 (1.711 sec)
+2019-09-12 16:34:05,111 - tensorflow - INFO - Saving checkpoints for 21700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:34:06,938 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:34:07,024 - tensorflow - INFO - global_step/sec: 5.71745
+2019-09-12 16:34:07,025 - tensorflow - INFO - loss = 0.7043626, step = 21701 (3.498 sec)
+2019-09-12 16:34:08,783 - tensorflow - INFO - global_step/sec: 11.3694
+2019-09-12 16:34:08,785 - tensorflow - INFO - loss = 0.5522541, step = 21721 (1.760 sec)
+2019-09-12 16:34:10,536 - tensorflow - INFO - global_step/sec: 11.409
+2019-09-12 16:34:10,541 - tensorflow - INFO - loss = 0.57960707, step = 21741 (1.755 sec)
+2019-09-12 16:34:12,310 - tensorflow - INFO - global_step/sec: 11.2766
+2019-09-12 16:34:12,314 - tensorflow - INFO - loss = 0.5130307, step = 21761 (1.774 sec)
+2019-09-12 16:34:14,032 - tensorflow - INFO - global_step/sec: 11.6162
+2019-09-12 16:34:14,033 - tensorflow - INFO - loss = 0.39498973, step = 21781 (1.719 sec)
+2019-09-12 16:34:15,651 - tensorflow - INFO - Saving checkpoints for 21800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:34:17,415 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:34:17,487 - tensorflow - INFO - global_step/sec: 5.78851
+2019-09-12 16:34:17,489 - tensorflow - INFO - loss = 0.3951916, step = 21801 (3.456 sec)
+2019-09-12 16:34:19,201 - tensorflow - INFO - global_step/sec: 11.6673
+2019-09-12 16:34:19,202 - tensorflow - INFO - loss = 0.3522796, step = 21821 (1.713 sec)
+2019-09-12 16:34:20,915 - tensorflow - INFO - global_step/sec: 11.6685
+2019-09-12 16:34:20,916 - tensorflow - INFO - loss = 0.3762708, step = 21841 (1.714 sec)
+2019-09-12 16:34:22,834 - tensorflow - INFO - global_step/sec: 10.4235
+2019-09-12 16:34:22,836 - tensorflow - INFO - loss = 0.31281653, step = 21861 (1.920 sec)
+2019-09-12 16:34:24,670 - tensorflow - INFO - global_step/sec: 10.8935
+2019-09-12 16:34:24,672 - tensorflow - INFO - loss = 0.26103404, step = 21881 (1.836 sec)
+2019-09-12 16:34:26,284 - tensorflow - INFO - Saving checkpoints for 21900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:34:28,194 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:34:28,277 - tensorflow - INFO - global_step/sec: 5.54519
+2019-09-12 16:34:28,278 - tensorflow - INFO - loss = 0.25517133, step = 21901 (3.606 sec)
+2019-09-12 16:34:30,130 - tensorflow - INFO - global_step/sec: 10.7885
+2019-09-12 16:34:30,132 - tensorflow - INFO - loss = 0.2793211, step = 21921 (1.853 sec)
+2019-09-12 16:34:31,998 - tensorflow - INFO - global_step/sec: 10.7057
+2019-09-12 16:34:32,000 - tensorflow - INFO - loss = 0.26235777, step = 21941 (1.869 sec)
+2019-09-12 16:34:34,058 - tensorflow - INFO - global_step/sec: 9.71147
+2019-09-12 16:34:34,059 - tensorflow - INFO - loss = 0.27070093, step = 21961 (2.059 sec)
+2019-09-12 16:34:35,752 - tensorflow - INFO - global_step/sec: 11.8075
+2019-09-12 16:34:35,756 - tensorflow - INFO - loss = 0.7231252, step = 21981 (1.697 sec)
+2019-09-12 16:34:37,331 - tensorflow - INFO - Saving checkpoints for 22000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:34:39,145 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:34:39,234 - tensorflow - INFO - global_step/sec: 5.74275
+2019-09-12 16:34:39,236 - tensorflow - INFO - loss = 0.82518417, step = 22001 (3.480 sec)
+2019-09-12 16:34:40,913 - tensorflow - INFO - global_step/sec: 11.9115
+2019-09-12 16:34:40,914 - tensorflow - INFO - loss = 0.6359945, step = 22021 (1.679 sec)
+2019-09-12 16:34:42,632 - tensorflow - INFO - global_step/sec: 11.6346
+2019-09-12 16:34:42,636 - tensorflow - INFO - loss = 0.6822324, step = 22041 (1.721 sec)
+2019-09-12 16:34:44,369 - tensorflow - INFO - global_step/sec: 11.5159
+2019-09-12 16:34:44,371 - tensorflow - INFO - loss = 0.527702, step = 22061 (1.735 sec)
+2019-09-12 16:34:46,120 - tensorflow - INFO - global_step/sec: 11.4235
+2019-09-12 16:34:46,122 - tensorflow - INFO - loss = 0.49368504, step = 22081 (1.751 sec)
+2019-09-12 16:34:47,800 - tensorflow - INFO - Saving checkpoints for 22100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:34:49,573 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:34:49,664 - tensorflow - INFO - global_step/sec: 5.64239
+2019-09-12 16:34:49,665 - tensorflow - INFO - loss = 0.34027955, step = 22101 (3.544 sec)
+2019-09-12 16:34:51,404 - tensorflow - INFO - global_step/sec: 11.4985
+2019-09-12 16:34:51,407 - tensorflow - INFO - loss = 0.4625747, step = 22121 (1.741 sec)
+2019-09-12 16:34:53,123 - tensorflow - INFO - global_step/sec: 11.6354
+2019-09-12 16:34:53,124 - tensorflow - INFO - loss = 0.38868597, step = 22141 (1.717 sec)
+2019-09-12 16:34:54,858 - tensorflow - INFO - global_step/sec: 11.5253
+2019-09-12 16:34:54,859 - tensorflow - INFO - loss = 0.33098269, step = 22161 (1.735 sec)
+2019-09-12 16:34:56,576 - tensorflow - INFO - global_step/sec: 11.6453
+2019-09-12 16:34:56,578 - tensorflow - INFO - loss = 0.3237221, step = 22181 (1.719 sec)
+2019-09-12 16:34:58,205 - tensorflow - INFO - Saving checkpoints for 22200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:34:59,973 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:35:00,072 - tensorflow - INFO - global_step/sec: 5.71969
+2019-09-12 16:35:00,075 - tensorflow - INFO - loss = 0.24656343, step = 22201 (3.497 sec)
+2019-09-12 16:35:01,746 - tensorflow - INFO - global_step/sec: 11.9481
+2019-09-12 16:35:01,748 - tensorflow - INFO - loss = 0.21774645, step = 22221 (1.673 sec)
+2019-09-12 16:35:03,410 - tensorflow - INFO - global_step/sec: 12.0212
+2019-09-12 16:35:03,411 - tensorflow - INFO - loss = 0.34257963, step = 22241 (1.663 sec)
+2019-09-12 16:35:05,097 - tensorflow - INFO - global_step/sec: 11.856
+2019-09-12 16:35:05,098 - tensorflow - INFO - loss = 0.2464013, step = 22261 (1.687 sec)
+2019-09-12 16:35:06,726 - tensorflow - INFO - global_step/sec: 12.2715
+2019-09-12 16:35:06,728 - tensorflow - INFO - loss = 0.3298399, step = 22281 (1.630 sec)
+2019-09-12 16:35:08,316 - tensorflow - INFO - Saving checkpoints for 22300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:35:10,104 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:35:10,171 - tensorflow - INFO - global_step/sec: 5.8058
+2019-09-12 16:35:10,173 - tensorflow - INFO - loss = 0.21813084, step = 22301 (3.446 sec)
+2019-09-12 16:35:11,877 - tensorflow - INFO - global_step/sec: 11.7282
+2019-09-12 16:35:11,878 - tensorflow - INFO - loss = 0.78829384, step = 22321 (1.705 sec)
+2019-09-12 16:35:13,568 - tensorflow - INFO - global_step/sec: 11.8248
+2019-09-12 16:35:13,577 - tensorflow - INFO - loss = 0.7361086, step = 22341 (1.699 sec)
+2019-09-12 16:35:15,254 - tensorflow - INFO - global_step/sec: 11.8591
+2019-09-12 16:35:15,256 - tensorflow - INFO - loss = 0.67018896, step = 22361 (1.678 sec)
+2019-09-12 16:35:16,970 - tensorflow - INFO - global_step/sec: 11.6608
+2019-09-12 16:35:16,971 - tensorflow - INFO - loss = 0.5669801, step = 22381 (1.715 sec)
+2019-09-12 16:35:18,629 - tensorflow - INFO - Saving checkpoints for 22400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:35:20,421 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:35:20,516 - tensorflow - INFO - global_step/sec: 5.63972
+2019-09-12 16:35:20,517 - tensorflow - INFO - loss = 0.5408624, step = 22401 (3.546 sec)
+2019-09-12 16:35:22,255 - tensorflow - INFO - global_step/sec: 11.5027
+2019-09-12 16:35:22,257 - tensorflow - INFO - loss = 0.53231865, step = 22421 (1.741 sec)
+2019-09-12 16:35:24,066 - tensorflow - INFO - global_step/sec: 11.0415
+2019-09-12 16:35:24,067 - tensorflow - INFO - loss = 0.37729287, step = 22441 (1.810 sec)
+2019-09-12 16:35:25,941 - tensorflow - INFO - global_step/sec: 10.6667
+2019-09-12 16:35:25,942 - tensorflow - INFO - loss = 0.46510664, step = 22461 (1.875 sec)
+2019-09-12 16:35:27,812 - tensorflow - INFO - global_step/sec: 10.687
+2019-09-12 16:35:27,814 - tensorflow - INFO - loss = 0.4223685, step = 22481 (1.872 sec)
+2019-09-12 16:35:29,480 - tensorflow - INFO - Saving checkpoints for 22500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:35:31,274 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:35:31,342 - tensorflow - INFO - global_step/sec: 5.66631
+2019-09-12 16:35:31,344 - tensorflow - INFO - loss = 0.2631979, step = 22501 (3.529 sec)
+2019-09-12 16:35:33,040 - tensorflow - INFO - global_step/sec: 11.7814
+2019-09-12 16:35:33,041 - tensorflow - INFO - loss = 0.33529693, step = 22521 (1.697 sec)
+2019-09-12 16:35:34,765 - tensorflow - INFO - global_step/sec: 11.5878
+2019-09-12 16:35:34,767 - tensorflow - INFO - loss = 0.31757027, step = 22541 (1.726 sec)
+2019-09-12 16:35:36,448 - tensorflow - INFO - global_step/sec: 11.8889
+2019-09-12 16:35:36,449 - tensorflow - INFO - loss = 0.30589452, step = 22561 (1.682 sec)
+2019-09-12 16:35:38,109 - tensorflow - INFO - global_step/sec: 12.036
+2019-09-12 16:35:38,111 - tensorflow - INFO - loss = 0.2576453, step = 22581 (1.662 sec)
+2019-09-12 16:35:39,696 - tensorflow - INFO - Saving checkpoints for 22600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:35:41,445 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:35:41,530 - tensorflow - INFO - global_step/sec: 5.8464
+2019-09-12 16:35:41,531 - tensorflow - INFO - loss = 0.2540388, step = 22601 (3.421 sec)
+2019-09-12 16:35:43,184 - tensorflow - INFO - global_step/sec: 12.0926
+2019-09-12 16:35:43,188 - tensorflow - INFO - loss = 0.23122004, step = 22621 (1.656 sec)
+2019-09-12 16:35:44,841 - tensorflow - INFO - global_step/sec: 12.071
+2019-09-12 16:35:44,844 - tensorflow - INFO - loss = 0.7437202, step = 22641 (1.656 sec)
+2019-09-12 16:35:46,612 - tensorflow - INFO - global_step/sec: 11.2931
+2019-09-12 16:35:46,614 - tensorflow - INFO - loss = 0.6909094, step = 22661 (1.770 sec)
+2019-09-12 16:35:48,423 - tensorflow - INFO - global_step/sec: 11.0455
+2019-09-12 16:35:48,424 - tensorflow - INFO - loss = 0.7738462, step = 22681 (1.810 sec)
+2019-09-12 16:35:50,165 - tensorflow - INFO - Saving checkpoints for 22700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:35:52,111 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:35:52,186 - tensorflow - INFO - global_step/sec: 5.31479
+2019-09-12 16:35:52,188 - tensorflow - INFO - loss = 0.6081954, step = 22701 (3.764 sec)
+2019-09-12 16:35:54,037 - tensorflow - INFO - global_step/sec: 10.8062
+2019-09-12 16:35:54,038 - tensorflow - INFO - loss = 0.42650858, step = 22721 (1.850 sec)
+2019-09-12 16:35:55,753 - tensorflow - INFO - global_step/sec: 11.6528
+2019-09-12 16:35:55,754 - tensorflow - INFO - loss = 0.46963513, step = 22741 (1.716 sec)
+2019-09-12 16:35:57,523 - tensorflow - INFO - global_step/sec: 11.301
+2019-09-12 16:35:57,524 - tensorflow - INFO - loss = 0.43493137, step = 22761 (1.770 sec)
+2019-09-12 16:35:59,287 - tensorflow - INFO - global_step/sec: 11.3378
+2019-09-12 16:35:59,288 - tensorflow - INFO - loss = 0.45605373, step = 22781 (1.764 sec)
+2019-09-12 16:36:00,922 - tensorflow - INFO - Saving checkpoints for 22800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:36:02,697 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:36:02,772 - tensorflow - INFO - global_step/sec: 5.73861
+2019-09-12 16:36:02,774 - tensorflow - INFO - loss = 0.36529118, step = 22801 (3.486 sec)
+2019-09-12 16:36:04,521 - tensorflow - INFO - global_step/sec: 11.432
+2019-09-12 16:36:04,523 - tensorflow - INFO - loss = 0.38927242, step = 22821 (1.749 sec)
+2019-09-12 16:36:06,228 - tensorflow - INFO - global_step/sec: 11.717
+2019-09-12 16:36:06,230 - tensorflow - INFO - loss = 0.35301444, step = 22841 (1.707 sec)
+2019-09-12 16:36:08,088 - tensorflow - INFO - global_step/sec: 10.7533
+2019-09-12 16:36:08,093 - tensorflow - INFO - loss = 0.28792024, step = 22861 (1.863 sec)
+2019-09-12 16:36:10,507 - tensorflow - INFO - global_step/sec: 8.26935
+2019-09-12 16:36:10,509 - tensorflow - INFO - loss = 0.27709544, step = 22881 (2.417 sec)
+2019-09-12 16:36:12,376 - tensorflow - INFO - Saving checkpoints for 22900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:36:14,601 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:36:14,681 - tensorflow - INFO - global_step/sec: 4.79149
+2019-09-12 16:36:14,683 - tensorflow - INFO - loss = 0.27721232, step = 22901 (4.174 sec)
+2019-09-12 16:36:16,551 - tensorflow - INFO - global_step/sec: 10.6926
+2019-09-12 16:36:16,554 - tensorflow - INFO - loss = 0.20599772, step = 22921 (1.871 sec)
+2019-09-12 16:36:18,652 - tensorflow - INFO - global_step/sec: 9.51966
+2019-09-12 16:36:18,655 - tensorflow - INFO - loss = 0.31660414, step = 22941 (2.101 sec)
+2019-09-12 16:36:20,529 - tensorflow - INFO - global_step/sec: 10.6568
+2019-09-12 16:36:20,530 - tensorflow - INFO - loss = 0.27179828, step = 22961 (1.876 sec)
+2019-09-12 16:36:22,641 - tensorflow - INFO - global_step/sec: 9.46953
+2019-09-12 16:36:22,644 - tensorflow - INFO - loss = 0.8522797, step = 22981 (2.114 sec)
+2019-09-12 16:36:24,542 - tensorflow - INFO - Saving checkpoints for 23000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:36:26,701 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:36:26,793 - tensorflow - INFO - global_step/sec: 4.81688
+2019-09-12 16:36:26,797 - tensorflow - INFO - loss = 0.9145395, step = 23001 (4.153 sec)
+2019-09-12 16:36:28,713 - tensorflow - INFO - global_step/sec: 10.419
+2019-09-12 16:36:28,715 - tensorflow - INFO - loss = 0.5941828, step = 23021 (1.918 sec)
+2019-09-12 16:36:30,785 - tensorflow - INFO - global_step/sec: 9.65561
+2019-09-12 16:36:30,788 - tensorflow - INFO - loss = 0.5027077, step = 23041 (2.073 sec)
+2019-09-12 16:36:32,984 - tensorflow - INFO - global_step/sec: 9.09
+2019-09-12 16:36:32,986 - tensorflow - INFO - loss = 0.54711807, step = 23061 (2.198 sec)
+2019-09-12 16:36:35,228 - tensorflow - INFO - global_step/sec: 8.9121
+2019-09-12 16:36:35,232 - tensorflow - INFO - loss = 0.45771584, step = 23081 (2.246 sec)
+2019-09-12 16:36:37,223 - tensorflow - INFO - Saving checkpoints for 23100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:36:39,171 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:36:39,262 - tensorflow - INFO - global_step/sec: 4.95798
+2019-09-12 16:36:39,265 - tensorflow - INFO - loss = 0.4884579, step = 23101 (4.033 sec)
+2019-09-12 16:36:41,204 - tensorflow - INFO - global_step/sec: 10.3014
+2019-09-12 16:36:41,205 - tensorflow - INFO - loss = 0.4193417, step = 23121 (1.940 sec)
+2019-09-12 16:36:43,270 - tensorflow - INFO - global_step/sec: 9.67738
+2019-09-12 16:36:43,273 - tensorflow - INFO - loss = 0.41340062, step = 23141 (2.068 sec)
+2019-09-12 16:36:45,429 - tensorflow - INFO - global_step/sec: 9.26691
+2019-09-12 16:36:45,430 - tensorflow - INFO - loss = 0.286997, step = 23161 (2.157 sec)
+2019-09-12 16:36:47,507 - tensorflow - INFO - global_step/sec: 9.62154
+2019-09-12 16:36:47,509 - tensorflow - INFO - loss = 0.3002514, step = 23181 (2.079 sec)
+2019-09-12 16:36:49,408 - tensorflow - INFO - Saving checkpoints for 23200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:36:51,533 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:36:51,628 - tensorflow - INFO - global_step/sec: 4.85294
+2019-09-12 16:36:51,630 - tensorflow - INFO - loss = 0.26695618, step = 23201 (4.120 sec)
+2019-09-12 16:36:53,737 - tensorflow - INFO - global_step/sec: 9.48748
+2019-09-12 16:36:53,739 - tensorflow - INFO - loss = 0.25631577, step = 23221 (2.109 sec)
+2019-09-12 16:36:55,588 - tensorflow - INFO - global_step/sec: 10.8
+2019-09-12 16:36:55,591 - tensorflow - INFO - loss = 0.2776991, step = 23241 (1.852 sec)
+2019-09-12 16:36:57,482 - tensorflow - INFO - global_step/sec: 10.5616
+2019-09-12 16:36:57,483 - tensorflow - INFO - loss = 0.23608272, step = 23261 (1.892 sec)
+2019-09-12 16:36:59,268 - tensorflow - INFO - global_step/sec: 11.1998
+2019-09-12 16:36:59,269 - tensorflow - INFO - loss = 0.26173332, step = 23281 (1.786 sec)
+2019-09-12 16:37:01,022 - tensorflow - INFO - Saving checkpoints for 23300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:37:02,973 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:37:03,064 - tensorflow - INFO - global_step/sec: 5.26858
+2019-09-12 16:37:03,066 - tensorflow - INFO - loss = 0.68327767, step = 23301 (3.797 sec)
+2019-09-12 16:37:04,979 - tensorflow - INFO - global_step/sec: 10.4419
+2019-09-12 16:37:04,982 - tensorflow - INFO - loss = 0.70662326, step = 23321 (1.915 sec)
+2019-09-12 16:37:07,069 - tensorflow - INFO - global_step/sec: 9.57238
+2019-09-12 16:37:07,071 - tensorflow - INFO - loss = 0.5850467, step = 23341 (2.090 sec)
+2019-09-12 16:37:09,101 - tensorflow - INFO - global_step/sec: 9.8398
+2019-09-12 16:37:09,102 - tensorflow - INFO - loss = 0.63196975, step = 23361 (2.031 sec)
+2019-09-12 16:37:10,990 - tensorflow - INFO - global_step/sec: 10.5864
+2019-09-12 16:37:10,993 - tensorflow - INFO - loss = 0.5020161, step = 23381 (1.890 sec)
+2019-09-12 16:37:13,022 - tensorflow - INFO - Saving checkpoints for 23400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:37:14,971 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:37:15,058 - tensorflow - INFO - global_step/sec: 4.9171
+2019-09-12 16:37:15,060 - tensorflow - INFO - loss = 0.45856082, step = 23401 (4.067 sec)
+2019-09-12 16:37:16,913 - tensorflow - INFO - global_step/sec: 10.7803
+2019-09-12 16:37:16,914 - tensorflow - INFO - loss = 0.5660246, step = 23421 (1.855 sec)
+2019-09-12 16:37:18,761 - tensorflow - INFO - global_step/sec: 10.8246
+2019-09-12 16:37:18,763 - tensorflow - INFO - loss = 0.47689095, step = 23441 (1.849 sec)
+2019-09-12 16:37:20,605 - tensorflow - INFO - global_step/sec: 10.8444
+2019-09-12 16:37:20,608 - tensorflow - INFO - loss = 0.428272, step = 23461 (1.845 sec)
+2019-09-12 16:37:22,528 - tensorflow - INFO - global_step/sec: 10.4003
+2019-09-12 16:37:22,529 - tensorflow - INFO - loss = 0.38601726, step = 23481 (1.922 sec)
+2019-09-12 16:37:24,496 - tensorflow - INFO - Saving checkpoints for 23500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:37:26,729 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:37:26,801 - tensorflow - INFO - global_step/sec: 4.68104
+2019-09-12 16:37:26,802 - tensorflow - INFO - loss = 0.29377562, step = 23501 (4.273 sec)
+2019-09-12 16:37:28,912 - tensorflow - INFO - global_step/sec: 9.47282
+2019-09-12 16:37:28,917 - tensorflow - INFO - loss = 0.29832992, step = 23521 (2.115 sec)
+2019-09-12 16:37:31,109 - tensorflow - INFO - global_step/sec: 9.10405
+2019-09-12 16:37:31,110 - tensorflow - INFO - loss = 0.28486234, step = 23541 (2.193 sec)
+2019-09-12 16:37:33,149 - tensorflow - INFO - global_step/sec: 9.80238
+2019-09-12 16:37:33,150 - tensorflow - INFO - loss = 0.2571373, step = 23561 (2.040 sec)
+2019-09-12 16:37:34,911 - tensorflow - INFO - global_step/sec: 11.3533
+2019-09-12 16:37:34,912 - tensorflow - INFO - loss = 0.26586437, step = 23581 (1.762 sec)
+2019-09-12 16:37:36,739 - tensorflow - INFO - Saving checkpoints for 23600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:37:38,836 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:37:38,910 - tensorflow - INFO - global_step/sec: 5.00118
+2019-09-12 16:37:38,911 - tensorflow - INFO - loss = 0.22387214, step = 23601 (3.999 sec)
+2019-09-12 16:37:40,982 - tensorflow - INFO - global_step/sec: 9.64924
+2019-09-12 16:37:40,983 - tensorflow - INFO - loss = 0.2307949, step = 23621 (2.073 sec)
+2019-09-12 16:37:42,885 - tensorflow - INFO - global_step/sec: 10.5119
+2019-09-12 16:37:42,891 - tensorflow - INFO - loss = 0.6909948, step = 23641 (1.907 sec)
+2019-09-12 16:37:44,824 - tensorflow - INFO - global_step/sec: 10.3164
+2019-09-12 16:37:44,825 - tensorflow - INFO - loss = 0.64076984, step = 23661 (1.934 sec)
+2019-09-12 16:37:46,892 - tensorflow - INFO - global_step/sec: 9.66804
+2019-09-12 16:37:46,895 - tensorflow - INFO - loss = 0.62420344, step = 23681 (2.070 sec)
+2019-09-12 16:37:48,806 - tensorflow - INFO - Saving checkpoints for 23700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:37:50,894 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:37:50,966 - tensorflow - INFO - global_step/sec: 4.90945
+2019-09-12 16:37:50,967 - tensorflow - INFO - loss = 0.56276274, step = 23701 (4.073 sec)
+2019-09-12 16:37:52,837 - tensorflow - INFO - global_step/sec: 10.6901
+2019-09-12 16:37:52,838 - tensorflow - INFO - loss = 0.5027953, step = 23721 (1.871 sec)
+2019-09-12 16:37:54,672 - tensorflow - INFO - global_step/sec: 10.8997
+2019-09-12 16:37:54,675 - tensorflow - INFO - loss = 0.42939395, step = 23741 (1.837 sec)
+2019-09-12 16:37:56,502 - tensorflow - INFO - global_step/sec: 10.9283
+2019-09-12 16:37:56,504 - tensorflow - INFO - loss = 0.41985232, step = 23761 (1.828 sec)
+2019-09-12 16:37:58,276 - tensorflow - INFO - global_step/sec: 11.2758
+2019-09-12 16:37:58,278 - tensorflow - INFO - loss = 0.35955766, step = 23781 (1.774 sec)
+2019-09-12 16:37:59,973 - tensorflow - INFO - Saving checkpoints for 23800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:38:01,787 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:38:01,859 - tensorflow - INFO - global_step/sec: 5.58087
+2019-09-12 16:38:01,861 - tensorflow - INFO - loss = 0.42703313, step = 23801 (3.583 sec)
+2019-09-12 16:38:03,588 - tensorflow - INFO - global_step/sec: 11.5675
+2019-09-12 16:38:03,590 - tensorflow - INFO - loss = 0.33494678, step = 23821 (1.729 sec)
+2019-09-12 16:38:05,361 - tensorflow - INFO - global_step/sec: 11.284
+2019-09-12 16:38:05,362 - tensorflow - INFO - loss = 0.33413333, step = 23841 (1.772 sec)
+2019-09-12 16:38:07,162 - tensorflow - INFO - global_step/sec: 11.1031
+2019-09-12 16:38:07,165 - tensorflow - INFO - loss = 0.24652115, step = 23861 (1.803 sec)
+2019-09-12 16:38:09,252 - tensorflow - INFO - global_step/sec: 9.57123
+2019-09-12 16:38:09,254 - tensorflow - INFO - loss = 0.2807614, step = 23881 (2.089 sec)
+2019-09-12 16:38:11,783 - tensorflow - INFO - Saving checkpoints for 23900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:38:14,251 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:38:14,316 - tensorflow - INFO - global_step/sec: 3.94877
+2019-09-12 16:38:14,318 - tensorflow - INFO - loss = 0.20286559, step = 23901 (5.064 sec)
+2019-09-12 16:38:16,210 - tensorflow - INFO - global_step/sec: 10.5703
+2019-09-12 16:38:16,212 - tensorflow - INFO - loss = 0.28187826, step = 23921 (1.894 sec)
+2019-09-12 16:38:18,304 - tensorflow - INFO - global_step/sec: 9.54355
+2019-09-12 16:38:18,307 - tensorflow - INFO - loss = 0.21785158, step = 23941 (2.095 sec)
+2019-09-12 16:38:20,177 - tensorflow - INFO - global_step/sec: 10.6782
+2019-09-12 16:38:20,180 - tensorflow - INFO - loss = 0.82361037, step = 23961 (1.873 sec)
+2019-09-12 16:38:22,043 - tensorflow - INFO - global_step/sec: 10.72
+2019-09-12 16:38:22,046 - tensorflow - INFO - loss = 0.7093917, step = 23981 (1.866 sec)
+2019-09-12 16:38:23,832 - tensorflow - INFO - Saving checkpoints for 24000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:38:26,155 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:38:26,260 - tensorflow - INFO - global_step/sec: 4.74218
+2019-09-12 16:38:26,263 - tensorflow - INFO - loss = 0.60993636, step = 24001 (4.217 sec)
+2019-09-12 16:38:28,420 - tensorflow - INFO - global_step/sec: 9.25856
+2019-09-12 16:38:28,422 - tensorflow - INFO - loss = 0.5631546, step = 24021 (2.159 sec)
+2019-09-12 16:38:30,655 - tensorflow - INFO - global_step/sec: 8.94957
+2019-09-12 16:38:30,656 - tensorflow - INFO - loss = 0.44144985, step = 24041 (2.235 sec)
+2019-09-12 16:38:32,859 - tensorflow - INFO - global_step/sec: 9.07715
+2019-09-12 16:38:32,862 - tensorflow - INFO - loss = 0.54015875, step = 24061 (2.205 sec)
+2019-09-12 16:38:34,952 - tensorflow - INFO - global_step/sec: 9.55562
+2019-09-12 16:38:34,954 - tensorflow - INFO - loss = 0.5163515, step = 24081 (2.092 sec)
+2019-09-12 16:38:36,784 - tensorflow - INFO - Saving checkpoints for 24100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:38:38,921 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:38:39,017 - tensorflow - INFO - global_step/sec: 4.91933
+2019-09-12 16:38:39,019 - tensorflow - INFO - loss = 0.48022646, step = 24101 (4.065 sec)
+2019-09-12 16:38:41,065 - tensorflow - INFO - global_step/sec: 9.76918
+2019-09-12 16:38:41,067 - tensorflow - INFO - loss = 0.41275713, step = 24121 (2.048 sec)
+2019-09-12 16:38:42,844 - tensorflow - INFO - global_step/sec: 11.2356
+2019-09-12 16:38:42,846 - tensorflow - INFO - loss = 0.3016524, step = 24141 (1.780 sec)
+2019-09-12 16:38:44,638 - tensorflow - INFO - global_step/sec: 11.1514
+2019-09-12 16:38:44,639 - tensorflow - INFO - loss = 0.2737198, step = 24161 (1.793 sec)
+2019-09-12 16:38:46,639 - tensorflow - INFO - global_step/sec: 9.99811
+2019-09-12 16:38:46,643 - tensorflow - INFO - loss = 0.33626556, step = 24181 (2.004 sec)
+2019-09-12 16:38:48,787 - tensorflow - INFO - Saving checkpoints for 24200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:38:50,865 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:38:50,959 - tensorflow - INFO - global_step/sec: 4.62906
+2019-09-12 16:38:50,960 - tensorflow - INFO - loss = 0.2304876, step = 24201 (4.317 sec)
+2019-09-12 16:38:52,918 - tensorflow - INFO - global_step/sec: 10.2092
+2019-09-12 16:38:52,919 - tensorflow - INFO - loss = 0.25813293, step = 24221 (1.959 sec)
+2019-09-12 16:38:55,118 - tensorflow - INFO - global_step/sec: 9.09225
+2019-09-12 16:38:55,121 - tensorflow - INFO - loss = 0.24436748, step = 24241 (2.201 sec)
+2019-09-12 16:38:56,883 - tensorflow - INFO - global_step/sec: 11.331
+2019-09-12 16:38:56,884 - tensorflow - INFO - loss = 0.25718817, step = 24261 (1.763 sec)
+2019-09-12 16:38:58,732 - tensorflow - INFO - global_step/sec: 10.8164
+2019-09-12 16:38:58,734 - tensorflow - INFO - loss = 0.32221955, step = 24281 (1.850 sec)
+2019-09-12 16:39:00,381 - tensorflow - INFO - Saving checkpoints for 24300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:39:02,277 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:39:02,369 - tensorflow - INFO - global_step/sec: 5.4989
+2019-09-12 16:39:02,371 - tensorflow - INFO - loss = 0.8639159, step = 24301 (3.637 sec)
+2019-09-12 16:39:04,094 - tensorflow - INFO - global_step/sec: 11.5897
+2019-09-12 16:39:04,096 - tensorflow - INFO - loss = 0.8663366, step = 24321 (1.725 sec)
+2019-09-12 16:39:05,759 - tensorflow - INFO - global_step/sec: 12.0127
+2019-09-12 16:39:05,760 - tensorflow - INFO - loss = 0.5978175, step = 24341 (1.665 sec)
+2019-09-12 16:39:07,494 - tensorflow - INFO - global_step/sec: 11.5291
+2019-09-12 16:39:07,497 - tensorflow - INFO - loss = 0.625951, step = 24361 (1.736 sec)
+2019-09-12 16:39:09,249 - tensorflow - INFO - global_step/sec: 11.3948
+2019-09-12 16:39:09,252 - tensorflow - INFO - loss = 0.5856375, step = 24381 (1.756 sec)
+2019-09-12 16:39:10,957 - tensorflow - INFO - Saving checkpoints for 24400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:39:12,785 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:39:12,865 - tensorflow - INFO - global_step/sec: 5.53111
+2019-09-12 16:39:12,869 - tensorflow - INFO - loss = 0.47660995, step = 24401 (3.617 sec)
+2019-09-12 16:39:14,583 - tensorflow - INFO - global_step/sec: 11.6427
+2019-09-12 16:39:14,585 - tensorflow - INFO - loss = 0.48348087, step = 24421 (1.716 sec)
+2019-09-12 16:39:16,342 - tensorflow - INFO - global_step/sec: 11.3724
+2019-09-12 16:39:16,343 - tensorflow - INFO - loss = 0.43674278, step = 24441 (1.758 sec)
+2019-09-12 16:39:18,094 - tensorflow - INFO - global_step/sec: 11.4115
+2019-09-12 16:39:18,096 - tensorflow - INFO - loss = 0.35659614, step = 24461 (1.753 sec)
+2019-09-12 16:39:19,813 - tensorflow - INFO - global_step/sec: 11.6341
+2019-09-12 16:39:19,815 - tensorflow - INFO - loss = 0.31986806, step = 24481 (1.718 sec)
+2019-09-12 16:39:21,441 - tensorflow - INFO - Saving checkpoints for 24500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:39:23,213 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:39:23,287 - tensorflow - INFO - global_step/sec: 5.75784
+2019-09-12 16:39:23,288 - tensorflow - INFO - loss = 0.33757153, step = 24501 (3.474 sec)
+2019-09-12 16:39:24,989 - tensorflow - INFO - global_step/sec: 11.7526
+2019-09-12 16:39:24,991 - tensorflow - INFO - loss = 0.21895157, step = 24521 (1.703 sec)
+2019-09-12 16:39:26,687 - tensorflow - INFO - global_step/sec: 11.7795
+2019-09-12 16:39:26,689 - tensorflow - INFO - loss = 0.25279057, step = 24541 (1.699 sec)
+2019-09-12 16:39:28,349 - tensorflow - INFO - global_step/sec: 12.0285
+2019-09-12 16:39:28,350 - tensorflow - INFO - loss = 0.32818204, step = 24561 (1.661 sec)
+2019-09-12 16:39:30,015 - tensorflow - INFO - global_step/sec: 12.0046
+2019-09-12 16:39:30,016 - tensorflow - INFO - loss = 0.24191089, step = 24581 (1.666 sec)
+2019-09-12 16:39:31,575 - tensorflow - INFO - Saving checkpoints for 24600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:39:33,374 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:39:33,461 - tensorflow - INFO - global_step/sec: 5.80511
+2019-09-12 16:39:33,462 - tensorflow - INFO - loss = 0.24278621, step = 24601 (3.446 sec)
+2019-09-12 16:39:35,123 - tensorflow - INFO - global_step/sec: 12.0336
+2019-09-12 16:39:35,125 - tensorflow - INFO - loss = 0.83381426, step = 24621 (1.663 sec)
+2019-09-12 16:39:36,823 - tensorflow - INFO - global_step/sec: 11.7625
+2019-09-12 16:39:36,824 - tensorflow - INFO - loss = 0.6570544, step = 24641 (1.699 sec)
+2019-09-12 16:39:38,512 - tensorflow - INFO - global_step/sec: 11.8426
+2019-09-12 16:39:38,513 - tensorflow - INFO - loss = 0.65316087, step = 24661 (1.688 sec)
+2019-09-12 16:39:40,213 - tensorflow - INFO - global_step/sec: 11.7534
+2019-09-12 16:39:40,215 - tensorflow - INFO - loss = 0.6844389, step = 24681 (1.702 sec)
+2019-09-12 16:39:41,875 - tensorflow - INFO - Saving checkpoints for 24700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:39:43,689 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:39:43,779 - tensorflow - INFO - global_step/sec: 5.60991
+2019-09-12 16:39:43,781 - tensorflow - INFO - loss = 0.510428, step = 24701 (3.566 sec)
+2019-09-12 16:39:45,517 - tensorflow - INFO - global_step/sec: 11.5062
+2019-09-12 16:39:45,518 - tensorflow - INFO - loss = 0.5030991, step = 24721 (1.737 sec)
+2019-09-12 16:39:47,256 - tensorflow - INFO - global_step/sec: 11.5
+2019-09-12 16:39:47,257 - tensorflow - INFO - loss = 0.51852125, step = 24741 (1.739 sec)
+2019-09-12 16:39:48,980 - tensorflow - INFO - global_step/sec: 11.5974
+2019-09-12 16:39:48,982 - tensorflow - INFO - loss = 0.43060732, step = 24761 (1.725 sec)
+2019-09-12 16:39:50,708 - tensorflow - INFO - global_step/sec: 11.5777
+2019-09-12 16:39:50,711 - tensorflow - INFO - loss = 0.3700378, step = 24781 (1.728 sec)
+2019-09-12 16:39:52,430 - tensorflow - INFO - Saving checkpoints for 24800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:39:54,389 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:39:54,466 - tensorflow - INFO - global_step/sec: 5.32202
+2019-09-12 16:39:54,467 - tensorflow - INFO - loss = 0.3422358, step = 24801 (3.756 sec)
+2019-09-12 16:39:56,612 - tensorflow - INFO - global_step/sec: 9.32044
+2019-09-12 16:39:56,614 - tensorflow - INFO - loss = 0.33940908, step = 24821 (2.147 sec)
+2019-09-12 16:39:58,965 - tensorflow - INFO - global_step/sec: 8.4992
+2019-09-12 16:39:58,970 - tensorflow - INFO - loss = 0.24963072, step = 24841 (2.356 sec)
+2019-09-12 16:40:02,158 - tensorflow - INFO - global_step/sec: 6.26307
+2019-09-12 16:40:02,160 - tensorflow - INFO - loss = 0.29624376, step = 24861 (3.190 sec)
+2019-09-12 16:40:04,610 - tensorflow - INFO - global_step/sec: 8.1585
+2019-09-12 16:40:04,612 - tensorflow - INFO - loss = 0.21826202, step = 24881 (2.452 sec)
+2019-09-12 16:40:06,867 - tensorflow - INFO - Saving checkpoints for 24900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:40:09,094 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:40:09,171 - tensorflow - INFO - global_step/sec: 4.38443
+2019-09-12 16:40:09,173 - tensorflow - INFO - loss = 0.2762673, step = 24901 (4.561 sec)
+2019-09-12 16:40:11,384 - tensorflow - INFO - global_step/sec: 9.03787
+2019-09-12 16:40:11,386 - tensorflow - INFO - loss = 0.28384978, step = 24921 (2.213 sec)
+2019-09-12 16:40:13,336 - tensorflow - INFO - global_step/sec: 10.2439
+2019-09-12 16:40:13,338 - tensorflow - INFO - loss = 0.21885556, step = 24941 (1.952 sec)
+2019-09-12 16:40:15,330 - tensorflow - INFO - global_step/sec: 10.0322
+2019-09-12 16:40:15,331 - tensorflow - INFO - loss = 0.7966477, step = 24961 (1.993 sec)
+2019-09-12 16:40:17,249 - tensorflow - INFO - global_step/sec: 10.419
+2019-09-12 16:40:17,251 - tensorflow - INFO - loss = 0.74692416, step = 24981 (1.920 sec)
+2019-09-12 16:40:18,955 - tensorflow - INFO - Saving checkpoints for 25000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:40:20,837 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:40:20,917 - tensorflow - INFO - global_step/sec: 5.45276
+2019-09-12 16:40:20,919 - tensorflow - INFO - loss = 0.6586527, step = 25001 (3.668 sec)
+2019-09-12 16:40:22,638 - tensorflow - INFO - global_step/sec: 11.6225
+2019-09-12 16:40:22,640 - tensorflow - INFO - loss = 0.583275, step = 25021 (1.721 sec)
+2019-09-12 16:40:24,425 - tensorflow - INFO - global_step/sec: 11.1942
+2019-09-12 16:40:24,427 - tensorflow - INFO - loss = 0.5937514, step = 25041 (1.786 sec)
+2019-09-12 16:40:26,182 - tensorflow - INFO - global_step/sec: 11.3788
+2019-09-12 16:40:26,185 - tensorflow - INFO - loss = 0.4466815, step = 25061 (1.758 sec)
+2019-09-12 16:40:27,938 - tensorflow - INFO - global_step/sec: 11.3887
+2019-09-12 16:40:27,940 - tensorflow - INFO - loss = 0.40431273, step = 25081 (1.755 sec)
+2019-09-12 16:40:29,615 - tensorflow - INFO - Saving checkpoints for 25100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:40:31,415 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:40:31,487 - tensorflow - INFO - global_step/sec: 5.63684
+2019-09-12 16:40:31,489 - tensorflow - INFO - loss = 0.4010962, step = 25101 (3.548 sec)
+2019-09-12 16:40:33,238 - tensorflow - INFO - global_step/sec: 11.4196
+2019-09-12 16:40:33,239 - tensorflow - INFO - loss = 0.4111692, step = 25121 (1.751 sec)
+2019-09-12 16:40:35,030 - tensorflow - INFO - global_step/sec: 11.161
+2019-09-12 16:40:35,033 - tensorflow - INFO - loss = 0.36438897, step = 25141 (1.793 sec)
+2019-09-12 16:40:36,906 - tensorflow - INFO - global_step/sec: 10.6614
+2019-09-12 16:40:36,908 - tensorflow - INFO - loss = 0.26099664, step = 25161 (1.875 sec)
+2019-09-12 16:40:38,743 - tensorflow - INFO - global_step/sec: 10.8864
+2019-09-12 16:40:38,744 - tensorflow - INFO - loss = 0.24898812, step = 25181 (1.837 sec)
+2019-09-12 16:40:40,515 - tensorflow - INFO - Saving checkpoints for 25200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:40:42,498 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:40:42,567 - tensorflow - INFO - global_step/sec: 5.23066
+2019-09-12 16:40:42,568 - tensorflow - INFO - loss = 0.25328964, step = 25201 (3.824 sec)
+2019-09-12 16:40:44,249 - tensorflow - INFO - global_step/sec: 11.8886
+2019-09-12 16:40:44,250 - tensorflow - INFO - loss = 0.230157, step = 25221 (1.682 sec)
+2019-09-12 16:40:45,924 - tensorflow - INFO - global_step/sec: 11.9387
+2019-09-12 16:40:45,926 - tensorflow - INFO - loss = 0.21101029, step = 25241 (1.676 sec)
+2019-09-12 16:40:47,577 - tensorflow - INFO - global_step/sec: 12.1036
+2019-09-12 16:40:47,579 - tensorflow - INFO - loss = 0.2820817, step = 25261 (1.653 sec)
+2019-09-12 16:40:49,235 - tensorflow - INFO - global_step/sec: 12.0596
+2019-09-12 16:40:49,238 - tensorflow - INFO - loss = 0.7668935, step = 25281 (1.659 sec)
+2019-09-12 16:40:50,848 - tensorflow - INFO - Saving checkpoints for 25300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:40:52,642 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:40:52,727 - tensorflow - INFO - global_step/sec: 5.72721
+2019-09-12 16:40:52,728 - tensorflow - INFO - loss = 0.6021925, step = 25301 (3.491 sec)
+2019-09-12 16:40:54,482 - tensorflow - INFO - global_step/sec: 11.3936
+2019-09-12 16:40:54,484 - tensorflow - INFO - loss = 0.60468185, step = 25321 (1.755 sec)
+2019-09-12 16:40:56,202 - tensorflow - INFO - global_step/sec: 11.6296
+2019-09-12 16:40:56,203 - tensorflow - INFO - loss = 0.7411275, step = 25341 (1.720 sec)
+2019-09-12 16:40:57,950 - tensorflow - INFO - global_step/sec: 11.4469
+2019-09-12 16:40:57,951 - tensorflow - INFO - loss = 0.50171506, step = 25361 (1.748 sec)
+2019-09-12 16:40:59,730 - tensorflow - INFO - global_step/sec: 11.2342
+2019-09-12 16:40:59,732 - tensorflow - INFO - loss = 0.47577372, step = 25381 (1.780 sec)
+2019-09-12 16:41:01,425 - tensorflow - INFO - Saving checkpoints for 25400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:41:03,239 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:41:03,313 - tensorflow - INFO - global_step/sec: 5.58213
+2019-09-12 16:41:03,314 - tensorflow - INFO - loss = 0.508908, step = 25401 (3.583 sec)
+2019-09-12 16:41:05,072 - tensorflow - INFO - global_step/sec: 11.3666
+2019-09-12 16:41:05,074 - tensorflow - INFO - loss = 0.46905938, step = 25421 (1.760 sec)
+2019-09-12 16:41:06,795 - tensorflow - INFO - global_step/sec: 11.6114
+2019-09-12 16:41:06,797 - tensorflow - INFO - loss = 0.3536142, step = 25441 (1.722 sec)
+2019-09-12 16:41:08,524 - tensorflow - INFO - global_step/sec: 11.5624
+2019-09-12 16:41:08,526 - tensorflow - INFO - loss = 0.35815102, step = 25461 (1.730 sec)
+2019-09-12 16:41:10,259 - tensorflow - INFO - global_step/sec: 11.5282
+2019-09-12 16:41:10,262 - tensorflow - INFO - loss = 0.30847675, step = 25481 (1.735 sec)
+2019-09-12 16:41:11,878 - tensorflow - INFO - Saving checkpoints for 25500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:41:13,699 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:41:13,803 - tensorflow - INFO - global_step/sec: 5.64334
+2019-09-12 16:41:13,806 - tensorflow - INFO - loss = 0.30149478, step = 25501 (3.544 sec)
+2019-09-12 16:41:15,483 - tensorflow - INFO - global_step/sec: 11.9061
+2019-09-12 16:41:15,485 - tensorflow - INFO - loss = 0.21188653, step = 25521 (1.679 sec)
+2019-09-12 16:41:17,508 - tensorflow - INFO - global_step/sec: 9.87796
+2019-09-12 16:41:17,511 - tensorflow - INFO - loss = 0.25907335, step = 25541 (2.026 sec)
+2019-09-12 16:41:19,376 - tensorflow - INFO - global_step/sec: 10.7048
+2019-09-12 16:41:19,377 - tensorflow - INFO - loss = 0.32918438, step = 25561 (1.866 sec)
+2019-09-12 16:41:21,092 - tensorflow - INFO - global_step/sec: 11.6585
+2019-09-12 16:41:21,093 - tensorflow - INFO - loss = 0.24978456, step = 25581 (1.716 sec)
+2019-09-12 16:41:22,805 - tensorflow - INFO - Saving checkpoints for 25600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:41:24,907 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:41:24,981 - tensorflow - INFO - global_step/sec: 5.14186
+2019-09-12 16:41:24,983 - tensorflow - INFO - loss = 0.18252464, step = 25601 (3.890 sec)
+2019-09-12 16:41:26,919 - tensorflow - INFO - global_step/sec: 10.3184
+2019-09-12 16:41:26,921 - tensorflow - INFO - loss = 0.8793814, step = 25621 (1.938 sec)
+2019-09-12 16:41:28,740 - tensorflow - INFO - global_step/sec: 10.988
+2019-09-12 16:41:28,741 - tensorflow - INFO - loss = 0.5613871, step = 25641 (1.820 sec)
+2019-09-12 16:41:30,575 - tensorflow - INFO - global_step/sec: 10.8981
+2019-09-12 16:41:30,576 - tensorflow - INFO - loss = 0.5620252, step = 25661 (1.836 sec)
+2019-09-12 16:41:32,542 - tensorflow - INFO - global_step/sec: 10.1657
+2019-09-12 16:41:32,545 - tensorflow - INFO - loss = 0.5513238, step = 25681 (1.968 sec)
+2019-09-12 16:41:34,754 - tensorflow - INFO - Saving checkpoints for 25700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:41:37,344 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:41:37,478 - tensorflow - INFO - global_step/sec: 4.05236
+2019-09-12 16:41:37,481 - tensorflow - INFO - loss = 0.7030075, step = 25701 (4.936 sec)
+2019-09-12 16:41:39,482 - tensorflow - INFO - global_step/sec: 9.97724
+2019-09-12 16:41:39,485 - tensorflow - INFO - loss = 0.50625235, step = 25721 (2.004 sec)
+2019-09-12 16:41:41,394 - tensorflow - INFO - global_step/sec: 10.4611
+2019-09-12 16:41:41,396 - tensorflow - INFO - loss = 0.5201709, step = 25741 (1.911 sec)
+2019-09-12 16:41:43,347 - tensorflow - INFO - global_step/sec: 10.2422
+2019-09-12 16:41:43,351 - tensorflow - INFO - loss = 0.35578597, step = 25761 (1.954 sec)
+2019-09-12 16:41:45,794 - tensorflow - INFO - global_step/sec: 8.17248
+2019-09-12 16:41:45,795 - tensorflow - INFO - loss = 0.35576528, step = 25781 (2.445 sec)
+2019-09-12 16:41:47,959 - tensorflow - INFO - Saving checkpoints for 25800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:41:50,330 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:41:50,422 - tensorflow - INFO - global_step/sec: 4.32106
+2019-09-12 16:41:50,424 - tensorflow - INFO - loss = 0.3673495, step = 25801 (4.629 sec)
+2019-09-12 16:41:52,634 - tensorflow - INFO - global_step/sec: 9.04319
+2019-09-12 16:41:52,637 - tensorflow - INFO - loss = 0.2960744, step = 25821 (2.213 sec)
+2019-09-12 16:41:54,727 - tensorflow - INFO - global_step/sec: 9.55653
+2019-09-12 16:41:54,729 - tensorflow - INFO - loss = 0.26313928, step = 25841 (2.092 sec)
+2019-09-12 16:41:56,855 - tensorflow - INFO - global_step/sec: 9.39725
+2019-09-12 16:41:56,856 - tensorflow - INFO - loss = 0.32071403, step = 25861 (2.127 sec)
+2019-09-12 16:41:58,705 - tensorflow - INFO - global_step/sec: 10.8084
+2019-09-12 16:41:58,707 - tensorflow - INFO - loss = 0.20509073, step = 25881 (1.850 sec)
+2019-09-12 16:42:00,818 - tensorflow - INFO - Saving checkpoints for 25900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:42:03,172 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:42:03,282 - tensorflow - INFO - global_step/sec: 4.37068
+2019-09-12 16:42:03,285 - tensorflow - INFO - loss = 0.26834115, step = 25901 (4.578 sec)
+2019-09-12 16:42:05,458 - tensorflow - INFO - global_step/sec: 9.19092
+2019-09-12 16:42:05,460 - tensorflow - INFO - loss = 0.2217888, step = 25921 (2.175 sec)
+2019-09-12 16:42:08,368 - tensorflow - INFO - global_step/sec: 6.87322
+2019-09-12 16:42:08,374 - tensorflow - INFO - loss = 0.98134035, step = 25941 (2.914 sec)
+2019-09-12 16:42:11,992 - tensorflow - INFO - global_step/sec: 5.5176
+2019-09-12 16:42:11,994 - tensorflow - INFO - loss = 0.57438034, step = 25961 (3.621 sec)
+2019-09-12 16:42:14,678 - tensorflow - INFO - global_step/sec: 7.44742
+2019-09-12 16:42:14,680 - tensorflow - INFO - loss = 0.6851708, step = 25981 (2.686 sec)
+2019-09-12 16:42:17,013 - tensorflow - INFO - Saving checkpoints for 26000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:42:21,531 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-12 16:42:21,628 - tensorflow - INFO - global_step/sec: 2.87765
+2019-09-12 16:42:21,629 - tensorflow - INFO - loss = 0.46843547, step = 26001 (6.949 sec)
+2019-09-12 16:42:23,771 - tensorflow - INFO - global_step/sec: 9.33099
+2019-09-12 16:42:23,774 - tensorflow - INFO - loss = 0.6020857, step = 26021 (2.145 sec)
+2019-09-12 16:42:25,959 - tensorflow - INFO - global_step/sec: 9.14042
+2019-09-12 16:42:25,960 - tensorflow - INFO - loss = 0.48826173, step = 26041 (2.187 sec)
+2019-09-12 16:42:27,815 - tensorflow - INFO - global_step/sec: 10.7766
+2019-09-12 16:42:27,818 - tensorflow - INFO - loss = 0.49495056, step = 26061 (1.857 sec)
+2019-09-12 16:42:29,542 - tensorflow - INFO - global_step/sec: 11.5844
+2019-09-12 16:42:29,543 - tensorflow - INFO - loss = 0.42216888, step = 26081 (1.725 sec)
+2019-09-12 16:42:31,187 - tensorflow - INFO - Saving checkpoints for 26100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-12 16:42:33,092 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-12 16:42:36,118 - tensorflow - INFO - Calling model_fn.
+2019-09-12 16:43:04,345 - tensorflow - INFO - Done calling model_fn.
+2019-09-12 16:43:04,558 - tensorflow - INFO - Starting evaluation at 2019-09-12T16:43:04Z
+2019-09-12 16:43:07,348 - tensorflow - INFO - Graph was finalized.
+2019-09-12 16:43:07,352 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-26100
+2019-09-12 16:43:08,845 - tensorflow - INFO - Running local_init_op.
+2019-09-12 16:43:09,190 - tensorflow - INFO - Done running local_init_op.
+2019-09-12 16:43:32,789 - tensorflow - INFO - Evaluation [100/1000]
+2019-09-12 16:43:37,594 - tensorflow - INFO - Evaluation [200/1000]
+2019-09-12 16:43:42,145 - tensorflow - INFO - Evaluation [300/1000]
+2019-09-12 16:43:44,030 - tensorflow - INFO - Finished evaluation at 2019-09-12-16:43:44
+2019-09-12 16:43:44,031 - tensorflow - INFO - Saving dict for global step 26100: ctr_auc = 0.87894356, global_step = 26100, loss = 0.38144803, uv_auc = 0.8443898
+2019-09-12 16:43:44,033 - tensorflow - INFO - Saving 'checkpoint_path' summary for global step 26100: /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-26100
+2019-09-12 16:43:44,133 - tensorflow - INFO - global_step/sec: 0.268126
+2019-09-12 16:43:44,134 - tensorflow - INFO - loss = 0.3180339, step = 26101 (74.591 sec)
+2019-09-12 16:43:45,863 - tensorflow - INFO - global_step/sec: 11.5645
+2019-09-12 16:43:45,865 - tensorflow - INFO - loss = 0.3239516, step = 26121 (1.730 sec)
+2019-09-12 16:43:47,645 - tensorflow - INFO - global_step/sec: 11.2253
+2019-09-12 16:43:47,647 - tensorflow - INFO - loss = 0.26140714, step = 26141 (1.782 sec)
+2019-09-12 16:43:49,505 - tensorflow - INFO - global_step/sec: 10.7498
+2019-09-12 16:43:49,508 - tensorflow - INFO - loss = 0.27381065, step = 26161 (1.861 sec)
+2019-09-12 16:43:51,415 - tensorflow - INFO - global_step/sec: 10.4721
+2019-09-12 16:43:51,416 - tensorflow - INFO - loss = 0.21138878, step = 26181 (1.908 sec)
+2019-09-12 16:43:53,373 - tensorflow - INFO - Saving checkpoints for 26200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:40:57,721 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:46: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-09-23 15:42:00,905 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:46: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-09-23 15:43:26,228 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:46: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-09-23 15:43:31,580 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x1a46279358>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-23 15:43:31,667 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0x1a46279160>
+2019-09-23 15:43:31,668 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-23 15:43:31,669 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-23 15:43:31,670 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-23 15:43:31,736 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2019-09-23 15:43:31,777 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-23 15:43:31,786 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:510: The name tf.gfile.IsDirectory is deprecated. Please use tf.io.gfile.isdir instead.
+
+2019-09-23 15:43:31,879 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/data/util/random_seed.py:58: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2019-09-23 15:43:33,007 - tensorflow - INFO - Calling model_fn.
+2019-09-23 15:43:33,009 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:61: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2019-09-23 15:43:33,009 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:61: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+2019-09-23 15:43:33,010 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:116: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2019-09-23 15:43:34,518 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:222: The name tf.regex_replace is deprecated. Please use tf.strings.regex_replace instead.
+
+2019-09-23 15:43:42,215 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:34: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+2019-09-23 15:43:42,595 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/deepfm_v2.py:35: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2019-09-23 15:43:43,125 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:76: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2019-09-23 15:43:43,132 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2019-09-23 15:43:44,717 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:96: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2019-09-23 15:43:44,731 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/utils/layers.py:97: The name tf.log is deprecated. Please use tf.math.log instead.
+
+2019-09-23 15:43:45,170 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:809: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+2019-09-23 15:43:53,694 - tensorflow - INFO - Done calling model_fn.
+2019-09-23 15:43:53,701 - tensorflow - INFO - Create CheckpointSaverHook.
+2019-09-23 15:43:58,134 - tensorflow - INFO - Graph was finalized.
+2019-09-23 15:43:58,141 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-09-23 15:43:58,143 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-26200
+2019-09-23 15:44:00,387 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1066: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2019-09-23 15:44:01,218 - tensorflow - INFO - Running local_init_op.
+2019-09-23 15:44:01,615 - tensorflow - INFO - Done running local_init_op.
+2019-09-23 15:44:15,151 - tensorflow - INFO - Saving checkpoints for 26200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:44:35,224 - tensorflow - INFO - loss = 0.75287473, step = 26201
+2019-09-23 15:45:21,702 - tensorflow - INFO - global_step/sec: 0.430288
+2019-09-23 15:45:21,705 - tensorflow - INFO - loss = 0.94137657, step = 26221 (46.481 sec)
+2019-09-23 15:45:23,936 - tensorflow - INFO - global_step/sec: 8.95663
+2019-09-23 15:45:23,936 - tensorflow - INFO - loss = 0.73354584, step = 26241 (2.232 sec)
+2019-09-23 15:45:47,492 - tensorflow - INFO - global_step/sec: 0.848981
+2019-09-23 15:45:47,493 - tensorflow - INFO - loss = 0.7700533, step = 26261 (23.557 sec)
+2019-09-23 15:45:49,194 - tensorflow - INFO - global_step/sec: 11.7513
+2019-09-23 15:45:49,195 - tensorflow - INFO - loss = 0.6245772, step = 26281 (1.701 sec)
+2019-09-23 15:45:50,804 - tensorflow - INFO - Saving checkpoints for 26300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:45:50,853 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2019-09-23 15:45:51,984 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-23 15:45:53,219 - tensorflow - INFO - Calling model_fn.
+2019-09-23 15:46:03,368 - tensorflow - INFO - Done calling model_fn.
+2019-09-23 15:46:03,421 - tensorflow - INFO - Starting evaluation at 2019-09-23T15:46:03Z
+2019-09-23 15:46:04,203 - tensorflow - INFO - Graph was finalized.
+2019-09-23 15:46:04,206 - tensorflow - INFO - Restoring parameters from /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-26300
+2019-09-23 15:46:05,494 - tensorflow - INFO - Running local_init_op.
+2019-09-23 15:46:05,838 - tensorflow - INFO - Done running local_init_op.
+2019-09-23 15:46:35,562 - tensorflow - INFO - Evaluation [100/1000]
+2019-09-23 15:46:40,319 - tensorflow - INFO - Evaluation [200/1000]
+2019-09-23 15:46:44,982 - tensorflow - INFO - Evaluation [300/1000]
+2019-09-23 15:46:46,879 - tensorflow - INFO - Finished evaluation at 2019-09-23-15:46:46
+2019-09-23 15:46:46,879 - tensorflow - INFO - Saving dict for global step 26300: ctr_auc = 0.80604523, global_step = 26300, loss = 0.46008575, uv_auc = 0.21819961
+2019-09-23 15:46:48,371 - tensorflow - INFO - Saving 'checkpoint_path' summary for global step 26300: /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt-26300
+2019-09-23 15:46:48,443 - tensorflow - INFO - global_step/sec: 0.337557
+2019-09-23 15:46:48,447 - tensorflow - INFO - loss = 0.8291209, step = 26301 (59.253 sec)
+2019-09-23 15:46:50,463 - tensorflow - INFO - global_step/sec: 9.89955
+2019-09-23 15:46:50,464 - tensorflow - INFO - loss = 0.4343892, step = 26321 (2.017 sec)
+2019-09-23 15:46:52,321 - tensorflow - INFO - global_step/sec: 10.7665
+2019-09-23 15:46:52,322 - tensorflow - INFO - loss = 0.5519316, step = 26341 (1.857 sec)
+2019-09-23 15:46:54,481 - tensorflow - INFO - global_step/sec: 9.2597
+2019-09-23 15:46:54,482 - tensorflow - INFO - loss = 0.4771031, step = 26361 (2.160 sec)
+2019-09-23 15:46:56,950 - tensorflow - INFO - global_step/sec: 8.099
+2019-09-23 15:46:56,952 - tensorflow - INFO - loss = 0.44075188, step = 26381 (2.470 sec)
+2019-09-23 15:46:58,926 - tensorflow - INFO - Saving checkpoints for 26400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:47:00,524 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:47:00,628 - tensorflow - INFO - global_step/sec: 5.43762
+2019-09-23 15:47:00,630 - tensorflow - INFO - loss = 0.325726, step = 26401 (3.678 sec)
+2019-09-23 15:47:02,954 - tensorflow - INFO - global_step/sec: 8.6018
+2019-09-23 15:47:02,956 - tensorflow - INFO - loss = 0.28044286, step = 26421 (2.326 sec)
+2019-09-23 15:47:04,714 - tensorflow - INFO - global_step/sec: 11.3586
+2019-09-23 15:47:04,715 - tensorflow - INFO - loss = 0.36065018, step = 26441 (1.759 sec)
+2019-09-23 15:47:06,565 - tensorflow - INFO - global_step/sec: 10.8079
+2019-09-23 15:47:06,566 - tensorflow - INFO - loss = 0.34798852, step = 26461 (1.851 sec)
+2019-09-23 15:47:08,831 - tensorflow - INFO - global_step/sec: 8.82604
+2019-09-23 15:47:08,832 - tensorflow - INFO - loss = 0.2672809, step = 26481 (2.267 sec)
+2019-09-23 15:47:10,558 - tensorflow - INFO - Saving checkpoints for 26500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:47:11,861 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:47:11,950 - tensorflow - INFO - global_step/sec: 6.41107
+2019-09-23 15:47:11,951 - tensorflow - INFO - loss = 0.23973721, step = 26501 (3.119 sec)
+2019-09-23 15:47:13,686 - tensorflow - INFO - global_step/sec: 11.5255
+2019-09-23 15:47:13,687 - tensorflow - INFO - loss = 0.24914412, step = 26521 (1.735 sec)
+2019-09-23 15:47:15,588 - tensorflow - INFO - global_step/sec: 10.5145
+2019-09-23 15:47:15,589 - tensorflow - INFO - loss = 0.86964124, step = 26541 (1.902 sec)
+2019-09-23 15:47:17,536 - tensorflow - INFO - global_step/sec: 10.2679
+2019-09-23 15:47:17,537 - tensorflow - INFO - loss = 0.9282705, step = 26561 (1.949 sec)
+2019-09-23 15:47:19,384 - tensorflow - INFO - global_step/sec: 10.8211
+2019-09-23 15:47:19,385 - tensorflow - INFO - loss = 0.6923679, step = 26581 (1.848 sec)
+2019-09-23 15:47:21,104 - tensorflow - INFO - Saving checkpoints for 26600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:47:22,242 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:47:22,310 - tensorflow - INFO - global_step/sec: 6.83463
+2019-09-23 15:47:22,312 - tensorflow - INFO - loss = 0.6591434, step = 26601 (2.927 sec)
+2019-09-23 15:47:24,122 - tensorflow - INFO - global_step/sec: 11.0371
+2019-09-23 15:47:24,123 - tensorflow - INFO - loss = 0.4983248, step = 26621 (1.811 sec)
+2019-09-23 15:47:26,476 - tensorflow - INFO - global_step/sec: 8.49696
+2019-09-23 15:47:26,479 - tensorflow - INFO - loss = 0.53862244, step = 26641 (2.356 sec)
+2019-09-23 15:47:28,789 - tensorflow - INFO - global_step/sec: 8.6462
+2019-09-23 15:47:28,791 - tensorflow - INFO - loss = 0.45967355, step = 26661 (2.311 sec)
+2019-09-23 15:47:31,122 - tensorflow - INFO - global_step/sec: 8.57237
+2019-09-23 15:47:31,123 - tensorflow - INFO - loss = 0.3959119, step = 26681 (2.333 sec)
+2019-09-23 15:47:33,232 - tensorflow - INFO - Saving checkpoints for 26700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:47:34,750 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:47:34,822 - tensorflow - INFO - global_step/sec: 5.40545
+2019-09-23 15:47:34,823 - tensorflow - INFO - loss = 0.4339201, step = 26701 (3.700 sec)
+2019-09-23 15:47:36,672 - tensorflow - INFO - global_step/sec: 10.8113
+2019-09-23 15:47:36,673 - tensorflow - INFO - loss = 0.3526317, step = 26721 (1.850 sec)
+2019-09-23 15:47:38,636 - tensorflow - INFO - global_step/sec: 10.1856
+2019-09-23 15:47:38,637 - tensorflow - INFO - loss = 0.41898024, step = 26741 (1.964 sec)
+2019-09-23 15:47:40,722 - tensorflow - INFO - global_step/sec: 9.58534
+2019-09-23 15:47:40,723 - tensorflow - INFO - loss = 0.35523996, step = 26761 (2.086 sec)
+2019-09-23 15:47:43,271 - tensorflow - INFO - global_step/sec: 7.84755
+2019-09-23 15:47:43,272 - tensorflow - INFO - loss = 0.28713396, step = 26781 (2.549 sec)
+2019-09-23 15:47:45,726 - tensorflow - INFO - Saving checkpoints for 26800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:47:47,042 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:47:47,133 - tensorflow - INFO - global_step/sec: 5.17806
+2019-09-23 15:47:47,134 - tensorflow - INFO - loss = 0.35446373, step = 26801 (3.862 sec)
+2019-09-23 15:47:49,133 - tensorflow - INFO - global_step/sec: 9.99994
+2019-09-23 15:47:49,139 - tensorflow - INFO - loss = 0.37507135, step = 26821 (2.005 sec)
+2019-09-23 15:47:51,066 - tensorflow - INFO - global_step/sec: 10.3465
+2019-09-23 15:47:51,067 - tensorflow - INFO - loss = 0.27707118, step = 26841 (1.928 sec)
+2019-09-23 15:47:53,379 - tensorflow - INFO - global_step/sec: 8.64732
+2019-09-23 15:47:53,382 - tensorflow - INFO - loss = 0.99415827, step = 26861 (2.315 sec)
+2019-09-23 15:47:55,630 - tensorflow - INFO - global_step/sec: 8.88716
+2019-09-23 15:47:55,630 - tensorflow - INFO - loss = 0.8538617, step = 26881 (2.248 sec)
+2019-09-23 15:47:57,592 - tensorflow - INFO - Saving checkpoints for 26900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:47:59,111 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:47:59,182 - tensorflow - INFO - global_step/sec: 5.62937
+2019-09-23 15:47:59,183 - tensorflow - INFO - loss = 0.7617178, step = 26901 (3.553 sec)
+2019-09-23 15:48:01,132 - tensorflow - INFO - global_step/sec: 10.2584
+2019-09-23 15:48:01,133 - tensorflow - INFO - loss = 0.5747167, step = 26921 (1.950 sec)
+2019-09-23 15:48:02,890 - tensorflow - INFO - global_step/sec: 11.3734
+2019-09-23 15:48:02,892 - tensorflow - INFO - loss = 0.6625044, step = 26941 (1.759 sec)
+2019-09-23 15:48:04,645 - tensorflow - INFO - global_step/sec: 11.3988
+2019-09-23 15:48:04,646 - tensorflow - INFO - loss = 0.50530326, step = 26961 (1.754 sec)
+2019-09-23 15:48:06,404 - tensorflow - INFO - global_step/sec: 11.3723
+2019-09-23 15:48:06,405 - tensorflow - INFO - loss = 0.40308005, step = 26981 (1.759 sec)
+2019-09-23 15:48:08,201 - tensorflow - INFO - Saving checkpoints for 27000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:48:09,464 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:48:09,567 - tensorflow - INFO - global_step/sec: 6.32266
+2019-09-23 15:48:09,568 - tensorflow - INFO - loss = 0.5205032, step = 27001 (3.163 sec)
+2019-09-23 15:48:11,314 - tensorflow - INFO - global_step/sec: 11.449
+2019-09-23 15:48:11,315 - tensorflow - INFO - loss = 0.3738353, step = 27021 (1.747 sec)
+2019-09-23 15:48:13,423 - tensorflow - INFO - global_step/sec: 9.48231
+2019-09-23 15:48:13,424 - tensorflow - INFO - loss = 0.351463, step = 27041 (2.109 sec)
+2019-09-23 15:48:15,169 - tensorflow - INFO - global_step/sec: 11.4548
+2019-09-23 15:48:15,170 - tensorflow - INFO - loss = 0.4341168, step = 27061 (1.746 sec)
+2019-09-23 15:48:17,563 - tensorflow - INFO - global_step/sec: 8.35419
+2019-09-23 15:48:17,568 - tensorflow - INFO - loss = 0.30007714, step = 27081 (2.398 sec)
+2019-09-23 15:48:19,243 - tensorflow - INFO - Saving checkpoints for 27100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:48:20,363 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:48:20,446 - tensorflow - INFO - global_step/sec: 6.93799
+2019-09-23 15:48:20,447 - tensorflow - INFO - loss = 0.29335785, step = 27101 (2.879 sec)
+2019-09-23 15:48:22,177 - tensorflow - INFO - global_step/sec: 11.5524
+2019-09-23 15:48:22,178 - tensorflow - INFO - loss = 0.2674438, step = 27121 (1.731 sec)
+2019-09-23 15:48:23,865 - tensorflow - INFO - global_step/sec: 11.8474
+2019-09-23 15:48:23,866 - tensorflow - INFO - loss = 0.34925327, step = 27141 (1.688 sec)
+2019-09-23 15:48:25,529 - tensorflow - INFO - global_step/sec: 12.0168
+2019-09-23 15:48:25,530 - tensorflow - INFO - loss = 0.25092554, step = 27161 (1.664 sec)
+2019-09-23 15:48:27,200 - tensorflow - INFO - global_step/sec: 11.9737
+2019-09-23 15:48:27,201 - tensorflow - INFO - loss = 0.28540584, step = 27181 (1.670 sec)
+2019-09-23 15:48:28,818 - tensorflow - INFO - Saving checkpoints for 27200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:48:30,033 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:48:30,138 - tensorflow - INFO - global_step/sec: 6.8088
+2019-09-23 15:48:30,140 - tensorflow - INFO - loss = 0.98034513, step = 27201 (2.940 sec)
+2019-09-23 15:48:31,817 - tensorflow - INFO - global_step/sec: 11.9072
+2019-09-23 15:48:31,817 - tensorflow - INFO - loss = 0.8426971, step = 27221 (1.677 sec)
+2019-09-23 15:48:33,561 - tensorflow - INFO - global_step/sec: 11.4672
+2019-09-23 15:48:33,562 - tensorflow - INFO - loss = 0.6244949, step = 27241 (1.745 sec)
+2019-09-23 15:48:35,299 - tensorflow - INFO - global_step/sec: 11.503
+2019-09-23 15:48:35,300 - tensorflow - INFO - loss = 0.62478393, step = 27261 (1.738 sec)
+2019-09-23 15:48:37,083 - tensorflow - INFO - global_step/sec: 11.2143
+2019-09-23 15:48:37,084 - tensorflow - INFO - loss = 0.7079323, step = 27281 (1.784 sec)
+2019-09-23 15:48:38,768 - tensorflow - INFO - Saving checkpoints for 27300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:48:39,911 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:48:39,991 - tensorflow - INFO - global_step/sec: 6.87821
+2019-09-23 15:48:39,993 - tensorflow - INFO - loss = 0.51268715, step = 27301 (2.909 sec)
+2019-09-23 15:48:41,813 - tensorflow - INFO - global_step/sec: 10.973
+2019-09-23 15:48:41,814 - tensorflow - INFO - loss = 0.4622653, step = 27321 (1.821 sec)
+2019-09-23 15:48:43,575 - tensorflow - INFO - global_step/sec: 11.3546
+2019-09-23 15:48:43,576 - tensorflow - INFO - loss = 0.46541882, step = 27341 (1.762 sec)
+2019-09-23 15:48:45,337 - tensorflow - INFO - global_step/sec: 11.3487
+2019-09-23 15:48:45,338 - tensorflow - INFO - loss = 0.48589933, step = 27361 (1.762 sec)
+2019-09-23 15:48:47,085 - tensorflow - INFO - global_step/sec: 11.4418
+2019-09-23 15:48:47,086 - tensorflow - INFO - loss = 0.38022152, step = 27381 (1.748 sec)
+2019-09-23 15:48:48,750 - tensorflow - INFO - Saving checkpoints for 27400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:48:49,891 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:48:49,964 - tensorflow - INFO - global_step/sec: 6.94758
+2019-09-23 15:48:49,965 - tensorflow - INFO - loss = 0.4123615, step = 27401 (2.879 sec)
+2019-09-23 15:48:51,714 - tensorflow - INFO - global_step/sec: 11.428
+2019-09-23 15:48:51,715 - tensorflow - INFO - loss = 0.30755007, step = 27421 (1.750 sec)
+2019-09-23 15:48:53,419 - tensorflow - INFO - global_step/sec: 11.7253
+2019-09-23 15:48:53,420 - tensorflow - INFO - loss = 0.2620286, step = 27441 (1.705 sec)
+2019-09-23 15:48:55,107 - tensorflow - INFO - global_step/sec: 11.8522
+2019-09-23 15:48:55,108 - tensorflow - INFO - loss = 0.32370588, step = 27461 (1.688 sec)
+2019-09-23 15:48:56,808 - tensorflow - INFO - global_step/sec: 11.7602
+2019-09-23 15:48:56,808 - tensorflow - INFO - loss = 0.27016872, step = 27481 (1.700 sec)
+2019-09-23 15:48:58,415 - tensorflow - INFO - Saving checkpoints for 27500 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:48:59,554 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:48:59,648 - tensorflow - INFO - global_step/sec: 7.04142
+2019-09-23 15:48:59,649 - tensorflow - INFO - loss = 0.24327184, step = 27501 (2.841 sec)
+2019-09-23 15:49:01,368 - tensorflow - INFO - global_step/sec: 11.6238
+2019-09-23 15:49:01,370 - tensorflow - INFO - loss = 0.8813968, step = 27521 (1.721 sec)
+2019-09-23 15:49:03,087 - tensorflow - INFO - global_step/sec: 11.6356
+2019-09-23 15:49:03,088 - tensorflow - INFO - loss = 0.840583, step = 27541 (1.718 sec)
+2019-09-23 15:49:04,799 - tensorflow - INFO - global_step/sec: 11.685
+2019-09-23 15:49:04,800 - tensorflow - INFO - loss = 0.67154604, step = 27561 (1.711 sec)
+2019-09-23 15:49:06,512 - tensorflow - INFO - global_step/sec: 11.6721
+2019-09-23 15:49:06,513 - tensorflow - INFO - loss = 0.6463658, step = 27581 (1.714 sec)
+2019-09-23 15:49:08,175 - tensorflow - INFO - Saving checkpoints for 27600 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:49:09,425 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:49:09,580 - tensorflow - INFO - global_step/sec: 6.52038
+2019-09-23 15:49:09,581 - tensorflow - INFO - loss = 0.6344501, step = 27601 (3.068 sec)
+2019-09-23 15:49:11,645 - tensorflow - INFO - global_step/sec: 9.68172
+2019-09-23 15:49:11,646 - tensorflow - INFO - loss = 0.5609015, step = 27621 (2.065 sec)
+2019-09-23 15:49:13,421 - tensorflow - INFO - global_step/sec: 11.2618
+2019-09-23 15:49:13,423 - tensorflow - INFO - loss = 0.39492232, step = 27641 (1.776 sec)
+2019-09-23 15:49:15,182 - tensorflow - INFO - global_step/sec: 11.362
+2019-09-23 15:49:15,182 - tensorflow - INFO - loss = 0.45996395, step = 27661 (1.760 sec)
+2019-09-23 15:49:16,904 - tensorflow - INFO - global_step/sec: 11.6115
+2019-09-23 15:49:16,905 - tensorflow - INFO - loss = 0.4087092, step = 27681 (1.723 sec)
+2019-09-23 15:49:18,563 - tensorflow - INFO - Saving checkpoints for 27700 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:49:19,691 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:49:19,759 - tensorflow - INFO - global_step/sec: 7.00525
+2019-09-23 15:49:19,760 - tensorflow - INFO - loss = 0.40902385, step = 27701 (2.855 sec)
+2019-09-23 15:49:21,512 - tensorflow - INFO - global_step/sec: 11.4094
+2019-09-23 15:49:21,513 - tensorflow - INFO - loss = 0.33424497, step = 27721 (1.753 sec)
+2019-09-23 15:49:23,227 - tensorflow - INFO - global_step/sec: 11.6596
+2019-09-23 15:49:23,229 - tensorflow - INFO - loss = 0.31519738, step = 27741 (1.716 sec)
+2019-09-23 15:49:24,937 - tensorflow - INFO - global_step/sec: 11.697
+2019-09-23 15:49:24,939 - tensorflow - INFO - loss = 0.39245096, step = 27761 (1.710 sec)
+2019-09-23 15:49:26,990 - tensorflow - INFO - global_step/sec: 9.74624
+2019-09-23 15:49:26,993 - tensorflow - INFO - loss = 0.24392839, step = 27781 (2.054 sec)
+2019-09-23 15:49:28,869 - tensorflow - INFO - Saving checkpoints for 27800 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:49:30,316 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:49:30,383 - tensorflow - INFO - global_step/sec: 5.89301
+2019-09-23 15:49:30,384 - tensorflow - INFO - loss = 0.31145126, step = 27801 (3.392 sec)
+2019-09-23 15:49:32,628 - tensorflow - INFO - global_step/sec: 8.90912
+2019-09-23 15:49:32,631 - tensorflow - INFO - loss = 0.31847936, step = 27821 (2.247 sec)
+2019-09-23 15:49:34,989 - tensorflow - INFO - global_step/sec: 8.47181
+2019-09-23 15:49:34,990 - tensorflow - INFO - loss = 0.25581336, step = 27841 (2.359 sec)
+2019-09-23 15:49:37,447 - tensorflow - INFO - global_step/sec: 8.13732
+2019-09-23 15:49:37,447 - tensorflow - INFO - loss = 0.8348893, step = 27861 (2.457 sec)
+2019-09-23 15:49:39,328 - tensorflow - INFO - global_step/sec: 10.6299
+2019-09-23 15:49:39,329 - tensorflow - INFO - loss = 0.7123351, step = 27881 (1.881 sec)
+2019-09-23 15:49:40,993 - tensorflow - INFO - Saving checkpoints for 27900 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:49:42,816 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:49:42,912 - tensorflow - INFO - global_step/sec: 5.58091
+2019-09-23 15:49:42,912 - tensorflow - INFO - loss = 0.59349644, step = 27901 (3.584 sec)
+2019-09-23 15:49:45,069 - tensorflow - INFO - global_step/sec: 9.27166
+2019-09-23 15:49:45,070 - tensorflow - INFO - loss = 0.54983634, step = 27921 (2.157 sec)
+2019-09-23 15:49:46,910 - tensorflow - INFO - global_step/sec: 10.8624
+2019-09-23 15:49:46,911 - tensorflow - INFO - loss = 0.526159, step = 27941 (1.841 sec)
+2019-09-23 15:49:48,687 - tensorflow - INFO - global_step/sec: 11.2528
+2019-09-23 15:49:48,691 - tensorflow - INFO - loss = 0.38114375, step = 27961 (1.780 sec)
+2019-09-23 15:49:50,407 - tensorflow - INFO - global_step/sec: 11.6279
+2019-09-23 15:49:50,409 - tensorflow - INFO - loss = 0.4798032, step = 27981 (1.717 sec)
+2019-09-23 15:49:52,058 - tensorflow - INFO - Saving checkpoints for 28000 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:49:53,183 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:49:53,287 - tensorflow - INFO - global_step/sec: 6.9449
+2019-09-23 15:49:53,290 - tensorflow - INFO - loss = 0.38777947, step = 28001 (2.881 sec)
+2019-09-23 15:49:55,063 - tensorflow - INFO - global_step/sec: 11.2623
+2019-09-23 15:49:55,065 - tensorflow - INFO - loss = 0.35884023, step = 28021 (1.775 sec)
+2019-09-23 15:49:57,247 - tensorflow - INFO - global_step/sec: 9.15817
+2019-09-23 15:49:57,248 - tensorflow - INFO - loss = 0.2997847, step = 28041 (2.183 sec)
+2019-09-23 15:49:59,524 - tensorflow - INFO - global_step/sec: 8.78242
+2019-09-23 15:49:59,525 - tensorflow - INFO - loss = 0.37390682, step = 28061 (2.277 sec)
+2019-09-23 15:50:01,469 - tensorflow - INFO - global_step/sec: 10.2855
+2019-09-23 15:50:01,470 - tensorflow - INFO - loss = 0.33366445, step = 28081 (1.944 sec)
+2019-09-23 15:50:03,075 - tensorflow - INFO - Saving checkpoints for 28100 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:50:04,228 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:50:04,320 - tensorflow - INFO - global_step/sec: 7.01559
+2019-09-23 15:50:04,321 - tensorflow - INFO - loss = 0.3928737, step = 28101 (2.851 sec)
+2019-09-23 15:50:06,673 - tensorflow - INFO - global_step/sec: 8.49874
+2019-09-23 15:50:06,673 - tensorflow - INFO - loss = 0.31587368, step = 28121 (2.353 sec)
+2019-09-23 15:50:08,984 - tensorflow - INFO - global_step/sec: 8.65684
+2019-09-23 15:50:08,987 - tensorflow - INFO - loss = 0.25023112, step = 28141 (2.313 sec)
+2019-09-23 15:50:10,918 - tensorflow - INFO - global_step/sec: 10.334
+2019-09-23 15:50:10,920 - tensorflow - INFO - loss = 0.25703442, step = 28161 (1.933 sec)
+2019-09-23 15:50:12,834 - tensorflow - INFO - global_step/sec: 10.4424
+2019-09-23 15:50:12,835 - tensorflow - INFO - loss = 0.864973, step = 28181 (1.916 sec)
+2019-09-23 15:50:14,515 - tensorflow - INFO - Saving checkpoints for 28200 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:50:16,341 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:50:16,412 - tensorflow - INFO - global_step/sec: 5.58949
+2019-09-23 15:50:16,413 - tensorflow - INFO - loss = 0.7608993, step = 28201 (3.577 sec)
+2019-09-23 15:50:20,538 - tensorflow - INFO - global_step/sec: 4.84726
+2019-09-23 15:50:20,539 - tensorflow - INFO - loss = 0.6945066, step = 28221 (4.127 sec)
+2019-09-23 15:50:25,057 - tensorflow - INFO - global_step/sec: 4.42598
+2019-09-23 15:50:25,062 - tensorflow - INFO - loss = 0.7594332, step = 28241 (4.523 sec)
+2019-09-23 15:50:28,238 - tensorflow - INFO - global_step/sec: 6.2869
+2019-09-23 15:50:28,239 - tensorflow - INFO - loss = 0.59059054, step = 28261 (3.177 sec)
+2019-09-23 15:50:31,688 - tensorflow - INFO - global_step/sec: 5.79628
+2019-09-23 15:50:31,689 - tensorflow - INFO - loss = 0.53099203, step = 28281 (3.450 sec)
+2019-09-23 15:50:34,888 - tensorflow - INFO - Saving checkpoints for 28300 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:50:36,277 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:50:36,367 - tensorflow - INFO - global_step/sec: 4.27444
+2019-09-23 15:50:36,372 - tensorflow - INFO - loss = 0.49212694, step = 28301 (4.683 sec)
+2019-09-23 15:50:38,840 - tensorflow - INFO - global_step/sec: 8.0869
+2019-09-23 15:50:38,842 - tensorflow - INFO - loss = 0.4533219, step = 28321 (2.470 sec)
+2019-09-23 15:50:41,014 - tensorflow - INFO - global_step/sec: 9.20062
+2019-09-23 15:50:41,015 - tensorflow - INFO - loss = 0.50181335, step = 28341 (2.173 sec)
+2019-09-23 15:50:43,365 - tensorflow - INFO - global_step/sec: 8.50729
+2019-09-23 15:50:43,366 - tensorflow - INFO - loss = 0.36520153, step = 28361 (2.351 sec)
+2019-09-23 15:50:45,490 - tensorflow - INFO - global_step/sec: 9.41159
+2019-09-23 15:50:45,491 - tensorflow - INFO - loss = 0.29151958, step = 28381 (2.125 sec)
+2019-09-23 15:50:47,630 - tensorflow - INFO - Saving checkpoints for 28400 into /Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/model.ckpt.
+2019-09-23 15:50:48,971 - tensorflow - INFO - Skip the current checkpoint eval due to throttle secs (600 secs).
+2019-09-23 15:50:49,054 - tensorflow - INFO - global_step/sec: 5.61197
+2019-09-23 15:50:49,056 - tensorflow - INFO - loss = 0.29429996, step = 28401 (3.565 sec)
+2019-09-23 15:50:50,764 - tensorflow - INFO - global_step/sec: 11.6929
+2019-09-23 15:50:50,765 - tensorflow - INFO - loss = 0.31758994, step = 28421 (1.710 sec)
+2019-09-23 15:50:52,504 - tensorflow - INFO - global_step/sec: 11.4982
+2019-09-23 15:50:52,505 - tensorflow - INFO - loss = 0.24707848, step = 28441 (1.739 sec)
+2019-09-23 15:50:55,074 - tensorflow - INFO - global_step/sec: 7.78073
+2019-09-23 15:50:55,076 - tensorflow - INFO - loss = 0.30779725, step = 28461 (2.572 sec)
+2019-09-23 15:50:57,819 - tensorflow - INFO - global_step/sec: 7.28569
+2019-09-23 15:50:57,821 - tensorflow - INFO - loss = 0.2550212, step = 28481 (2.745 sec)
+2019-09-23 16:57:05,828 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:47: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-09-23 16:57:56,139 - tensorflow - INFO - Using config: {'_model_dir': '/Users/snoworday/git/algo-deeplearning/result/summary/deepfm_v2/', '_tf_random_seed': 77887, '_save_summary_steps': 55, '_save_checkpoints_steps': 100, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+log_device_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 1, '_log_step_count_steps': 20, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x1a46574080>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2019-09-23 16:57:56,935 - tensorflow - INFO - Build estimator: <tensorflow_estimator.python.estimator.estimator.Estimator object at 0x1a45b1a470>
+2019-09-23 16:57:56,942 - tensorflow - INFO - Not using Distribute Coordinator.
+2019-09-23 16:57:56,946 - tensorflow - INFO - Running training and evaluation locally (non-distributed).
+2019-09-23 16:57:56,953 - tensorflow - INFO - Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 100 or save_checkpoints_secs None.
+2019-09-23 16:57:57,049 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2019-09-23 16:57:57,238 - tensorflow - INFO - Parsing input file: /Users/snoworday/git/algo-deeplearning/data/2019-07-24:2019-07-28
+2019-09-23 16:57:57,273 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/solo.py:510: The name tf.gfile.IsDirectory is deprecated. Please use tf.io.gfile.isdir instead.
+
+2019-09-23 16:57:57,508 - tensorflow - WARNING - From /Users/snoworday/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/data/util/random_seed.py:58: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2019-09-23 16:58:04,930 - tensorflow - INFO - Calling model_fn.
+2019-09-23 16:58:04,952 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:61: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2019-09-23 16:58:04,957 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:61: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+2019-09-23 16:58:04,966 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/model/BaseModel.py:116: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2019-09-23 16:58:16,245 - tensorflow - WARNING - From /Users/snoworday/git/dl_rank/dl_rank/conf/BaseParser.py:224: The name tf.regex_replace is deprecated. Please use tf.strings.regex_replace instead.
+
+2019-09-23 17:33:18,062 - tensorflow - WARNING - From /Applications/PyCharm CE.app/Contents/helpers/pydev/_pydev_bundle/_pydev_imports_tipper.py:198: The name tf.AttrValue is deprecated. Please use tf.compat.v1.AttrValue instead.
+

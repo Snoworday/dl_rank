@@ -1,11 +1,12 @@
 import tensorflow as tf
 from .BaseModel import baseModel
 try:
-    from ..utils import layers
+    from dl_rank.layer import layers
 except:
-    from utils import layers
+    from layer import layers
 
 class dcn(baseModel):
+    name = 'dcn'
     def __init__(self, model_conf, mode):
         super(dcn, self).__init__(model_conf, mode)
         self.dropout_keep_deep = model_conf['dropout_keep_deep']

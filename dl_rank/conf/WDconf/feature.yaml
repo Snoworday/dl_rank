@@ -5,7 +5,7 @@ cid:
     embed_dim: 1
     scope: wide_layer_variable
   transform: tabled
-  model:
+  group:
     - wide
   type: category
   style:
@@ -15,7 +15,7 @@ pid:
   parameter:
     size: 55356
     scope: deep_layer_variable
-  model:
+  group:
     - trigger_id
   transform: tabled
   type: category
@@ -30,7 +30,7 @@ click:
     size: 55356
     name: pid
     scope: deep_layer_variable
-  model:
+  group:
     - seq
   transform: tabled
   type: category
@@ -45,7 +45,8 @@ click_cross:
     size: 31708747
     embed_dim: 1
     scope: wide_layer_variable
-  model:
+    name: itemid_cross
+  group:
     - wide
   transform: tabled
   type: category
@@ -60,7 +61,8 @@ order_cross:
     size: 31708747
     embed_dim: 1
     scope: wide_layer_variable
-  model:
+    name: itemid_cross
+  group:
     - wide
   transform: tabled
   type: category
@@ -72,7 +74,7 @@ gmv:
     size: 3000
     embed_dim: 1
     scope: wide_layer_variable
-  model:
+  group:
     - wide
   transform: tabled
   type: category
@@ -84,7 +86,7 @@ ctr:
     size: 3000
     embed_dim: 1
     scope: wide_layer_variable
-  model:
+  group:
     - wide
   transform: tabled
   type: category

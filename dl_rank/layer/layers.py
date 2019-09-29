@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+
 def multi_hot(cat_int_tensor, depth, num=0, combiner=None):
     if isinstance(cat_int_tensor, tf.Tensor):
         out = tf.concat([tf.expand_dims(tf.one_hot(cat_int_tensor[:, n], depth, axis=-1), 1) for n in range(num)], axis=1)

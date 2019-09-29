@@ -11,7 +11,7 @@ try:
     from dl_rank.utils.modelUtils import setEnv
 except:
     from utils.modelUtils import setEnv
-import sys
+from multiprocessing import Pool
 
 # names about EMR
 UserName = 'hadoop'
@@ -29,15 +29,21 @@ class SFTPClient(paramiko.SFTPClient):
             target directory needs to exists. All subdirectories in source are
             created under target.
         '''
-        for item in os.listdir(source):
-            if os.path.isfile(os.path.join(source, item)):
-                try:
-                    self.put(os.path.join(source, item), '%s/%s' % (target, item))
-                except:
-                    pass
-            else:
-                self.mkdir('%s/%s' % (target, item), ignore_existing=True)
-                self.put_dir(os.path.join(source, item), '%s/%s' % (target, item))
+        if os.path.isfile(source):
+            try:
+                self.put(source, '%s' % target)
+            except:
+                pass
+        else:
+            for item in os.listdir(source):
+                if os.path.isfile(os.path.join(source, item)):
+                    try:
+                        self.put(os.path.join(source, item), '%s/%s' % (target, item))
+                    except:
+                        pass
+                else:
+                    self.mkdir('%s/%s' % (target, item), ignore_existing=True)
+                    self.put_dir(os.path.join(source, item), '%s/%s' % (target, item))
 
     def mkdir(self, path, mode=511, ignore_existing=True):
         ''' Augments mkdir by adding an option to not fail if the folder exists  '''
@@ -106,36 +112,50 @@ def generateTFConfig(worker_ps_evaluator, chief, ps_num, ev_num):
         idx += 1
     return TF_CONFIG_dict
 
-def transportFile(ssh, file_path, target_path):
+def transportFile(ssh, file_path_list, target_path):
     transport = ssh.get_transport()
     sftp = SFTPClient.from_transport(transport)
-    target_path = os.path.join(target_path, file_path.rsplit('/', 1)[1])
     sftp.mkdir(target_path)
-    sftp.put_dir(file_path, target_path)
+    for file_path in file_path_list:
+        target_path = os.path.join(target_path, file_path.rsplit('/', 1)[1])
+        sftp.put_dir(file_path, target_path)
 
-def distributeTrain(confDir, date, ps_num, ev_num, emrName, keyFile, logDir=emr_home_path, dirs2issue=''):
+def distributeMulti(mode, *args, **kwargs):
+    func = distributeTrain if mode == 'train' else distributeInfer
+    p = Pool()
+    result = p.apply(func, args, kwargs)
+    p.close()
+    p.join()
+    pid = result
+    return pid
+
+def distributeTrain(confDir, date, retrain, ps_num, ev_num, emrName, keyFile, logDir=emr_home_path, dirs2issue=None):
+    if confDir[-1] == '/':
+        confDir = confDir[:-1]
+    if retrain:
+        clear_summary(confDir, logDir)
+    if dirs2issue is None:
+        dirs2issue = []
     hostnameList, chief, hostnum = getHostnameList_Chief_Hostnum(emrName)
     hostnameList.pop(hostnameList.index(chief))
     TF_CONFIG_dict = generateTFConfig(hostnameList, chief, ps_num, ev_num)
-    if confDir[-1] == '/':
-        confDir = confDir[:-1]
     total_worker = int(hostnum) - ev_num - ps_num
     worker_wi, ps_wi = 0, 0
     date = '--date {}'.format(date) if date!='' else ''
-    confName = confDir.rsplit('/', 1)[1] if '/' in confDir else confDir
-    if dirs2issue == '' and gfile.Exists(os.path.join(os.getcwd(), confDir)):
-        dirs2issue = confDir
+    confName = confDir.rsplit('/', 1)[1] if ('/' in confDir) and not confDir.startswith('s3') else confDir
+    if confName != confDir:
+        dirs2issue.append(confDir)
 
     def run_remote(wi, TF_CONFIG, UserName, hostname, is_eval):
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect(hostname=hostname, port=port, username=UserName, key_filename=keyFile)
-        if dirs2issue != '':
+        if not dirs2issue:
             transportFile(ssh, dirs2issue, logDir)
         if gfile.Exists(os.path.join(os.getcwd(), confDir)):
             transportFile(ssh, os.path.join(os.getcwd(), confDir), logDir)
         if __name__=='__main__':
-            trainpath = os.path.join(logDir, dirs2issue.split('/')[-1], _exec_file)
+            trainpath = os.path.join(logDir, dirs2issue[0].split('/')[-1], _exec_file)
         else:
             trainpath = '-m dl_rank.solo'
         cmd = r'''
@@ -143,23 +163,24 @@ def distributeTrain(confDir, date, ps_num, ev_num, emrName, keyFile, logDir=emr_
         '''.format(trainpath=trainpath, tw=total_worker if not is_eval else 1, wi=wi, ps=ps_num,
                    date=date, conf=confName, tfconfig=TF_CONFIG, logpath=logDir)
         nohup_cmd = '/home/hadoop/nohup' + cmd + ' > {} 2>&1 &'.format(os.path.join(logDir, 'dl_rank_run.log'))
+        cmd = cmd + ' > {}'.format(os.path.join(logDir, 'dl_rank_run.log'))
         # subprocess.Popen(['ssh', ' -i {} '.format(keyFile), UserName + '@' + hostname, nohup_cmd], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        _ = ssh.exec_command(nohup_cmd)
+        _ = ssh.exec_command(cmd)
         ssh.close()
 
     def run_local(wi, TF_CONFIG):
         if __name__ == '__main__':
-            trainpath = os.path.join(dirs2issue, _exec_file)
+            trainpath = os.path.join(dirs2issue[0], _exec_file)
         else:
             trainpath = '-m dl_rank.solo'
         cmd = '''
         python3 {trainpath} --mode train --tw {tw} --wi {wi} --ps {ps} {date} --conf {conf} --tfconfig {tfconfig} --logpath {logpath}
         '''.format(trainpath=trainpath, tw=total_worker, wi=wi, ps=ps_num, date=date,
                    conf=confDir, tfconfig=TF_CONFIG, logpath=logDir)
-        nohup_cmd = '/home/hadoop/nohup' + cmd + ' > {} 2>&1 &'.format(os.path.join(logDir, 'dl_rank_run.log'))
-        process = subprocess.Popen([nohup_cmd], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, close_fds=True)
+        # nohup_cmd = '/home/hadoop/nohup' + cmd + ' > {} 2>&1 &'.format(os.path.join(logDir, 'dl_rank_run.log'))
+        cmd = cmd + ' > {}'.format(os.path.join(logDir, 'dl_rank_run.log'))
+        process = subprocess.Popen([cmd], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, close_fds=True)
         return process
-        # _ = os.system(cmd)
 
     for hostname, TF_CONFIG in TF_CONFIG_dict.items():
         node_type = TF_CONFIG['task']['type']
@@ -176,7 +197,7 @@ def distributeTrain(confDir, date, ps_num, ev_num, emrName, keyFile, logDir=emr_
             chief = run_local(wi, TF_CONFIG)
         else:
             run_remote(wi, TF_CONFIG, UserName, hostname, is_eval=node_type == 'evaluator')
-    return chief
+    return chief.pid
 
 def stopCluster(emrName, keyFile):
     hostnameList, chief, _ = getHostnameList_Chief_Hostnum(emrName)
@@ -204,24 +225,41 @@ def _zipDir(dirList, project_path):
         py_file.append(dir_path + '.zip')
     return py_file
 
-def _find_conf(conf):
-    conf_path = os.path.join(os.getcwd(), conf)
-    if not os.path.exists(conf_path):
+def _find_conf(conf, save_path):
+    if conf.startswith('s3'):
+        if not gfile.Exists(conf):
+            conf = conf.strip('/')
+            conf_name = conf.rsplit('/', 1)[1]
+            save_path = os.path.join(save_path, conf_name) + '/'
+            gfile.MakeDirs(save_path)
+            check = os.system('aws s3 cp {} {} --recursive'.format(conf+'/', save_path))
+            conf = save_path
+            if check:
+                assert False, 'cant find conf in: {}'.format(conf)
+        return conf
+    conf_path = os.path.abspath(conf)
+    if not gfile.Exists(conf_path):
         conf_path = os.path.join(_project_path, 'conf', conf)
     return conf_path
 
 
-def _addConfig(conf):
-    if conf.startswith('s3'):
+def _addConfig(conf_path):
+    if conf_path.startswith('s3'):
         return []
-    conf_path = _find_conf(conf)
     py_files = []
     for file in os.listdir(conf_path):
         py_files.append(os.path.join(conf_path, file))
-    assert py_files!=[], 'Cant find conf dir'
+    assert py_files != [], 'Cant find conf dir'
     return py_files
 
-
+def clear_summary(conf, bake_path):
+    import yaml
+    conf_path = _find_conf(conf, bake_path)
+    with open(conf_path + '/mission.yaml', 'r') as f:
+        train_conf = yaml.load(f)
+        model_dir = train_conf['train']['model_dir']
+    if gfile.Exists(model_dir):
+        gfile.DeleteRecursively(model_dir)
 
 def run_tensorboard(conf='', model_dir='', logpath=emr_home_path, port=6006):
     assert conf!='' or model_dir!='', 'Please define summary path'
@@ -229,8 +267,8 @@ def run_tensorboard(conf='', model_dir='', logpath=emr_home_path, port=6006):
         pass
     else:
         import yaml
-        conf_path = _find_conf(conf)
-        with open(conf_path + '/train.yaml', 'r') as f:
+        conf_path = _find_conf(conf, logpath)
+        with gfile.GFile(conf_path + '/mission.yaml', 'r') as f:
             train_conf = yaml.load(f)
             model_dir = train_conf['train']['model_dir']
 
@@ -239,33 +277,36 @@ def run_tensorboard(conf='', model_dir='', logpath=emr_home_path, port=6006):
     process = subprocess.Popen([nohup_cmd], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return process
 
-def distributeInfer(conf, date, ps, emrName, logpath=emr_home_path, use_TFoS=True):
+def distributeInfer(conf, date, ps, emrName, logpath=emr_home_path, use_TFoS=True, dirs2issue=None, executer_num=0):
     _args_useSpark = True
+    if dirs2issue is None:
+        dirs2issue = []
+    conf = _find_conf(conf, logpath)
     if __name__=='__main__':
         py_file_conf = _addConfig(conf)
-        package_names = ['model', 'utils', 'conf']
+        package_names = ['model', 'utils', 'conf', 'layer']
         py_file_zip = _zipDir(package_names, _project_path)
-        py_file = ','.join(py_file_zip + py_file_conf)
-        # if use_TFoS:
-        #     archive_names= ['tensorflowonspark']
-        #     archive_zip = _zipDir(archive_names, _project_path)
-        #     archive_file = ','.join(archive_zip)
+        py_file = ','.join(py_file_zip + py_file_conf + dirs2issue)
     else:
         py_file_conf = _addConfig(conf)
-        py_file = ','.join(py_file_conf)
+        py_file = ','.join(py_file_conf + dirs2issue)
+
+    py_file = '--py-files {}'.format(py_file) if py_file != '' else ''
     setEnv()
-    _, _, hostnum = getHostnameList_Chief_Hostnum(emrName)
-    if use_TFoS:
-        hostnum = int(hostnum) - 1
+    if executer_num==0:
+        _, _, executer_num = getHostnameList_Chief_Hostnum(emrName)
+        if use_TFoS:
+            executer_num = int(executer_num) - 1
+
+    use_TFoS_param = '--executor-cores 1' if use_TFoS else ''
     date = '--date {}'.format(date) if date != '' else ''
     command = r'''
-    nohup ${{SPARK_HOME}}/bin/spark-submit --master yarn --py-files {py_file} {archive} --num-executors {executor} --executor-memory 15G --driver-memory 15G --conf spark.executorEnv.JAVA_HOME="$JAVA_HOME" --conf spark.executorEnv.PYSPARK_PYTHON="/usr/bin/python3" --conf spark.executorEnv.PYSPARK_DRIVER_PYTHON="/usr/bin/python3"  --conf spark.executorEnv.CLASSPATH="$($HADOOP_HOME/bin/hadoop classpath --glob):${{CLASSPATH}}"  --conf spark.executorEnv.LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:${{JAVA_HOME}}/lib/amd64/server" {exec_file} {date} --mode infer --useSpark --logpath {tf_log_path} --ps {ps} --num_executor {num_executor} {use_TFoS} --conf {conf}  > {logpath} 2>&1 &
-    '''.format(py_file=py_file, archive= '', date=date, executor=hostnum, exec_file=os.path.join(_project_path, _exec_file),
-               tf_log_path=logpath, ps=ps, num_executor=hostnum, use_TFoS='--use_TFoS' if use_TFoS else '', conf=conf,
+    spark-submit --master yarn {py_file} {archive} {TFoS} --num-executors {executor} --executor-memory 15G --driver-memory 15G --conf spark.executorEnv.JAVA_HOME="$JAVA_HOME" --conf spark.executorEnv.PYSPARK_PYTHON="/usr/bin/python3" --conf spark.executorEnv.PYSPARK_DRIVER_PYTHON="/usr/bin/python3"  --conf spark.executorEnv.CLASSPATH="$($HADOOP_HOME/bin/hadoop classpath --glob):${{CLASSPATH}}"  --conf spark.executorEnv.LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:${{JAVA_HOME}}/lib/amd64/server" {exec_file} {date} --mode infer --useSpark --logpath {tf_log_path} --ps {ps} --num_executor {num_executor} {use_TFoS} --conf {conf}  > {logpath}
+    '''.format(py_file=py_file, archive= '', TFoS=use_TFoS_param, date=date, executor=executer_num, exec_file=os.path.join(_project_path, _exec_file),
+               tf_log_path=logpath, ps=ps, num_executor=executer_num, use_TFoS='--use_TFoS' if use_TFoS else '', conf=conf,
                logpath=os.path.join(logpath, 'dl_rank_run.log'))
-    # os.system(command)
     process = subprocess.Popen([command], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, close_fds=True)
-    return process
+    return process.pid
 
 if __name__=='__main__':
     '''
@@ -282,6 +323,7 @@ if __name__=='__main__':
     parser.add_argument('--mode', type=str, help='train|infer|stop|export|tb', default='train')
     parser.add_argument('--port', type=int, help='default port for tensorboard', default=6006)
     parser.add_argument('--useSpark', help='use spark-file when infer', action='store_true')
+    parser.add_argument('--retrain', help='if retrain clear summary', action='store_true')
     parser.add_argument('--use_TFoS', help='use tensorflowonspark when infer', action='store_true')
 
     _args = parser.parse_args()
@@ -297,7 +339,8 @@ if __name__=='__main__':
 
     if _args.mode == 'train':
         assert _args.conf != '', 'please set conf!'
-        distributeTrain(_args.conf, _args.date, ps_num, ev_num, EmrName, _args.keyFile, _args.logpath, _project_path)
+        distributeTrain(_args.conf, _args.date, _args.retrain,
+                        ps_num, ev_num, EmrName, _args.keyFile, _args.logpath, [_project_path])
     elif _args.mode == 'stop':
         stopCluster(EmrName, _args.keyFile)
     elif _args.mode == 'infer':

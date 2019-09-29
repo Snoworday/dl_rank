@@ -1,0 +1,74 @@
+### Train Configuration
+
+## Train & Test Parameters
+
+# Note this part set some defaults to parser, these can't be override by using command line.
+
+# model_dir: Model base directory to save model, full model directory = model_dir.
+# model_type: `deepfm` or `wdl`.
+# dynamic train: Bool, a train mode that first take file1 as train data, file2 as test data;
+#     then keep training take file2 as train data, file3 as test data ...
+# train_data: Train csv data path.
+# eval_data: Evaluation small csv data path.
+# pred_data: prediction data path
+# image_train_data: Optional, set empty to not use.
+# image_eval_data: Optional, set empty to not use.
+# image_test_data: Optional, set empty to not use.
+
+# train_epochs: Train epochs.
+# epochs_per_eval: Evaluating test data per `epochs_per_eval` epochs. Only work for non-dynamic mode
+# batch_size: Recommend 1024/2048.
+# keep_train: Bool, if 0, remove model_dir, else keep training.(dep)
+
+# multivalue: Bool, set 1 or true for features with multiple values.
+# num_examples: Approximate value for total samples number, use this value for shuffle buffer size when training.
+# num_parallel_calls: Optional, representing the number elements to process in parallel. If not
+#    specified, elements will be processed sequentially.
+train:
+  # path related.
+  model_dir: s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/logData/deepfm_v2_mba3
+  graph_dir: s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/graph
+  result_dir: s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/result
+  model_type: deepfm_v2
+  train_data:  s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/traindata
+  eval_data:  s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/evaldata
+  pred_data: s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/preddata
+  # train behavior
+  train_epochs: 20
+  max_steps: 100000000
+  epochs_per_eval: 1
+  batch_size: 1024
+  keep_train: 1
+  shuffle_buffer_size: 10000
+  num_parallel_calls: 20
+  # evaluate behavior
+  steps: 500
+  eval_epochs: 1
+
+
+## Runconfig Parameters
+# config for `tf.estimator.RunConfig`. See details in https://www.tensorflow.org/api_docs/python/tf/estimator/RunConfig
+# tf_random_seed: Random seed for TensorFlow initializers. Setting this value allows consistency between reruns.
+# save_summary_steps: Save summaries every this many steps. Defaults to 100.
+# save_checkpoints_steps: Save checkpoints every this many steps. Can not be specified with save_checkpoints_secs.
+# save_checkpoints_secs: Save checkpoints every this many seconds. Can not be specified with save_checkpoints_steps.
+#   Defaults to 600 seconds if both save_checkpoints_steps and save_checkpoints_secs are not set in constructor.
+#   If both save_checkpoints_steps and save_checkpoints_secs are None, then checkpoints are disabled.
+# session_config: a ConfigProto used to set session parameters, or None.
+# keep_checkpoint_max: The maximum number of recent checkpoint files to keep. As new files are created, older files are deleted.
+#   If None or 0, all checkpoint files are kept. Defaults to 5 (that is, the 5 most recent checkpoint files are kept.)
+# keep_checkpoint_every_n_hours: Number of hours between each checkpoint to be saved. The default value of 10,000 hours effectively disables the feature.
+# log_step_count_steps: The frequency, in number of global steps, that the global step/sec will be logged during training. Defaults to 100
+
+runconfig:
+  tf_random_seed: 777
+  save_summary_steps: 400
+  save_checkpoints_steps: 1000
+  save_checkpoints_secs:
+  keep_checkpoint_max: 5
+  keep_checkpoint_every_n_hours: 1
+  log_step_count_steps: 400
+
+
+
+

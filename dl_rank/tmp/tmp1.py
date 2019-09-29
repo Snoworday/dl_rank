@@ -1,40 +1,36 @@
+import sys
 
+path = '''
+spark-submit \
+--master yarn \
+--num-executors 80 \
+--executor-memory 15G \
+--driver-memory 15G \
+--executor-cores 4 \
+--conf spark.driver.maxResultSize="2g" \
+--conf spark.executorEnv.SPARK_HOME="/usr/lib/spark" \
+--conf spark.executorEnv.JAVA_HOME="$JAVA_HOME" \
+--conf spark.executorEnv.PYSPARK_PYTHON="/usr/bin/python3" \
+--conf spark.dynamicAllocation.enabled=false \
+--conf spark.yarn.maxAppAttempts=1 \
+--conf spark.storage.memoryFraction=0.7 \
+--conf spark.shuffle.memoryFraction=0.2 \
+--conf spark.default.parallelism=100 \
+--conf spark.core.connection.ack.wait.timeout=5000 \
+--conf spark.executorEnv.LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:${JAVA_HOME}/lib/amd64/server" \
+--conf spark.executorEnv.CLASSPATH="${CLASSPATH}" \
+s3://jiayun.spark.data/wangqi/datapipeline/gen_ctr_json_from_infer.py
+'''
 
-GRAPH_PB_PATH = '/Users/snoworday/git/algo-deeplearning/result/graph/wide_and_deep_traditional_attention_v2/pbtxt'
+if __name__ == '__main__':
+    path1 = path
+    file1 = path#open(path1, "r").read()
+    lis1 = file1.split("spark-submit")
+    lis2 = []
+    for line in lis1:
+        lis = line.replace("\t", " ").replace("\\", " ").replace("\n", " ").split(" ")
+        lis = [v for v in lis if (not "".__eq__(v))]
+        lis2.append("command-runner.jar,spark-submit," + ",".join(lis))
 
-import tensorflow as tf
-
-
-
-
-
-
-with tf.compat.v1.Session(graph=tf.Graph()) as sess:
-    tf.compat.v1.saved_model.loader.load(sess, [tf.compat.v1.saved_model.tag_constants.SERVING], GRAPH_PB_PATH)
-    trainable_coll = sess.graph.get_collection(tf.compat.v1.GraphKeys.VARIABLES)
-    # out_tensor = sess.graph.get_tensor_by_name("trunk/fm/batch_normalization/moving_mean/read:0")
-    # print(sess.run(out_tensor))
-    # es = [v.name for v in tf.compat.v1.trainable_variables()]
-    for v in trainable_coll:
-        print(sess.run(v.value()))
-
-
-
-with tf.compat.v1.Session(graph=tf.Graph()) as sess:
-    tf.compat.v1.saved_model.loader.load(sess, [tf.compat.v1.saved_model.tag_constants.SERVING], GRAPH_PB_PATH)
-    trainable_coll = sess.graph.get_collection(tf.compat.v1.GraphKeys.TRAINABLE_VARIABLES)
-    es = [v.name for v in tf.compat.v1.trainable_variables()]
-    for v in trainable_coll:
-        tf.compat.v1.get_default_graph().as_graph_element(es[0])
-        q=1
-        print(sess.run(v.name))
-
-##
-
-from tensorflow.python import pywrap_tensorflow
-checkpoint_path = '/Users/snoworday/data/deepfm/deepfm/model.ckpt-8100'
-reader = pywrap_tensorflow.NewCheckpointReader(checkpoint_path)
-var_to_shape_map = reader.get_variable_to_shape_map()
-for key in var_to_shape_map:
-    print("tensor_name: ", key)
-    print(reader.get_tensor(key)) # Remove this is you want to print only variable names
+    for v in lis2:
+        print(v)

@@ -1,12 +1,12 @@
 import tensorflow as tf
 from .BaseModel import baseModel
 try:
-    from ..utils import layers
+    from dl_rank.layer import layers
 except:
-    from utils import layers
+    from layer import layers
 
 class xdeepfm(baseModel):
-
+    name = 'xdeepfm'
     def forward(self, wide_features, deep_features, dense_features, deep_embedding_columns, load_conf, is_training):
         with tf.variable_scope('xdeepfm'):
             deep_input = tf.split(deep_features, num_or_size_splits=self.model_conf['field_num'], axis=1)

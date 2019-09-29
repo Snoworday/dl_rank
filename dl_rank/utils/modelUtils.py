@@ -27,9 +27,9 @@ def open_log(path, mode):
     fh.setFormatter(formatter)
     log.addHandler(fh)
     tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.INFO)
-    os.environ["TF_CPP_MIN_LOG_LEVEL"] = '0'
+    os.environ["TF_CPP_MIN_LOG_LEVEL"] = '3'
     # os.environ["TF_CPP_MIN_LOG_LEVEL"] = '2'
-    # os.environ["TF_CPP_MIN_LOG_LEVEL"]='3'
+    # os.environ["TF_CPP_MIN_LOG_LEVEL"]='1'
 
 def convertDate(date, delta):
     if date == '':
@@ -93,13 +93,13 @@ def elapse_time(start_time):
     return round((time.time() - start_time) / 60)
 
 
-def print_config(load_conf):
-    train_conf = load_conf('train.yaml')['train']
+def print_config(conf_dict):
+    train_conf = conf_dict['mission']['train']
     print("Using train config:")
     for k, v in train_conf.items():
         print('{}: {}'.format(k, v))
 
-    model_conf = load_conf('model.yaml')
+    model_conf = conf_dict['model']
     print("Using model config:")
     for k, v in model_conf.items():
         print('{}: {}'.format(k, v))
@@ -175,20 +175,74 @@ def tensorflow_save_parameters_with_partition(sess, save_path, out_type='txt'):
                 np.savetxt(file_name, merge_tensor)
         del merge_tensor
 
+def reduceF(f, type):
+    '''
+
+    :param f: [bs, n, S], reduce axis 1
+    :param type: combiner type, such as sum, mean, sqrtn, max, none
+    :return: [bs, 1, S]
+    '''
+    if type == 'none':
+        pass
+    elif type == 'sum':
+        f = tf.reduce_sum(f, axis=1, keep_dims=True)
+    elif type == 'mean':
+        f = tf.reduce_mean(f, axis=1, keep_dims=True)
+    elif type == 'sqrtn':
+        mean = tf.reduce_mean(f, axis=1, keep_dims=True)
+        f = tf.sqrt(tf.reduce_sum(tf.square(f - mean), axis=1, keep_dims=True))
+    elif type == 'max':
+        f = tf.reduce_max(f, axis=1, keep_dims=True)
+    else:
+        assert False
+    return f
+
+def walks3(path):
+    path = path.strip('/') + '/'
+    out = subprocess.check_output(['aws', 's3', 'ls', path]).decode().split('\n')
+    dirs = []
+    files = []
+    for row in out:
+        if row == '' or row[-1] == ' ':
+            continue
+        row = row.strip()
+        if row.startswith('PRE'):
+            dirs.append(row.rsplit(' ', 1)[1])
+        else:
+            files.append(row.rsplit(' ', 1)[1])
+    return path, dirs, files
+
+def latest_checkpoint(src_s3):
+    if gfile.Exists(src_s3):
+        return tf.train.latest_checkpoint(src_s3)
+    else:
+        root, _, files = walks3(src_s3)
+        maxStep = -1
+        for file in files:
+            num = file.split('model.ckpt-')[-1].split('.')[0]
+            if num.isdigit():
+                maxStep = max(maxStep, int(num))
+        if maxStep<0:
+            assert False, 'Cant find checkpoint under {}'.format(src_s3)
+        else:
+            latest_checkpoint = 'model.ckpt-'+str(maxStep)
+            return os.path.join(src_s3, latest_checkpoint)
+
 
 
 def copyS3toHDFS(sc, src_s3, dest_hdfs):
-    lastest = tf.train.latest_checkpoint(src_s3)
+    lastest = latest_checkpoint(src_s3)
     root, ckpt_name = lastest.rsplit('/', 1)
-    model_ckpt = [f for f in tf.gfile.ListDirectory(src_s3) if ckpt_name in f]
-    model_ckpt.append(['checkpoint', 'graph.pbtxt'])
+    model_ckpt = [f for f in walks3(src_s3)[2] if ckpt_name in f]
+    model_ckpt += ['checkpoint', 'graph.pbtxt']
     abs_ckpt = [root+'/'+f for f in model_ckpt]
-    process = [subprocess.Popen(['hadoop fs -cp {src_file} {dest_file}'
-                                .format(src_file=ckpt_file, dest_file=dest_hdfs) for ckpt_file in abs_ckpt])]
-    exit_codes = [p.wait() for p in process]
+    dir_process = subprocess.Popen(['hadoop', 'fs', '-mkdir', '{dest_file}'.format(dest_file=dest_hdfs)])
+    dir_process.wait()
+    process = [subprocess.Popen(['hadoop', 'fs', '-cp', '{src_file}'.format(src_file=ckpt_file), '{dest_file}'
+                                .format(dest_file=dest_hdfs)]) for ckpt_file in abs_ckpt]
+    _ = [p.wait() for p in process]
     print('finish copy model from {} to {}'.format(src_s3, dest_hdfs))
     hadoop = sc._jvm.org.apache.hadoop
-
     fs = hadoop.fs.FileSystem
     conf = hadoop.conf.Configuration()
     path = hadoop.fs.Path('/user/hadoop/dl_rank')

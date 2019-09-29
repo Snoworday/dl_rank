@@ -1,0 +1,19 @@
+dnn_hidden_units: [80,40]
+learning_rate: 0.0001
+lr_decay_step: 10000
+l1_reg: 0.00
+l2_reg: 0.00
+cross_layer_size: [200,200,100]
+dnn_decay_rate: 0.8
+field_num: 6
+embed_dim: 16
+activation: relu
+initializer: xavier
+embed_initializer:
+dropout_keep_fm: 0.7
+dropout_keep_deep: 0.7
+use_feature_column: False
+optimizer: adam
+
+first_order: True
+cross_dcn_layer_size: 3

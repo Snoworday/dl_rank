@@ -8,7 +8,7 @@ import argparse
 import yaml
 # from util.data_info import item_profile_head_4_1 as head
 DEBUG = False
-with open('sparator.yaml', 'r') as f:
+with open('separator.yaml', 'r') as f:
     sparator = yaml.load(f)
     primary_delim = sparator['primary_delim']
     secondary_delim = sparator['secondary_delim']

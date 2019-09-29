@@ -3,9 +3,9 @@ from .BaseModel import baseModel
 from functools import reduce
 from operator import mul
 try:
-    from ..utils import layers
+    from dl_rank.layer import layers
 except:
-    from utils import layers
+    from layer import layers
 
 VERY_BIG_NUMBER = 1e30
 VERY_SMALL_NUMBER = 1e-30
@@ -28,6 +28,7 @@ class _config():
 
 
 class wide_and_deep(baseModel):
+    name = 'wide_deep_traditional_attention'
     def __init__(self, model_conf, mode):
         super(wide_and_deep, self).__init__(model_conf, mode)
         self.dropout_keep_fm = model_conf['dropout_keep_fm']
@@ -122,9 +123,6 @@ class wide_and_deep(baseModel):
         wide = model_struct['wide']
         itemid = model_struct['trigger_id'][0]
         sequence = model_struct['seq'][0]
-        # wide = ['cid', 'click_cross', 'order_cross', 'gmv', 'ctr']
-        # itemid = 'pid'
-        # sequence = 'click'
         tfprint = tf.print('cid', deep_emb['cid'], 'click_cross', deep_emb['click_cross'], 'order', deep_emb['order_cross'])
         with tf.control_dependencies([]):
             sparse_features = tf.concat([tf.squeeze(deep_emb[w], axis=1) for w in wide], axis=1)
@@ -283,7 +281,7 @@ class wide_and_deep(baseModel):
         # trainable_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES,'deep_layer')
         # print('trainable var num: %d' % len(trainable_vars))
         labels = tf.cast(labels, tf.float32, name='true_label')
-        # labels = tf.squeeze(labels, axis=2)
+        labels = tf.squeeze(labels, axis=1)
         labels = tf.slice(labels, [0], tf.shape(self.logits))
         losses = tf.nn.sigmoid_cross_entropy_with_logits(labels=labels, logits=self.logits)
         loss = tf.reduce_mean(losses, name='loss')

@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: dl-rank
-Version: 0.1.12
+Version: 0.3.3.3
 Summary: Packaging tensorflow for Recommend on local and EMR
 Home-page: https://github.com/Snoworday/dl_rank
 Author: wangqi@696

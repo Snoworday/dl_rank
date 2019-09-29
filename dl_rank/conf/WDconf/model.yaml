@@ -27,8 +27,8 @@ out_node_names:
 
 cfg:
   reduce_sequence_length: 20
-  embedding_dim: 16
+  embedding_dim: 64
   dropout: 0.8
   last_dropout: 0.8
-  hidden_num: 10
-  wd: 10
+  hidden_num: 64
+  wd: 1

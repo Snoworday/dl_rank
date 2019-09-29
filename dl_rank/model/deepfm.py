@@ -1,11 +1,10 @@
 import tensorflow as tf
+# from dl_rank.model import baseModel
 from .BaseModel import baseModel
 try:
-    from ..utils import layers
+    from dl_rank.layer import layers
 except:
-    from utils import layers
-
-# wide columns
+    from layer import layers
 
 class deepfm(baseModel):
     def __init__(self, model_conf, mode):
@@ -18,7 +17,6 @@ class deepfm(baseModel):
 
     def _forward_model(self, is_training, *args, **kwargs):
         sparse_features, deep_features, dense_features = args
-        ld = deep_features
         with tf.compat.v1.variable_scope('trunk'):
             if self.use_first_order:
                 deep_features, bias_features = tf.split(deep_features, [-1, 1], axis=2)
@@ -32,8 +30,6 @@ class deepfm(baseModel):
                 if self.use_first_order:
                     y_first_order = tf.concat([cate_bias_features, con_bias_features], axis=1)
                     y_first_order = tf.compat.v1.layers.batch_normalization(y_first_order, training=is_training)
-                    # ld = tf.compat.v1.get_default_graph().get_tensor_by_name("trunk/fm/batch_normalization/batchnorm/mul_2:0")
-                    # ld = tf.tile(tf.expand_dims(ld, 0), tf.stack([tf.shape(y_first_order)[0], 1]))
                     y_first_order = tf.compat.v1.layers.dropout(y_first_order, 1-self.dropout_keep_fm, training=is_training)
 
                 fm_features = tf.concat([con_deep_features, cate_deep_features], axis=1)
@@ -60,7 +56,6 @@ class deepfm(baseModel):
 
     def get_loss(self, labels, predictions):
         labels = tf.cast(labels, tf.int32)
-        labels = tf.expand_dims(labels, axis=1)
         l1_reg, l2_reg = self.model_conf['l1_reg'], self.model_conf['l2_reg']
         loss = tf.compat.v1.losses.log_loss(labels, predictions)
         T_vars = tf.compat.v1.trainable_variables()
@@ -96,7 +91,7 @@ class deepfm(baseModel):
         Returns:
             Dict of metric results keyed by name.
         """
-        labels = tf.expand_dims(tf.cast(labels, tf.int32), axis=1)
+        labels = tf.cast(labels, tf.int32)
         auc = tf.compat.v1.metrics.auc(
             labels=labels,
             predictions=predictions,

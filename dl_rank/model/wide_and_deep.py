@@ -3,11 +3,12 @@ from .BaseModel import baseModel
 import sys
 sys.path.append("..")
 try:
-    from ..utils import layers
+    from dl_rank.layer import layers
 except:
-    from utils import layers
+    from layer import layers
 
 class wdl(baseModel):
+    name = 'wdl'
     def __init__(self, model_conf, mode):
         super(wdl, self).__init__(model_conf, mode)
         self.dropout_keep_fm = model_conf['dropout_keep_fm']

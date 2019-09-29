@@ -1,78 +1,57 @@
 import tensorflow as tf
 import os
-import shutil
 import numpy as np
-import time
 from collections import OrderedDict
 import yaml
-import logging
-try:
-    from ..utils import layers
-except:
-    from utils import layers
 
+try:
+    from dl_rank.layer import layers
+except:
+    from layer import layers
 
 class BaseParser(object):
-    def __init__(self, confPath, useSpark):
+    def __init__(self, confPath, mode, useSpark):
         self.useSpark = useSpark
         self.confPath = confPath
-        self.load_conf = self.load_conf_switch()
-        self.feature_conf = self.load_conf('feature.yaml')
+        self.conf_dict = LoadDict(self.load_conf_switch(mode))
         self.column_to_csv_defaults()
-        self.sparator = self.load_conf('sparator.yaml')
         self.data_file_filter = lambda f_name: f_name.split('.')[-1] == 'txt'
-
-    @property
-    def sparator(self):
-        return self._sparator
-
-    @sparator.setter
-    def sparator(self, sparator_conf):
-        if sparator_conf is None:
-            self._sparator = dict()
-            self._sparator['primary_delim'] = '@'
-            self._sparator['secondary_delim'] = '|'
-            self._sparator['teriary_delim'] = '&'
-            self._sparator['pred_out_delim'] = ','
-            self._sparator['train_data_format'] = ['pid1', 'pid2', 'features']
-            self._sparator['infer_data_format'] = ['label', 'features']
-            self._sparator['model_out_format'] = ['pid1', 'pid2', 'out']
-        else:
-            self._sparator = sparator_conf
 
     @property
     def model_out_format(self):
         if hasattr(self, '_model_out_format'):
             return self._model_out_format
         else:
-            _model_out_format = self._sparator['model_out_format']
+            _model_out_format = self.conf_dict['separator']['model_out_format']
             self._model_out_format = [item+'_' for item in _model_out_format]
             return self._model_out_format
 
-    def load_conf_switch(self):
+    def load_conf_switch(self, mode):
         confPath = self.confPath
         if self.useSpark:
             from pyspark import SparkFiles
             def wrapper(filename):
                 try:
-                    with open(SparkFiles.get(filename), 'r') as f:
+                    with open(SparkFiles.get(filename+'_'+mode+'.yaml'), 'r') as f:
                         return yaml.load(f)
-                except FileNotFoundError:
-                    return None
+                except:
+                    with open(SparkFiles.get(filename+'.yaml'), 'r') as f:
+                        return yaml.load(f)
             return wrapper
         else:
             def wrapper(filename):
-                try:
-                    with open(os.path.join(confPath, filename), 'r') as f:
+                if tf.gfile.Exists(os.path.join(confPath, filename+'_'+mode+'.yaml')):
+                    with tf.gfile.GFile(os.path.join(confPath, filename+'_'+mode+'.yaml'), 'r') as f:
                         return yaml.load(f)
-                except:
-                    return None
+                else:
+                    with tf.gfile.GFile(os.path.join(confPath, filename+'.yaml'), 'r') as f:
+                        return yaml.load(f)
             return wrapper
 
     def load_all_conf(self, *confs):
         all_conf = dict()
         for conf in confs:
-            all_conf.update({conf: self.load_conf(conf+'.yaml')})
+            all_conf.update({conf: self.conf_dict[conf]})
         return all_conf
 
     def column_to_csv_defaults(self):
@@ -80,13 +59,13 @@ class BaseParser(object):
         Return:
             OrderedDict {'feature name': [''],...}
         """
-        feature_conf = self.load_conf('feature.yaml')
-        feature_list = list(self.load_conf('schema.yaml').values())
-        feature = feature_list
+        feature_conf = self.conf_dict['feature']
+        feature_list_conf = self.conf_dict['schema']
+        feature_list = [feature_list_conf[key] for key in sorted(feature_list_conf, reverse=False)]
         feature_unused = []
         csv_defaults = OrderedDict()
         csv_scope = OrderedDict()
-        for f in feature:
+        for f in feature_list:
             if f in feature_conf and not feature_conf[f]['ignore']:  # used features
                 conf = feature_conf[f]
                 scope = feature_conf[f]['parameter']['scope'] if 'scope' in feature_conf[f]['parameter'] else 'embedding'
@@ -123,13 +102,22 @@ class BaseParser(object):
         return serving_input_receiver_fn
 
 
-    def parse_fn(self, isPred=False, na_value='', get_serving_input_receiver_fn=False, tail=''):
+    def parse_fn(self, isPred=False, na_value='', tail=''):
         csv_defaults = self.column_defaults
         feature_unused = self.feature_unused
-        primary_delim = self.sparator['primary_delim']
-        secondary_delim = self.sparator['secondary_delim']
-        train_data_format = self.sparator['train_data_format']
-        infer_data_format = self.sparator['infer_data_format']
+        primary_delim = self.conf_dict['separator']['primary_delim']
+        secondary_delim = self.conf_dict['separator']['secondary_delim']
+        train_data_format = self.conf_dict['separator']['train_data_format']
+        infer_data_format = self.conf_dict['separator']['infer_data_format']
+        def _parser_feature(data_container):
+            data_container['features'] = tf.io.decode_csv(
+                records=data_container['features'], record_defaults=list(csv_defaults.values()),
+                field_delim=secondary_delim, use_quote_delim=False, na_value=na_value)
+            features = dict(zip(csv_defaults.keys(), data_container['features']))
+            for f in feature_unused:
+                features.pop(f)
+            features_tail = {key+tail: features[key] for key in features}
+            return features_tail
         def parser(value):
             """Parse train and eval data with label
             Args:
@@ -140,47 +128,32 @@ class BaseParser(object):
                     records=value, record_defaults=[['']]*len(infer_data_format),
                     field_delim=primary_delim, use_quote_delim=False, na_value=na_value)
                 data_container = dict(zip(infer_data_format, decode_data))
+                features_tail = _parser_feature(data_container)
+                features_tail.update({elem+'_'+tail: data for elem, data in data_container.items() if elem != 'features'})
+                return features_tail
             else:
                 decode_data = tf.io.decode_csv(
                     records=value, record_defaults=[['']]*len(train_data_format),
                     field_delim=primary_delim, use_quote_delim=False, na_value=na_value)
                 data_container = dict(zip(train_data_format, decode_data))
-
-            data_container['features'] = tf.io.decode_csv(
-                records=data_container['features'], record_defaults=list(csv_defaults.values()),
-                field_delim=secondary_delim, use_quote_delim=False, na_value=na_value)
-
-            features = dict(zip(csv_defaults.keys(), data_container['features']))
-
-            for f in feature_unused:
-                features.pop(f)
-
-            features_tail = {key+tail: features[key] for key in features}
-
-            # features = {'item1': features1, 'item2': features2}
-            if isPred:
-                features_tail.update({elem+'_'+tail: data for elem, data in data_container.items() if elem != 'features'})
-                return features_tail
-            else:
+                features_tail = _parser_feature(data_container)
                 labels = [tf.equal(data_container[label], '1') for label in train_data_format if label != 'features']
                 labels = tf.concat([tf.expand_dims(label, 1) if label.shape.ndims<2 else label for label in labels], axis=1)
                 return features_tail, labels
         return parser
 
-
     def model_input_parse_fn(self, model_secondary_parse_fn):
-        first_parser = self.model_first_parse_fn
+        first_parser = self.first_parse_fn
         second_parser = self.secondary_parse_fn if hasattr(self, 'secondary_parse_fn') else model_secondary_parse_fn
-        teriary_delim = self.sparator['teriary_delim']
+        teriary_delim = self.conf_dict['separator']['teriary_delim']
         def wrapper(features, params, dims, model_struct):
             sparse_emb, deep_emb, dense_emb, mask = first_parser(features, params, teriary_delim)
             features = second_parser(sparse_emb, deep_emb, dense_emb, mask, model_struct)
             return dims, features
         return wrapper
 
-
     @staticmethod
-    def model_first_parse_fn(features, params, teriary_delim):
+    def first_parse_fn(features, params, teriary_delim):
         '''
 
         :param features:
@@ -201,29 +174,6 @@ class BaseParser(object):
                 isEffect = tf.cast(tf.less(values, intercept), tf.int32)
                 values = isEffect * values + (1-isEffect) * default_value
                 return tf.SparseTensor(indices=tensor.indices, values=values, dense_shape=tensor.dense_shape)
-
-
-        def reduceF(f, type):
-            '''
-
-            :param f: [bs, n, S], reduce axis 1
-            :param type: combiner type, such as sum, mean, sqrtn, max, none
-            :return: [bs, 1, S]
-            '''
-            if type == 'none':
-                pass
-            elif type == 'sum':
-                f = tf.reduce_sum(f, axis=1, keep_dims=True)
-            elif type == 'mean':
-                f = tf.reduce_mean(f, axis=1, keep_dims=True)
-            elif type == 'sqrtn':
-                mean = tf.reduce_mean(f, axis=1, keep_dims=True)
-                f = tf.sqrt(tf.reduce_sum(tf.square(f - mean), axis=1, keep_dims=True))
-            elif type == 'max':
-                f = tf.reduce_max(f, axis=1, keep_dims=True)
-            else:
-                assert False
-            return f
 
         def sparse_str2dense_num(f_input, field_num, type, null_value):
             null_value = str(null_value)
@@ -246,14 +196,14 @@ class BaseParser(object):
         sparse = params['sparse']
         deep = params['deep']
         dense = params['dense']
-        continuous = params['continuous']
+        numeric = params['numeric']
         table = params['table']
         multi = params['multi']
 
         features = {key: tf.identity(features[key], name=key) for key in features}
         # batch_size = tf.shape(features[list(features.keys())[0]])[0]
         sparse_emb = OrderedDict()
-        deep_emb = {'category': OrderedDict(), 'continuous': OrderedDict()} #cate, continuous
+        deep_emb = {'category': OrderedDict(), 'numeric': OrderedDict()} #cate, numeric
         dense_emb = OrderedDict()
         dense_emb_noreduce = OrderedDict()
         mask = dict()
@@ -274,7 +224,7 @@ class BaseParser(object):
                                              dense_shape=features_f.dense_shape)
             features[f] = features_f
 
-        for f in continuous:
+        for f in numeric:
             f_type, num, size, combiner, same, default_value, fill_value, null_value = multi[f]
             if combiner == 'none':
                 features_f, f_mask = sparse_str2dense_num(features[f], abs(num), tf.float32,
@@ -296,7 +246,6 @@ class BaseParser(object):
                 if f in dense:
                     dense_emb.update({f: f_input_combine})
 
-        # ld = dense_emb['list_price']
         for f in sparse:
             f_type, num, size, combiner, same, default_value, fill_value, null_value = multi[f]
             if combiner == 'none':
@@ -308,7 +257,7 @@ class BaseParser(object):
                     features_f_indicator, f_mask = sparse_str2dense_num(features[f], abs(num), tf.int32, null_value=null_value)
                     features_f_indicator = replace2default(features_f_indicator, size, default_value)
                 # features_f_emb = tf.nn.embedding_lookup(sparse[f], features_f_indicator)
-                features_f_emb = layers.multi_hot(features_f_indicator, num=abs(num), depth=size+1 if null_value==-1 else size)
+                features_f_emb = layers.multi_hot(features_f_indicator, num=abs(num), depth=size + 1 if null_value == -1 else size)
                 if null_value == -1:
                     features_f_emb = features_f_emb[:, :, :-1]
                 sparse_emb.update({f: features_f_emb})
@@ -328,7 +277,7 @@ class BaseParser(object):
 
         for f in deep:
             f_type, num, size, combiner, same, default_value, fill_value, null_value = multi[f]
-            if f not in dense_emb_noreduce:
+            if f_type == 'category':
                 if combiner == 'none':
                     deep_f = tf.pad(deep[f], tf.constant([[0, 1], [0, 0]]), mode='CONSTANT',
                                     constant_values=0) if int(null_value) == size else deep[f]
@@ -366,7 +315,7 @@ class BaseParser(object):
                     deep_emb[f_type].update(
                         {f: tf.expand_dims(features_f_emb, 1)})
                     _ = tf.identity(features_f_emb, name='{}_used_embedding_params'.format(f))
-            else:
+            elif f_type == 'numeric':
                 features_f_value, sparse_f_indice = dense_emb_noreduce[f]
                 if combiner == 'none':
                     features_f_emb = tf.multiply(tf.expand_dims(features_f_value, -1), tf.expand_dims(deep[f], 0))
@@ -386,12 +335,22 @@ class BaseParser(object):
                         features_f_combine = tf.expand_dims(features_f_emb, 1)
                         deep_emb[f_type].update({f: features_f_combine})
 
-        deep_emb['category'].update(deep_emb['continuous'])
+        deep_emb['category'].update(deep_emb['numeric'])
         deep_emb = deep_emb['category']
-        # tfprintlist = [tf.print(tf.shape(deep_emb[tensor]), tensor) for tensor in deep_emb]
-        # with tf.control_dependencies(tfprintlist):
-        #     dense_emb['acr_15d'] = tf.identity(dense_emb['acr_15d'])
-        ld = dense_emb
-
         return sparse_emb, deep_emb, dense_emb, mask
 
+class LoadDict(dict):
+    def __init__(self, load_fn):
+        super(LoadDict, self).__init__()
+        self.load_fn = load_fn
+
+    def __getitem__(self, item):
+        try:
+            return dict.__getitem__(self, item)
+        except KeyError:
+            try:
+                value = self.load_fn(item)
+            except:
+                value = None
+            self.__setitem__(item, value)
+            return value

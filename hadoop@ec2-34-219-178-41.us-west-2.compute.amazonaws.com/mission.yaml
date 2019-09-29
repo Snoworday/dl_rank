@@ -26,23 +26,23 @@
 #    specified, elements will be processed sequentially.
 train:
   # path related.
-  model_dir: s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/logData/deepfm_v2_mba
-  graph_dir: s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/graph
-  result_dir: s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/result
-  model_type: deepfm_v2
-  train_data:  s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/traindata
-  eval_data:  s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/evaldata
-  pred_data: s3://jiayun.spark.data/wangqi/I2IRank/I2ICTRUV/preddata
+  model_dir: s3://jiayun.spark.data/wangqi/wide_deep/v2/logData/wide_and_deep_traditional_attention
+  graph_dir: s3://jiayun.spark.data/wangqi/wide_deep/v2/graph
+  online_graph_dir: s3://jiayun.spark.data/wangqi/wide_deep/v2/online_graph
+  result_dir: s3://jiayun.spark.data/wangqi/wide_deep/v2/result
+  model_type: wide_and_deep_traditional_attention
+  train_data:  s3://jiayun.spark.data/wangqi/wide_deep/traindata
+  eval_data:  s3://jiayun.spark.data/wangqi/wide_deep/evaldata
+  pred_data:  s3://jiayun.spark.data/wangqi/wide_deep/preddata
   # train behavior
-  train_epochs: 20
-  max_steps: 100000000
+  train_epochs: 100
+  max_steps: 66666666666
   epochs_per_eval: 1
-  batch_size: 1024
-  keep_train: 1
+  batch_size: 2048
   shuffle_buffer_size: 10000
   num_parallel_calls: 20
   # evaluate behavior
-  steps: 500
+  steps: 1000
   eval_epochs: 1
 
 
@@ -61,13 +61,14 @@ train:
 # log_step_count_steps: The frequency, in number of global steps, that the global step/sec will be logged during training. Defaults to 100
 
 runconfig:
-  tf_random_seed: 777
+  tf_random_seed: 77887
   save_summary_steps: 400
   save_checkpoints_steps: 1000
   save_checkpoints_secs:
   keep_checkpoint_max: 5
   keep_checkpoint_every_n_hours: 1
   log_step_count_steps: 400
+  train_distribute:
 
 
 

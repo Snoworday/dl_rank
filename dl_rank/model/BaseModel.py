@@ -9,10 +9,10 @@ if tf.__version__[0]=='1':
     lookup = tf.contrib.lookup
 else:
     lookup = tf.lookup
-    assert False, 'emm, lookup.index_table_from_tensor has been removed in TF2 ... and no substitute Q_Q'
+    assert False, 'emm.., lookup.index_table_from_tensor has been removed in TF2 ... and no substitute Q_Q'
 
 class baseModel(metaclass=ABCMeta):
-
+    name = 'base'
     def __init__(self, model_conf, mode):
         # self.activation_fn = activation_fn
         # self.initializer_fn = initializer_fn
@@ -27,6 +27,8 @@ class baseModel(metaclass=ABCMeta):
     @staticmethod
     def build_embedding(params, num_shards):
         feature_conf = params['feature_conf']
+        feature_list_conf = params['feature_list']
+        feature_list = [feature_list_conf[key] for key in sorted(feature_list_conf, reverse=False)]
         model_conf = params['model_conf']
         vocabulary_conf = params['vocabulary_conf']
         embed_dim = model_conf['embed_dim']
@@ -38,21 +40,25 @@ class baseModel(metaclass=ABCMeta):
         deep = OrderedDict()
         multi = OrderedDict()
         model_struct = defaultdict(list)
-        continuous = []
+        numeric = []
         dense = []
         dense_tag = []
         wide_dim, deep_dim, deep_num, cate_num, con_num, all_num, con_deep_num, con_bias_num = 0, 0, 0, 0, 0, 0, 0, 0
-        for feature, conf in feature_conf.items():
+        for feature in feature_list:
+            if not feature in feature_conf:
+                continue
+            conf = feature_conf[feature]
             if conf['ignore']:
                 continue
             f_type, f_tran, f_param = conf['type'], conf['transform'], conf['parameter']
-            if 'model' in conf:
-                for struct in conf['model']:
+            if 'group' in conf:
+                for struct in conf['group']:
                     model_struct[struct].append(feature)
             f_multi = conf['multi'] if 'multi' in conf else {'num': 1, 'same': True, 'combiner': 'none'}
             feature_name = f_param['name'] if 'name' in f_param else feature
             feature_embed_dim = f_param['embed_dim'] if 'embed_dim' in f_param else embed_dim
             feature_scope = f_param['scope'] if 'scope' in f_param else 'embedding'
+
             with tf.variable_scope(feature_scope, reuse=tf.AUTO_REUSE, partitioner=partitioner) as scope:
                 if f_type == 'category':
                     f_num, combiner = f_multi['num'], f_multi['combiner']
@@ -97,16 +103,12 @@ class baseModel(metaclass=ABCMeta):
                     all_num += abs(f_num)
                     tail_value = f_param['tail'] if 'tail' in f_param else f_size
 
-                else:
+                elif f_type == 'numeric':
                     f_size = 1
                     f_num = f_multi['num']
-                    fill_value = f_param['fill'] if 'fill' in f_param else ''#'0'
-                    continuous.append(feature)
-                    # con_num += 1
+                    numeric.append(feature)
                     if 'value' in conf['style']:
                         dense.append(feature)
-                        # sparse.update({feature: tf.eye(1)})
-                        # wide_dim += 1
                     if 'embedding' in conf['style']:
                         if f_num >=1:
                             if f_multi['combiner'] == 'none':
@@ -150,7 +152,7 @@ class baseModel(metaclass=ABCMeta):
                                                      tf.get_variable(
                                                          initializer=tf.random.normal([1, embed_dim + first_order], 0.0,
                                                                                       0.1),
-                                                         name='{}'.format(feature_name))})
+                                                         name='{}_embedding'.format(feature_name))})
                                 else:
                                     deep.update({feature: tf.get_variable(initializer=tf.random.normal([f_num, embed_dim+first_order], 0.0, 0.1), name='{}_embedding'.format(feature))})
                                 con_num += f_num
@@ -174,8 +176,10 @@ class baseModel(metaclass=ABCMeta):
 
                     f_dim = -1
                     default_value = 0
+                    fill_value = f_param['fill'] if 'fill' in f_param else ''#'0'
                     tail_value = f_param['tail'] if 'tail' in f_param else 0
-
+                else:
+                    assert False, "cant't handle this type now: {}".format(f_type)
                 multi.update(
                     {feature: (f_type, f_multi['num'], f_size, f_multi['combiner'], f_multi['same'], default_value, fill_value, tail_value)}
                 )
@@ -183,7 +187,7 @@ class baseModel(metaclass=ABCMeta):
         dims = {'deep_num': deep_num, 'deep_dim': deep_dim, 'wide_dim': wide_dim, 'con_num': con_num, 'cate_num': cate_num,
                 's_embed_size': embed_dim, 'cate_deep_num': deep_num-con_deep_num,
                 'd_embed_size': embed_dim, 'all_num': all_num, 'dense_tag': dense_tag, 'con_deep_num': con_deep_num}
-        columns = {'table': table, 'sparse': sparse, 'deep': deep, 'dense': dense, 'continuous': continuous, 'dense_tag': dense_tag, 'multi': multi}
+        columns = {'table': table, 'sparse': sparse, 'deep': deep, 'dense': dense, 'numeric': numeric, 'dense_tag': dense_tag, 'multi': multi}
         # dense_tag = tf.constant(dense_tag)
         return model_struct, columns, dims
 
@@ -259,8 +263,8 @@ class baseModel(metaclass=ABCMeta):
     def _forward_model(self, is_training, *args, **kwargs):
         '''
         :param sparse_features: [batch_size, len of all one hot merge], one_hot, only from category field generally
-        :param deep_features: [batch_size, [cate, con]num, embedding_dim], embedding, concat of category field and continous
-        :param dense_features: [batch_size, len of con], concat real value of continous data
+        :param deep_features: [batch_size, [cate, con]num, embedding_dim], embedding, concat of category field and numeric
+        :param dense_features: [batch_size, len of con], concat real value of numeric data
         :param is_training: bool
         :return:
         '''

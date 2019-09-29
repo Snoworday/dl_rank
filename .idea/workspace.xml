@@ -2,79 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5803b0-6d14-4a7c-b9fb-5c68c2b79716" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/feature.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/item_profile_parse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/model.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/schema.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/sparator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/train.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/vocabulary.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/feature.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/generate_train_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/generate_train_data_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/generate_train_data_v3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/model.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/schema.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/sparator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/train.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/gen_ctr_json_from_infer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/gen_pd_ctr_uv_infer_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/gen_pd_ctr_uv_train_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/gen_pd_train_data.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/gen_track_data_rec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/gen_track_statistic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/gen_wide_deep_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/gen_wide_deep_train_data.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/infer_ctr_uv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/pd_deepfm_infer_1_gen_infer_data.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/pd_deepfm_infer_2_gen_infer_result.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/pd_deepfm_infer_3_gen_infer_resultjson.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/pd_deepfm_infer_4_mv_resultjson.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/run_infer_model.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/set_python3_4_pyspark.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datapipeline/wangqi_pd_deepfm_infer.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/feature.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/feature_train.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/item_profile_parse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/mission.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/model.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/schema.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/vocabulary.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/separator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/feature.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/mission.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/model.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/schema.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/feature.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/mission.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/model.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/schema.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/separator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/separator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/layer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/model/deepfm_pair.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/tmp/generate_train_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/tmp/generate_train_data_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/tmp/generate_train_data_v3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/utils/configManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dl_rank/utils/scriptHelper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/conf/BaseParser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/conf/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/distribute.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/BaseModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/ModelFactory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/dcn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/deepfm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/deepfm_v2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/wide_and_deep.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/wide_deep_traditional_attention.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/xcross.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/model/xdeepfm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/solo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/utils/csvResult2json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/utils/dataHelper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/utils/item_profile_parse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/utils/layers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/utils/modelUtils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/utils/preprocess.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/dl_rank/utils/yamlHelper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dl_rank-0.1.1-py3.6.egg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dl_rank-0.1.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank.egg-info/PKG-INFO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank.egg-info/SOURCES.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/conf/BaseParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/BaseParser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/sparator.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/sparator.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/sparator.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/sparator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/feature.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/item_profile_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/item_profile_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/separator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf/mission.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/feature.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/item_profile_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/item_profile_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/separator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/mission.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/feature.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/item_profile_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/item_profile_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/separator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/mission.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/feature.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/item_profile_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/item_profile_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/separator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/mission.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/feature.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/item_profile_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/item_profile_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/model.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/model.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/separator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/mission.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/feature.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/model.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/model.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/sparator.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/sparator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/separator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf/mission.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/feature.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/separator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local/mission.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/feature.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/sparator.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/distribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/symphony.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/sparator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/separator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/mission.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/feature.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/feature.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/train.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/mission.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/conf/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/conf/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/dl_rank_export.log" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/dl_rank_export.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/dl_rank_export4online.log" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/dl_rank_export4online.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/dl_rank_infer.log" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/dl_rank_infer.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/dl_rank_train.log" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/dl_rank_train.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/model.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/model/BaseModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/BaseModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/model/ModelFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/ModelFactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/model/dcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/dcn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/model/deepfm.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/deepfm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/model/deepfm_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/deepfm_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/model/wide_and_deep.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/wide_and_deep.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/model/xcross.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/xcross.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/model/xdeepfm.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/model/xdeepfm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/solo.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/solo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_rank/tmp/tmp4.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/tmp/tmp4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/symphony.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/symphony.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/tmp/tmp1.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/tmp/tmp1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/utils.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_rank/utils/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/layer/layers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_rank/utils/modelUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_rank/utils/modelUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
@@ -85,14 +125,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46631205">
+    <splitter split-orientation="horizontal" split-proportion="0.62218046">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/dl_rank/solo.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2025">
-                  <caret line="437" column="56" lean-forward="true" selection-start-line="437" selection-start-column="56" selection-end-line="437" selection-end-column="56" />
+                <state relative-caret-position="563">
+                  <caret line="513" column="41" selection-start-line="513" selection-start-column="41" selection-end-line="513" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -101,40 +141,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/utils/modelUtils.py">
+            <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/model.yaml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="625">
-                  <caret line="191" column="29" lean-forward="true" selection-start-line="191" selection-start-column="29" selection-end-line="191" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#14#37#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="210">
+                  <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/train.yaml">
+            <entry file="file://$PROJECT_DIR$/dl_rank/utils/configManager.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="67">
-                  <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/model.yaml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/model.yaml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+                <state relative-caret-position="195">
+                  <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
                 </state>
               </provider>
             </entry>
@@ -142,8 +161,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dl_rank/conf/BaseParser.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="165" column="75" selection-start-line="165" selection-start-column="70" selection-end-line="165" selection-end-column="75" />
+                <state relative-caret-position="426">
+                  <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#23#0" expanded="true" />
                   </folding>
@@ -151,13 +170,26 @@
               </provider>
             </entry>
           </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v3.py">
+            <entry file="file://$PROJECT_DIR$/dl_rank/model/ModelFactory.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="206">
-                  <caret line="99" column="49" lean-forward="true" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/dl_rank/model/wide_and_deep.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="174">
+                  <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
                   <folding>
-                    <element signature="e#0#14#0" expanded="true" />
+                    <element signature="e#0#23#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -166,55 +198,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dl_rank/symphony.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1410">
-                  <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/schema.yaml">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data.py">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="270">
-                    <caret line="42" column="93" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="93" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-31">
-                  <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+                <state relative-caret-position="128">
+                  <caret line="112" column="25" lean-forward="true" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
                   <folding>
-                    <element signature="e#0#23#0" expanded="true" />
+                    <element signature="e#0#38#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/feature.yaml">
+            <entry file="file://$PROJECT_DIR$/setup.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="166">
-                  <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -232,37 +229,42 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tensorflow_save_parameters_with_partition</find>
+      <find>emr_home_path</find>
+      <find>num_executor</find>
+      <find>dirs2issue</find>
+      <find>addModel</find>
+      <find>layers</find>
+      <find>register</find>
+      <find>useSpark</find>
+      <find>conf</find>
+      <find>parse_fn</find>
+      <find>Resc</find>
+      <find>clear_summary</find>
       <find>use_TFoS</find>
-      <find>data_file</find>
-      <find>out_node_name</find>
-      <find>from .ten</find>
-      <find>get_files_under_dates</find>
-      <find>get</find>
-      <find>get_f</find>
-      <find>self.out_node_name</find>
-      <find>fn</find>
-      <find>checkpoint_dir</find>
-      <find>sess</find>
-      <find>saver_def</find>
-      <find>getDateInterval</find>
-      <find>map_fun</find>
-      <find>wrapper_fn</find>
-      <find>func</find>
-      <find>nputMode</find>
-      <find>setEnv</find>
-      <find>def restore</find>
-      <find>feed_timeout</find>
-      <find>num_ps</find>
-      <find>e</find>
-      <find>_export_model_online</find>
-      <find>file_name</find>
-      <find>lookup</find>
-      <find>Filter_freq</find>
-      <find>pid_emb</find>
-      <find>get_eval</find>
-      <find>get_loss</find>
+      <find>LoadDict</find>
+      <find>run_local</find>
+      <find>\</find>
+      <find>_find_conf</find>
+      <find>copyS3toHDFS</find>
+      <find>sub</find>
+      <find>gfile</find>
+      <find>subpr</find>
+      <find>predict_TFoS</find>
+      <find>expor</find>
+      <find>subproc</find>
+      <find>output_graph_name</find>
+      <find>bake_path</find>
+      <find>layer</find>
+      <find>distributeInfer</find>
+      <find>lay</find>
+      <find>aws</find>
+      <find>Utils.get_files_under_dates</find>
     </findStrings>
+    <replaceStrings>
+      <replace>numeric</replace>
+      <replace>group</replace>
+      <replace>separator</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -270,65 +272,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/parser.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/parser.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/parser.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf/parser.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local/feature.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/feature.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/feature.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/item_profile_parse.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf/item_profile_parse.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/item_profile_parse.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/item_profile_parse.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/item_profile_parse.py" />
+        <option value="$PROJECT_DIR$/dl_rank/datapipeline/gen_pd_ctr_uv_infer_dataset.py" />
+        <option value="$PROJECT_DIR$/dl_rank/datapipeline/gen_pd_ctr_uv_train_dataset.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf/parser.py" />
         <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local/parser.py" />
         <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/parser.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/parser.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/feature_train.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair/separator.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/feature.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/model.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/mission.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/mission.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22_local/parser.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/parser.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/model.yaml" />
+        <option value="$PROJECT_DIR$/datapipeline/pd_deepfm_infer_4_mv_resultjson.sh" />
+        <option value="$PROJECT_DIR$/datapipeline/pd_deepfm_infer_3_gen_infer_resultjson.sh" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/model.yaml" />
+        <option value="$PROJECT_DIR$/datapipeline/gen_ctr_json_from_infer.py" />
+        <option value="$PROJECT_DIR$/datapipeline/pd_deepfm_infer_1_gen_infer_data.sh" />
+        <option value="$PROJECT_DIR$/dl_rank/model/__init__.py" />
         <option value="$PROJECT_DIR$/dl_rank/utils/layers.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/train.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/tmp/tmp5.py" />
-        <option value="$PROJECT_DIR$/dl_rank/tmp/tmp6.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v2.py" />
-        <option value="$PROJECT_DIR$/dl_rank/utils/item_profile_parse.py" />
-        <option value="$PROJECT_DIR$/dl_rank/distribute.py" />
-        <option value="$PROJECT_DIR$/dl_rank/tmp/tmp4.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf/parser.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/feature.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/train.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/model.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/model/BaseModel.py" />
         <option value="$PROJECT_DIR$/dl_rank/model/ModelFactory.py" />
+        <option value="$PROJECT_DIR$/datapipeline/infer_ctr_uv.py" />
+        <option value="$PROJECT_DIR$/dl_rank/utils/modelUtils.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/BaseParser.py" />
         <option value="$PROJECT_DIR$/dl_rank/model/dcn.py" />
         <option value="$PROJECT_DIR$/dl_rank/model/deepfm.py" />
-        <option value="$PROJECT_DIR$/dl_rank/model/wide_and_deep.py" />
+        <option value="$PROJECT_DIR$/dl_rank/model/deepfm_pair.py" />
         <option value="$PROJECT_DIR$/dl_rank/model/deepfm_v2.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/generate_train_data_v3.py" />
-        <option value="$PROJECT_DIR$/build/lib/dl_rank/solo.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_tmp/sparator.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/sparator.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local/sparator.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf/sparator.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/sparator.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_wdl/sparator.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/sparator.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf/sparator.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/model/BaseModel.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/train.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/tensorflowonspark/TFSparkNode.py" />
-        <option value="$PROJECT_DIR$/dl_rank/tensorflowonspark/TFCluster.py" />
-        <option value="$PROJECT_DIR$/dl_rank/__init__.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf/feature.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/__init__.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf/README.md" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/BaseParser.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/feature.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/model/wide_and_deep.py" />
         <option value="$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v3.py" />
+        <option value="$PROJECT_DIR$/dl_rank/model/xcross.py" />
+        <option value="$PROJECT_DIR$/dl_rank/model/xdeepfm.py" />
         <option value="$PROJECT_DIR$/dl_rank/symphony.py" />
-        <option value="$PROJECT_DIR$/dl_rank/conf/WDconf/model.yaml" />
-        <option value="$PROJECT_DIR$/dl_rank/utils/modelUtils.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/dl_rank/__init__.py" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/__init__.py" />
+        <option value="$PROJECT_DIR$/datapipeline/pd_deepfm_infer_2_gen_infer_result.sh" />
+        <option value="$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/mission.yaml" />
+        <option value="$PROJECT_DIR$/dl_rank/utils/configManager.py" />
         <option value="$PROJECT_DIR$/dl_rank/solo.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="916" />
-    <option name="y" value="575" />
-    <option name="width" value="1363" />
-    <option name="height" value="877" />
+    <option name="x" value="-262" />
+    <option name="y" value="-1177" />
+    <option name="width" value="1920" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -345,6 +347,11 @@
             <path>
               <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
               <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
+              <item name="datapipeline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
               <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -358,26 +365,13 @@
               <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
               <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
-              <item name="WDconf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-              <item name="WDconf_local_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="I2Iconf_uv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
               <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
               <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="dl_rank" type="462c0819:PsiDirectoryNode" />
-              <item name="tensorflowonspark" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dl_rank" type="b2602c69:ProjectViewProjectNode" />
@@ -404,6 +398,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dl_rank/conf" />
+      <recent name="$PROJECT_DIR$/dl_rank/conf/I2Iconf_pair" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dl_rank/layer" />
+      <recent name="$PROJECT_DIR$/dl_rank/tmp" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -418,7 +418,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.WDconf_train">
+  <component name="RunManager" selected="Python.gen_ctr_json_from_infer">
     <configuration name="I2Iconf_test_train" type="PythonConfigurationType" factoryName="Python">
       <module name="dl_rank" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -454,6 +454,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../algo-deeplearning/dl_rank/solo.py" />
       <option name="PARAMETERS" value="--conf WDconf_local_v2 --mode train" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gen_ctr_json_from_infer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dl_rank" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/datapipeline" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datapipeline/gen_ctr_json_from_infer.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -503,6 +524,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tmp1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dl_rank" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dl_rank/tmp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dl_rank/tmp/tmp1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tmp5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dl_rank" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -525,14 +567,18 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.solo_pred" />
       <item itemvalue="Python.I2Iconf_test_train" />
       <item itemvalue="Python.WDconf_train" />
+      <item itemvalue="Python.solo_pred" />
       <item itemvalue="Python.solo" />
+      <item itemvalue="Python.tmp1" />
       <item itemvalue="Python.tmp5" />
+      <item itemvalue="Python.gen_ctr_json_from_infer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gen_ctr_json_from_infer" />
+        <item itemvalue="Python.tmp1" />
         <item itemvalue="Python.solo" />
         <item itemvalue="Python.tmp5" />
       </list>
@@ -551,517 +597,548 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="916" y="575" width="1363" height="877" extended-state="0" />
+    <frame x="-262" y="-1177" width="1920" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15946348" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15955766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.39632547" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32939634" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.48031497" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39548022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33709982" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34934086" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.259887" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956687" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32956687" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.23822975" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.26902887" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.26741996" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14955239" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39548022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33709982" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34934086" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956687" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32956687" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.21657251" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.26836157" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dl_rank/symphony.py</url>
-          <line>146</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dl_rank/symphony.py</url>
-          <line>133</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>141</line>
+          <line>139</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/model/BaseModel.py</url>
-          <line>250</line>
+          <line>254</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py</url>
-          <line>105</line>
+          <line>106</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>209</line>
+          <line>206</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>145</line>
+          <line>143</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>187</line>
+          <line>185</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>211</line>
+          <line>208</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>218</line>
+          <line>215</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>217</line>
+          <line>214</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py</url>
-          <line>428</line>
+          <line>426</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>399</line>
+          <line>388</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>345</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>379</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>383</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
-          <line>248</line>
+          <line>245</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py</url>
-          <line>284</line>
+          <line>282</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py</url>
-          <line>286</line>
+          <line>284</line>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
+          <line>351</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dl_rank/solo.py</url>
+          <line>343</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dl_rank/model/deepfm_v2.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datapipeline/gen_ctr_json_from_infer.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datapipeline/gen_ctr_json_from_infer.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/train.yaml">
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/schema.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/separator.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="34" selection-end-column="68" />
+        <state relative-caret-position="240">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/sparator.yaml">
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/feature.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="270">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/client/session.py">
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_09_22/model.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="1347" selection-start-line="1347" selection-end-line="1347" />
+        <state relative-caret-position="104">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/gen_array_ops.py">
+    <entry file="file://$PROJECT_DIR$/datapipeline/gen_pd_ctr_uv_infer_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="8952" selection-start-line="8952" selection-end-line="8952" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="2118" selection-start-line="2118" selection-end-line="2118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="1078" selection-start-line="1078" selection-end-line="1078" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/model/deepfm_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="62" column="35" lean-forward="true" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/tensorflowonspark/dfutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="248">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
           <folding>
-            <element signature="e#247#285#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/model/deepfm.py">
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_local/feature.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        <state relative-caret-position="465">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datapipeline/gen_ctr_json_from_infer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#14#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/tensorflowonspark/__init__.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/paramiko/sftp_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="265">
+          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/importlib/_bootstrap_external.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="489">
+          <caret line="541" column="29" selection-start-line="541" selection-start-column="29" selection-end-line="541" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/model/dcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/dl_rank/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_test/train.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="28" column="77" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/tensorflowonspark/TFManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/multiprocessing/__init__.pyi">
+    <entry file="file://$PROJECT_DIR$/datapipeline/pd_deepfm_infer_1_gen_infer_data.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <caret line="2" column="32" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/basic_session_run_hooks.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/framework/versions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="602" column="13" lean-forward="true" selection-start-line="602" selection-start-column="13" selection-end-line="602" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_test_emr/train.yaml">
+    <entry file="file://$PROJECT_DIR$/dl_rank/layer/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/framework/errors_impl.py">
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf/separator.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf/feature.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="527" column="28" selection-start-line="527" selection-start-column="18" selection-end-line="527" selection-end-column="28" />
+        <state relative-caret-position="110">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf/schema.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="379" column="24" lean-forward="true" selection-start-line="379" selection-start-column="24" selection-end-line="379" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datapipeline/pd_deepfm_infer_3_gen_infer_resultjson.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datapipeline/pd_deepfm_infer_4_mv_resultjson.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/checkpoint_management.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="371" column="26" lean-forward="true" selection-start-line="371" selection-start-column="26" selection-end-line="371" selection-end-column="26" />
+        <state relative-caret-position="485">
+          <caret line="344" column="31" lean-forward="true" selection-start-line="344" selection-start-column="31" selection-end-line="344" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py">
+    <entry file="file://$PROJECT_DIR$/dl_rank/layer/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="658" column="6" selection-start-line="658" selection-start-column="6" selection-end-line="658" selection-end-column="6" />
+        <state relative-caret-position="570">
+          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/tensorflowonspark/reservation.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/tensorflowonspark/TFNode.py">
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/deepfm_pair.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/pyspark/rdd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="2521" column="33" lean-forward="true" selection-start-line="2521" selection-start-column="33" selection-end-line="2521" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="1837" column="46" selection-start-line="1837" selection-start-column="46" selection-end-line="1837" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/lib/io/file_io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="276" column="30" selection-start-line="276" selection-start-column="30" selection-end-line="276" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/_api/v1/gfile/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/distutils/command/upload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/utils/yamlHelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/pyspark/streaming/dstream.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="154" column="18" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/tensorflowonspark/TFSparkNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6105">
-          <caret line="453" column="23" selection-start-line="453" selection-start-column="23" selection-end-line="453" selection-end-column="23" />
-          <folding>
-            <element signature="e#8801#9938#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/tensorflowonspark/TFCluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="18" />
-          <folding>
-            <element signature="e#910#948#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/feature.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="8" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/model/BaseModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3180">
-          <caret line="212" column="26" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="60">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py">
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/deepfm_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="1311" selection-start-line="1311" selection-end-line="1311" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/BaseParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="165" column="75" selection-start-line="165" selection-start-column="70" selection-end-line="165" selection-end-column="75" />
+        <state relative-caret-position="45">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/feature.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/generate_train_data_v3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="99" column="49" lean-forward="true" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dl_rank/model/wide_deep_traditional_attention.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/symphony.py">
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/schema.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/train.yaml">
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/dcn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="60">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf_local_v2/model.yaml">
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/BaseModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="148">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="42" column="93" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="93" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/xdeepfm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_rank/conf/WDconf/model.yaml">
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/xcross.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="75">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/ModelFactory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dl_rank/utils/modelUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="191" column="29" lean-forward="true" selection-start-line="191" selection-start-column="29" selection-end-line="191" selection-end-column="29" />
+        <state relative-caret-position="179">
+          <caret line="232" column="38" selection-start-line="232" selection-start-column="29" selection-end-line="232" selection-end-column="38" />
           <folding>
             <element signature="e#14#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/datapipeline/infer_ctr_uv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/deepfm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="94" lean-forward="true" selection-start-line="33" selection-start-column="94" selection-end-line="33" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datapipeline/pd_deepfm_infer_2_gen_infer_result.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/vocabulary.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/model.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/schema.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4307" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/separator.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/feature.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/item_profile_parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/I2Iconf_uv/mission.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/symphony.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="112" column="25" lean-forward="true" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/model/wide_and_deep.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/utils/configManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dl_rank/conf/BaseParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dl_rank/solo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2025">
-          <caret line="437" column="56" lean-forward="true" selection-start-line="437" selection-start-column="56" selection-end-line="437" selection-end-column="56" />
+        <state relative-caret-position="563">
+          <caret line="513" column="41" selection-start-line="513" selection-start-column="41" selection-end-line="513" selection-end-column="41" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
