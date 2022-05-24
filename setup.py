@@ -13,7 +13,7 @@ setup(name='dl_rank',
       },
       zip_safe=False,
       install_requires=[
-          'tensorflow==1.13.1',
+          'tensorflow==2.6.4',
           'pandas>=0.24.2',
           'paramiko>=2.6.0',
           'pyarrow==0.14.1'
