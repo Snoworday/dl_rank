@@ -16,7 +16,7 @@ setup(name='dl_rank',
           'tensorflow==1.13.1',
           'pandas>=0.24.2',
           'paramiko>=2.6.0',
-          'pyarrow==0.14.1'
+          'pyarrow==0.15.1'
       ],
       classifiers=[
           "License :: OSI Approved :: MIT License",
